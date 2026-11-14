@@ -1,0 +1,236 @@
+[
+  {
+    "source": "review/portable_20261107/source/posebusters/__init__.py",
+    "destination": "posebusters/__init__.py",
+    "sha256": "f9369696c3a5c76f055da09a532fb6221e2c4a59a592a985ff62e65d0b817158",
+    "change": "byte-for-byte copy"
+  },
+  {
+    "source": "review/portable_20261107/source/posebusters/posebusters.py",
+    "destination": "posebusters/posebusters.py",
+    "sha256": "a054d78eddd79b70b18d960aeb518f1e797421ea0f62119efe4894e0235d72b0",
+    "change": "byte-for-byte copy"
+  },
+  {
+    "source": "review/portable_20261107/source/posebusters/__main__.py",
+    "destination": "posebusters/__main__.py",
+    "sha256": "35fae304373c67a7712f9eb537005a3e30443b74b8c0219f81877e4f80e3d43e",
+    "change": "byte-for-byte copy"
+  },
+  {
+    "source": "review/portable_20261107/source/posebusters/cli.py",
+    "destination": "posebusters/cli.py",
+    "sha256": "0aa907d69594750fba20ea3c0aa8a0b633de23c8e4d0a6acfd75b1c6bc1bd24d",
+    "change": "byte-for-byte copy"
+  },
+  {
+    "source": "review/portable_20261107/source/posebusters/config/redock.yml",
+    "destination": "posebusters/config/redock.yml",
+    "sha256": "3cc1d43aec480e77abea92c9a7d652cf76194719059e9c4a87ca8cb35cd5665d",
+    "change": "byte-for-byte copy"
+  },
+  {
+    "source": "review/portable_20261107/source/posebusters/config/mol.yml",
+    "destination": "posebusters/config/mol.yml",
+    "sha256": "13a9fe4c2b69918d2ea53a3789e5b857946bb47b7d42e9e248561684cd152370",
+    "change": "byte-for-byte copy"
+  },
+  {
+    "source": "review/portable_20261107/source/posebusters/config/gen.yml",
+    "destination": "posebusters/config/gen.yml",
+    "sha256": "517b36f5ea397083a546bde3d87be47632c12a610e534895df5b37a595289191",
+    "change": "byte-for-byte copy"
+  },
+  {
+    "source": "review/portable_20261107/source/posebusters/config/dock.yml",
+    "destination": "posebusters/config/dock.yml",
+    "sha256": "6b76d53a01fe9f7a8ac503eed87995e6323f1bc06274dc8f810ef970f89608f3",
+    "change": "byte-for-byte copy"
+  },
+  {
+    "source": "review/portable_20261107/source/posebusters/tools/loading.py",
+    "destination": "posebusters/tools/loading.py",
+    "sha256": "ed0e18ed402d021b01a8ee3e6ea42aaff87101e0ba6b0e7b1361af6f8b8d8939",
+    "change": "byte-for-byte copy"
+  },
+  {
+    "source": "review/portable_20261107/source/posebusters/tools/__init__.py",
+    "destination": "posebusters/tools/__init__.py",
+    "sha256": "d10a324ec1488ed8c41fd76775c06ef39714d0a75d5817cd54c2c1f555cfd036",
+    "change": "byte-for-byte copy"
+  },
+  {
+    "source": "review/portable_20261107/source/posebusters/tools/formatting.py",
+    "destination": "posebusters/tools/formatting.py",
+    "sha256": "27112c682e7145c9c8ddf36f138961669334b72f379a2f1b8a256a312067dffa",
+    "change": "byte-for-byte copy"
+  },
+  {
+    "source": "review/portable_20261107/source/posebusters/tools/molecules.py",
+    "destination": "posebusters/tools/molecules.py",
+    "sha256": "123c5d4e7371bc884e2a9a93a819de6d64be26d350ef32765fc4f5d993571322",
+    "change": "byte-for-byte copy"
+  },
+  {
+    "source": "review/portable_20261107/source/posebusters/tools/logging.py",
+    "destination": "posebusters/tools/logging.py",
+    "sha256": "2cbf3bdee666bea6fda3f95063302ab88c46d18bb43cfac05d94d8a664afc44b",
+    "change": "byte-for-byte copy"
+  },
+  {
+    "source": "review/portable_20261107/source/posebusters/tools/protein.py",
+    "destination": "posebusters/tools/protein.py",
+    "sha256": "e67b3092ec193a627a9a4ab0267bc0abcf998c02246bd03dff8cc6c720afb079",
+    "change": "byte-for-byte copy"
+  },
+  {
+    "source": "review/portable_20261107/source/posebusters/tools/inchi.py",
+    "destination": "posebusters/tools/inchi.py",
+    "sha256": "95fa026d41168a7c535ba065daa0c73711ffd9190e02191f4fa5ec4cee06fdc0",
+    "change": "byte-for-byte copy"
+  },
+  {
+    "source": "review/portable_20261107/source/posebusters/tools/stats.py",
+    "destination": "posebusters/tools/stats.py",
+    "sha256": "f041994837694abdc179de4132914544405c87c77aa90f8f5c9fb54414bf9996",
+    "change": "byte-for-byte copy"
+  },
+  {
+    "source": "review/portable_20261107/source/posebusters/tools/parallel.py",
+    "destination": "posebusters/tools/parallel.py",
+    "sha256": "20522da22b127ba0c8d0da3a68947b4f94d8af6b8e1f7172797f1163baa98175",
+    "change": "byte-for-byte copy"
+  },
+  {
+    "source": "review/portable_20261107/source/posebusters/modules/loading.py",
+    "destination": "posebusters/modules/loading.py",
+    "sha256": "c3bbd411bb27988d0e537fd234bb1aefe121ac2045b863ccee2c3249a63c9d72",
+    "change": "byte-for-byte copy"
+  },
+  {
+    "source": "review/portable_20261107/source/posebusters/modules/sucos.py",
+    "destination": "posebusters/modules/sucos.py",
+    "sha256": "85bd2ed7bb8a2ec02787e524a76559236be81090fdc456418c78d18b532bf5cb",
+    "change": "byte-for-byte copy"
+  },
+  {
+    "source": "review/portable_20261107/source/posebusters/modules/volume_overlap.py",
+    "destination": "posebusters/modules/volume_overlap.py",
+    "sha256": "07b4a3259f49b7d98cda27404ed30f0de230862035e8d1e29152735381afa70e",
+    "change": "byte-for-byte copy"
+  },
+  {
+    "source": "review/portable_20261107/source/posebusters/modules/rmsd.py",
+    "destination": "posebusters/modules/rmsd.py",
+    "sha256": "de37b33b762430df44cfc4971e059863d6123ea7ed637e61661dda533bd117d6",
+    "change": "byte-for-byte copy"
+  },
+  {
+    "source": "review/portable_20261107/source/posebusters/modules/distance_geometry.py",
+    "destination": "posebusters/modules/distance_geometry.py",
+    "sha256": "da51961279f1ab30506647555ab4c112a6e96d1b687971951a705f6570dc5cec",
+    "change": "byte-for-byte copy"
+  },
+  {
+    "source": "review/portable_20261107/source/posebusters/modules/flatness.py",
+    "destination": "posebusters/modules/flatness.py",
+    "sha256": "c12dc3338cd382dd76d1cdb6d5a35a86eef97e6f03caee1419ed64174a96f8c0",
+    "change": "byte-for-byte copy"
+  },
+  {
+    "source": "review/portable_20261107/source/posebusters/modules/__init__.py",
+    "destination": "posebusters/modules/__init__.py",
+    "sha256": "d5c3f7ca7336851a691707ac80161c94c73eeef942b274863a20fdc88a71a5d9",
+    "change": "byte-for-byte copy"
+  },
+  {
+    "source": "review/portable_20261107/source/posebusters/modules/sanity.py",
+    "destination": "posebusters/modules/sanity.py",
+    "sha256": "ca0e7c0b0fbd29221b570bef9608e422c957f7554224321aedf18895454dda02",
+    "change": "byte-for-byte copy"
+  },
+  {
+    "source": "review/portable_20261107/source/posebusters/modules/energy_ratio.py",
+    "destination": "posebusters/modules/energy_ratio.py",
+    "sha256": "0ca424becd1ca9048cbdf2511294f2bf09cb4cf4d5d31ebc9b86088fecf5fda5",
+    "change": "byte-for-byte copy"
+  },
+  {
+    "source": "review/portable_20261107/source/posebusters/modules/intermolecular_distance.py",
+    "destination": "posebusters/modules/intermolecular_distance.py",
+    "sha256": "9b6ab7a1361254df3b8479af46bbd7817dd04457c114b2fc1c8f891f145eae10",
+    "change": "byte-for-byte copy"
+  },
+  {
+    "source": "review/portable_20261107/source/posebusters/modules/identity.py",
+    "destination": "posebusters/modules/identity.py",
+    "sha256": "32f12dc7661eed90083cae7cae64894c7365e91b08308dff32090ac09b71008e",
+    "change": "byte-for-byte copy"
+  },
+  {
+    "source": "review/portable_20261107/source/posebusters/datasets/__init__.py",
+    "destination": "posebusters/datasets/__init__.py",
+    "sha256": "a2f04ea354155a80ef6ac3edba0416ba471a720cf1ca7f81639208d899283ffb",
+    "change": "byte-for-byte copy"
+  },
+  {
+    "source": "review/portable_20261107/source/posebusters/datasets/load_datasets.py",
+    "destination": "posebusters/datasets/load_datasets.py",
+    "sha256": "81e971263b1d2934998afc837721504a912c62485e6d2c3543d4381127452392",
+    "change": "byte-for-byte copy"
+  },
+  {
+    "source": "deliver/scaffold_rescue_v2/scaffold_study_v1/geometry_intervention.py",
+    "destination": "scaffold_repair/geometry_intervention.py",
+    "sha256": "4ba7443ab3c96cf5cf9156884ed2a0fd7e97ed350ecc68a4e165182734768d6f",
+    "change": "byte-for-byte copy"
+  },
+  {
+    "source": "review/portable_20261107/source/scaffold_geometry_audit_v1/core.py",
+    "destination": "scaffold_repair/regions.py",
+    "sha256": "293589b0d904e070894ca63e2b1e3765722e0c9e86752ddde194d1041b20a090",
+    "change": "byte-for-byte copy"
+  },
+  {
+    "source": "review/portable_20261107/source/LICENSE",
+    "destination": "LICENSE",
+    "sha256": "2efcff496b2118b88ef8aa9c2d09410d4cc47c5c7ada332e3b457c4e170300f5",
+    "change": "byte-for-byte copy"
+  },
+  {
+    "source": "review/portable_20261107/source/scaffold_study_v1/terminal_control.py",
+    "function": "coordinate_arm",
+    "sha256": "53241dcba423495f6542e0dcf9989dfe06455eba00147ac02d3ca6bb1d70f929",
+    "change": "function source unchanged"
+  },
+  {
+    "source": "review/portable_20261107/source/scaffold_evaluation_v2/evaluate_scaffold_outputs.py",
+    "function": "fixed_diagnostics",
+    "sha256": "9c64e57088416c0f1498c86e34d4d37fc54e67bd25723265e42eb2b3e990e531",
+    "change": "function source unchanged"
+  },
+  {
+    "source": "review/portable_20261107/source/scaffold_evaluation_v2/evaluate_scaffold_outputs.py",
+    "function": "pb_metrics",
+    "sha256": "916887a11d938fa710b71533f02a2d633c39c333318411b247dfefc89974f94e",
+    "change": "function source unchanged"
+  },
+  {
+    "source": "review/portable_20261107/source/flowr/data/interpolate.py",
+    "function": "_sanitize_or_fix_aromaticity",
+    "sha256": "77312a3e6d8c3c1fa55775af0966c22b32b970e504525a7baa232f851dc32958",
+    "change": "function source unchanged"
+  },
+  {
+    "source": "review/portable_20261107/source/scaffold_geometry_audit_v1/temporal.py",
+    "function": "suffix",
+    "sha256": "b46d6a117a69d5059046da919639c3d54b5974d225699d9dc4e846ddd2936290",
+    "change": "function source unchanged"
+  },
+  {
+    "source": "review/portable_20261107/source/scaffold_geometry_audit_v1/temporal.py",
+    "function": "series",
+    "sha256": "398928ec5e8befd1615d34190e1ba19bcb0310261da0daba797676cc98f873b2",
+    "change": "function source unchanged"
+  }
+]

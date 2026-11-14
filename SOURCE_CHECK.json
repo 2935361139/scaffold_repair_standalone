@@ -1,0 +1,338 @@
+{
+  "archive": "flowr_root_analysis-main(3).zip",
+  "sha256": "1b8ba0979977af6541936368d4378ecfa476088fccc3358b415b0f630b7c2d3b",
+  "checked_sources": [
+    {
+      "path": "record_scaffold_run.py",
+      "uploaded": true,
+      "sha256": "7b26f499ab01915b5fb599f53cc00120aaf4c1c4f2bc95c1da904f572b5a56c4",
+      "matches_reference": true
+    },
+    {
+      "path": "scaffold_evaluation_v2/evaluate_scaffold_outputs.py",
+      "uploaded": true,
+      "sha256": "eada03f0918a4de1d675285ca3bdbc90120d510c36712683876acaa84b3665f9",
+      "matches_reference": true
+    },
+    {
+      "path": "scaffold_diagnostics_v1/diagnose_scaffold_runs.py",
+      "uploaded": true,
+      "sha256": "84d44ca3d19b4809bae14b4f6cf7cb2c9189bc1546af7f916e810d6af2c6ec22",
+      "matches_reference": true
+    },
+    {
+      "path": "scaffold_geometry_audit_v1/flowr_adapter.py",
+      "uploaded": true,
+      "sha256": "0d39a1bec543c61597db51aef613fea3ef139125e5552dd7fabcd2e1f03c5c41",
+      "matches_reference": true
+    },
+    {
+      "path": "scaffold_geometry_audit_v1/run_audit.py",
+      "uploaded": true,
+      "sha256": "2dc0a0578d02760e2805f15237610db61ab574cdee8df0906ae79e6ea122cc73",
+      "matches_reference": true
+    },
+    {
+      "path": "scaffold_geometry_audit_v1/core.py",
+      "uploaded": true,
+      "sha256": "293589b0d904e070894ca63e2b1e3765722e0c9e86752ddde194d1041b20a090",
+      "matches_reference": true
+    },
+    {
+      "path": "scaffold_geometry_audit_v1/temporal.py",
+      "uploaded": true,
+      "sha256": "5aa46a4647b8d2cf84c7b517f6d03bb9d50784046ce64c64fd3df2a4c87f0b8f",
+      "matches_reference": true
+    },
+    {
+      "path": "scaffold_study_v1/flowr_adapter.py",
+      "uploaded": false,
+      "recovered_from": "deliver/scaffold_diagnosis_update/scaffold_study_v1/flowr_adapter.py",
+      "sha256": "75e259d0b0d6b7c1c00543b386b97e0baebbe8c084ad7b64b5b9d98b2c553def",
+      "matches_reference": true
+    },
+    {
+      "path": "scaffold_study_v1/run.py",
+      "uploaded": false,
+      "recovered_from": "deliver/scaffold_diagnosis_update/scaffold_study_v1/run.py",
+      "sha256": "2a8a1cf043070286c473b5263fd9bc44d202fdf2d21a3ed2cc2eca25ece11fb1",
+      "matches_reference": true
+    },
+    {
+      "path": "scaffold_study_v1/io_utils.py",
+      "uploaded": false,
+      "recovered_from": "deliver/scaffold_diagnosis_update/scaffold_study_v1/io_utils.py",
+      "sha256": "2594358e42c8f95f934bf92907bbd7ba75ad4afb406a52358c43a5ef7239ca8f",
+      "matches_reference": true
+    },
+    {
+      "path": "scaffold_study_v1/protocol.py",
+      "uploaded": false,
+      "recovered_from": "deliver/scaffold_diagnosis_update/scaffold_study_v1/protocol.py",
+      "sha256": "230791a7cf57065bdb36f2f63a6dd5994e07080e98281ee1dd552da7be08d4bb",
+      "matches_reference": true
+    },
+    {
+      "path": "scaffold_study_v1/core.py",
+      "uploaded": false,
+      "recovered_from": "deliver/scaffold_diagnosis_update/scaffold_study_v1/core.py",
+      "sha256": "357d0887e265738a7bbe9060ca19da102e627114c2aa952b0db5c69d0dfe8eb1",
+      "matches_reference": true
+    },
+    {
+      "path": "scaffold_study_v1/__init__.py",
+      "uploaded": false,
+      "recovered_from": "deliver/scaffold_diagnosis_update/scaffold_study_v1/__init__.py",
+      "sha256": "ac495c4656651d324a48171131dcedab3c59b4fda2bab016d70823c6259bce3b",
+      "matches_reference": true
+    },
+    {
+      "path": "scaffold_study_v1/terminal_control.py",
+      "uploaded": true,
+      "sha256": "0f72b48e6556a581ee08379e4ef783be5a0cfd6c7032d863fef44aa11d1c9e33",
+      "matches_reference": true
+    },
+    {
+      "path": "scaffold_study_v1/geometry_intervention.py",
+      "uploaded": false,
+      "recovered_from": "deliver/scaffold_rescue_v2/scaffold_study_v1/geometry_intervention.py",
+      "sha256": "4ba7443ab3c96cf5cf9156884ed2a0fd7e97ed350ecc68a4e165182734768d6f",
+      "matches_reference": true
+    },
+    {
+      "path": "posebusters/__init__.py",
+      "uploaded": true,
+      "sha256": "f9369696c3a5c76f055da09a532fb6221e2c4a59a592a985ff62e65d0b817158",
+      "matches_reference": true
+    },
+    {
+      "path": "posebusters/__main__.py",
+      "uploaded": true,
+      "sha256": "35fae304373c67a7712f9eb537005a3e30443b74b8c0219f81877e4f80e3d43e",
+      "matches_reference": true
+    },
+    {
+      "path": "posebusters/cli.py",
+      "uploaded": true,
+      "sha256": "0aa907d69594750fba20ea3c0aa8a0b633de23c8e4d0a6acfd75b1c6bc1bd24d",
+      "matches_reference": true
+    },
+    {
+      "path": "posebusters/config/dock.yml",
+      "uploaded": true,
+      "sha256": "6b76d53a01fe9f7a8ac503eed87995e6323f1bc06274dc8f810ef970f89608f3",
+      "matches_reference": true
+    },
+    {
+      "path": "posebusters/config/gen.yml",
+      "uploaded": true,
+      "sha256": "517b36f5ea397083a546bde3d87be47632c12a610e534895df5b37a595289191",
+      "matches_reference": true
+    },
+    {
+      "path": "posebusters/config/mol.yml",
+      "uploaded": true,
+      "sha256": "13a9fe4c2b69918d2ea53a3789e5b857946bb47b7d42e9e248561684cd152370",
+      "matches_reference": true
+    },
+    {
+      "path": "posebusters/config/redock.yml",
+      "uploaded": true,
+      "sha256": "3cc1d43aec480e77abea92c9a7d652cf76194719059e9c4a87ca8cb35cd5665d",
+      "matches_reference": true
+    },
+    {
+      "path": "posebusters/datasets/__init__.py",
+      "uploaded": true,
+      "sha256": "a2f04ea354155a80ef6ac3edba0416ba471a720cf1ca7f81639208d899283ffb",
+      "matches_reference": true
+    },
+    {
+      "path": "posebusters/datasets/load_datasets.py",
+      "uploaded": true,
+      "sha256": "81e971263b1d2934998afc837721504a912c62485e6d2c3543d4381127452392",
+      "matches_reference": true
+    },
+    {
+      "path": "posebusters/modules/__init__.py",
+      "uploaded": true,
+      "sha256": "d5c3f7ca7336851a691707ac80161c94c73eeef942b274863a20fdc88a71a5d9",
+      "matches_reference": true
+    },
+    {
+      "path": "posebusters/modules/distance_geometry.py",
+      "uploaded": true,
+      "sha256": "da51961279f1ab30506647555ab4c112a6e96d1b687971951a705f6570dc5cec",
+      "matches_reference": true
+    },
+    {
+      "path": "posebusters/modules/energy_ratio.py",
+      "uploaded": true,
+      "sha256": "0ca424becd1ca9048cbdf2511294f2bf09cb4cf4d5d31ebc9b86088fecf5fda5",
+      "matches_reference": true
+    },
+    {
+      "path": "posebusters/modules/flatness.py",
+      "uploaded": true,
+      "sha256": "c12dc3338cd382dd76d1cdb6d5a35a86eef97e6f03caee1419ed64174a96f8c0",
+      "matches_reference": true
+    },
+    {
+      "path": "posebusters/modules/identity.py",
+      "uploaded": true,
+      "sha256": "32f12dc7661eed90083cae7cae64894c7365e91b08308dff32090ac09b71008e",
+      "matches_reference": true
+    },
+    {
+      "path": "posebusters/modules/intermolecular_distance.py",
+      "uploaded": true,
+      "sha256": "9b6ab7a1361254df3b8479af46bbd7817dd04457c114b2fc1c8f891f145eae10",
+      "matches_reference": true
+    },
+    {
+      "path": "posebusters/modules/loading.py",
+      "uploaded": true,
+      "sha256": "c3bbd411bb27988d0e537fd234bb1aefe121ac2045b863ccee2c3249a63c9d72",
+      "matches_reference": true
+    },
+    {
+      "path": "posebusters/modules/rmsd.py",
+      "uploaded": true,
+      "sha256": "de37b33b762430df44cfc4971e059863d6123ea7ed637e61661dda533bd117d6",
+      "matches_reference": true
+    },
+    {
+      "path": "posebusters/modules/sanity.py",
+      "uploaded": true,
+      "sha256": "ca0e7c0b0fbd29221b570bef9608e422c957f7554224321aedf18895454dda02",
+      "matches_reference": true
+    },
+    {
+      "path": "posebusters/modules/sucos.py",
+      "uploaded": true,
+      "sha256": "85bd2ed7bb8a2ec02787e524a76559236be81090fdc456418c78d18b532bf5cb",
+      "matches_reference": true
+    },
+    {
+      "path": "posebusters/modules/volume_overlap.py",
+      "uploaded": true,
+      "sha256": "07b4a3259f49b7d98cda27404ed30f0de230862035e8d1e29152735381afa70e",
+      "matches_reference": true
+    },
+    {
+      "path": "posebusters/posebusters.py",
+      "uploaded": true,
+      "sha256": "a054d78eddd79b70b18d960aeb518f1e797421ea0f62119efe4894e0235d72b0",
+      "matches_reference": true
+    },
+    {
+      "path": "posebusters/tools/__init__.py",
+      "uploaded": true,
+      "sha256": "d10a324ec1488ed8c41fd76775c06ef39714d0a75d5817cd54c2c1f555cfd036",
+      "matches_reference": true
+    },
+    {
+      "path": "posebusters/tools/formatting.py",
+      "uploaded": true,
+      "sha256": "27112c682e7145c9c8ddf36f138961669334b72f379a2f1b8a256a312067dffa",
+      "matches_reference": true
+    },
+    {
+      "path": "posebusters/tools/inchi.py",
+      "uploaded": true,
+      "sha256": "95fa026d41168a7c535ba065daa0c73711ffd9190e02191f4fa5ec4cee06fdc0",
+      "matches_reference": true
+    },
+    {
+      "path": "posebusters/tools/loading.py",
+      "uploaded": true,
+      "sha256": "ed0e18ed402d021b01a8ee3e6ea42aaff87101e0ba6b0e7b1361af6f8b8d8939",
+      "matches_reference": true
+    },
+    {
+      "path": "posebusters/tools/logging.py",
+      "uploaded": true,
+      "sha256": "2cbf3bdee666bea6fda3f95063302ab88c46d18bb43cfac05d94d8a664afc44b",
+      "matches_reference": true
+    },
+    {
+      "path": "posebusters/tools/molecules.py",
+      "uploaded": true,
+      "sha256": "123c5d4e7371bc884e2a9a93a819de6d64be26d350ef32765fc4f5d993571322",
+      "matches_reference": true
+    },
+    {
+      "path": "posebusters/tools/parallel.py",
+      "uploaded": true,
+      "sha256": "20522da22b127ba0c8d0da3a68947b4f94d8af6b8e1f7172797f1163baa98175",
+      "matches_reference": true
+    },
+    {
+      "path": "posebusters/tools/protein.py",
+      "uploaded": true,
+      "sha256": "e67b3092ec193a627a9a4ab0267bc0abcf998c02246bd03dff8cc6c720afb079",
+      "matches_reference": true
+    },
+    {
+      "path": "posebusters/tools/stats.py",
+      "uploaded": true,
+      "sha256": "f041994837694abdc179de4132914544405c87c77aa90f8f5c9fb54414bf9996",
+      "matches_reference": true
+    },
+    {
+      "path": "flowr/gen/generate_from_pdb.py",
+      "uploaded": true,
+      "sha256": "c562ea9183fb31dbe0424ed6688f7a258af38927cd2227ae8a43cfb07358dad8",
+      "matches_reference": true
+    },
+    {
+      "path": "flowr/gen/generate.py",
+      "uploaded": true,
+      "sha256": "cb397a0d903e447cec873826300b562b9e7e2666daaad1e5f1cd42178e4e61f9",
+      "matches_reference": true
+    },
+    {
+      "path": "flowr/models/fm_pocket.py",
+      "uploaded": true,
+      "sha256": "beaace3ab92a8377bc8eab95333c8f40ce370ca9224f7a78927c5a424bb38426",
+      "matches_reference": true
+    },
+    {
+      "path": "flowr/models/mol_builder.py",
+      "uploaded": true,
+      "sha256": "30df0c63e75d4350b9d38d97a13f67ba14cf8a45b847faf257a34ddfb3d035a3",
+      "matches_reference": true
+    },
+    {
+      "path": "flowr/data/interpolate.py",
+      "uploaded": true,
+      "sha256": "171af7162fe2b7fc37e8ffdcbf90f6ea5c99bebed0b17a3d825ef24dee7cdd96",
+      "matches_reference": true
+    },
+    {
+      "path": "flowr/scriptutil.py",
+      "uploaded": true,
+      "sha256": "94422ce28c701966cd54f1d46b4bbb22438204a38789a3e897301f4fb71da6ff",
+      "matches_reference": true
+    },
+    {
+      "path": "flowr/util/rdkit.py",
+      "uploaded": true,
+      "sha256": "00626d65e097dd1ac6b8f558219320869fef52611f964880a381f35903fda0d5",
+      "matches_reference": true
+    },
+    {
+      "path": "flowr/util/metrics.py",
+      "uploaded": true,
+      "sha256": "e2ec7666d7c63ccbe164f67063f5d13701bcd11c146f423c86c86b6d723768e3",
+      "matches_reference": true
+    },
+    {
+      "path": "flowr/gen/utils.py",
+      "uploaded": true,
+      "sha256": "2185b671e62bea6012dd38f4dfb8e6ba877285769b8609cc252c28760be440e0",
+      "matches_reference": true
+    }
+  ],
+  "note": "Seven source files absent in latest uploaded repository snapshot were located in earlier delivered packages and matched the frozen SHA-256. Only the recovered geometry optimizer is included in this standalone tool; old model orchestration is not needed."
+}
