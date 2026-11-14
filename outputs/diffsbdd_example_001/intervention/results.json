@@ -1,0 +1,82 @@
+{
+  "summary": {
+    "completed": true,
+    "total_samples": 5,
+    "original_passed": 0,
+    "original_failed": 5,
+    "requested_failures": 5,
+    "rescued": 0,
+    "rescued_without_relaxing_fixed_coordinates": 0,
+    "rescued_with_relaxed_fixed_coordinates": 0,
+    "final_passed": 0,
+    "final_failed": 5,
+    "unsupported_failures": 5,
+    "planned_arms": 0,
+    "completed_arms": 0,
+    "branch_errors": 0,
+    "all_planned_arms_evaluated": true,
+    "fatal_errors": [],
+    "new_generations": 0,
+    "neural_interventions": 0,
+    "interpretation": "Operational repair under the unchanged evaluator. C is separately counted because fixed coordinates move."
+  },
+  "records": [],
+  "conclusions": [
+    {
+      "run_id": "diffsbdd_001",
+      "selected_arm": null,
+      "result": "unsupported_failure",
+      "all_successful_interventions": [],
+      "fixed_coordinate_relaxation": false,
+      "original_success": false,
+      "requested_failure": true,
+      "intervention_executed": false,
+      "route": "unsupported"
+    },
+    {
+      "run_id": "diffsbdd_002",
+      "selected_arm": null,
+      "result": "unsupported_failure",
+      "all_successful_interventions": [],
+      "fixed_coordinate_relaxation": false,
+      "original_success": false,
+      "requested_failure": true,
+      "intervention_executed": false,
+      "route": "unsupported"
+    },
+    {
+      "run_id": "diffsbdd_003",
+      "selected_arm": null,
+      "result": "unsupported_failure",
+      "all_successful_interventions": [],
+      "fixed_coordinate_relaxation": false,
+      "original_success": false,
+      "requested_failure": true,
+      "intervention_executed": false,
+      "route": "unsupported"
+    },
+    {
+      "run_id": "diffsbdd_004",
+      "selected_arm": null,
+      "result": "unsupported_failure",
+      "all_successful_interventions": [],
+      "fixed_coordinate_relaxation": false,
+      "original_success": false,
+      "requested_failure": true,
+      "intervention_executed": false,
+      "route": "unsupported"
+    },
+    {
+      "run_id": "diffsbdd_005",
+      "selected_arm": null,
+      "result": "unsupported_failure",
+      "all_successful_interventions": [],
+      "fixed_coordinate_relaxation": false,
+      "original_success": false,
+      "requested_failure": true,
+      "intervention_executed": false,
+      "route": "unsupported"
+    }
+  ],
+  "branch_errors": []
+}

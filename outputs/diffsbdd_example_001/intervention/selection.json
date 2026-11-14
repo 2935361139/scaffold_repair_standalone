@@ -1,0 +1,13 @@
+{
+  "source_generated": "/home/ljl/projects/scaffold_repair_standalone/outputs/diffsbdd_example_001/generated",
+  "source_integrity_sha256": "5919879828455ce8209dac14548a3e479dc87c263e07d8892b86ade9af0e15a8",
+  "requested_failures": [
+    "diffsbdd_001",
+    "diffsbdd_002",
+    "diffsbdd_003",
+    "diffsbdd_004",
+    "diffsbdd_005"
+  ],
+  "active_runs": [],
+  "planned_arms": 0
+}

@@ -1,0 +1,6 @@
+﻿run_id,selected_arm,result,all_successful_interventions,fixed_coordinate_relaxation,original_success,requested_failure,intervention_executed,route
+diffsbdd_001,,unsupported_failure,[],False,False,True,False,unsupported
+diffsbdd_002,,unsupported_failure,[],False,False,True,False,unsupported
+diffsbdd_003,,unsupported_failure,[],False,False,True,False,unsupported
+diffsbdd_004,,unsupported_failure,[],False,False,True,False,unsupported
+diffsbdd_005,,unsupported_failure,[],False,False,True,False,unsupported

@@ -1,0 +1,11 @@
+{
+  "run_id": "diffsbdd_005",
+  "selected_arm": null,
+  "result": "unsupported_failure",
+  "all_successful_interventions": [],
+  "fixed_coordinate_relaxation": false,
+  "original_success": false,
+  "requested_failure": true,
+  "intervention_executed": false,
+  "route": "unsupported"
+}
