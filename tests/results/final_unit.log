@@ -1,0 +1,23 @@
+test_aromatic_fixed_query_remains_strict (test_core.ScientificInvariants.test_aromatic_fixed_query_remains_strict) ... ok
+test_atom_mapping_rejects_duplicates (test_core.ScientificInvariants.test_atom_mapping_rejects_duplicates) ... ok
+test_controls_cannot_supply_a_repair (test_core.ScientificInvariants.test_controls_cannot_supply_a_repair) ... ok
+test_discrete_failure_is_unsupported (test_core.ScientificInvariants.test_discrete_failure_is_unsupported) ... ok
+test_existing_output_is_preserved (test_core.ScientificInvariants.test_existing_output_is_preserved) ... ok
+test_geometry_routing_is_not_water_specific (test_core.ScientificInvariants.test_geometry_routing_is_not_water_specific) ... ok
+test_geometry_source_remains_byte_identical (test_core.ScientificInvariants.test_geometry_source_remains_byte_identical) ... ok
+test_missing_input_stops_before_experiment (test_core.ScientificInvariants.test_missing_input_stops_before_experiment) ... ok
+test_no_flowr_runtime_imports (test_core.ScientificInvariants.test_no_flowr_runtime_imports) ... ok
+test_observation_is_not_causal_onset (test_core.ScientificInvariants.test_observation_is_not_causal_onset) ... ok
+test_optimizer_hard_budget (test_core.ScientificInvariants.test_optimizer_hard_budget) ... ok
+test_original_success_is_preserved (test_core.ScientificInvariants.test_original_success_is_preserved) ... ok
+test_path_ids_cannot_escape_output (test_core.ScientificInvariants.test_path_ids_cannot_escape_output) ... ok
+test_primary_priority_and_relaxed_constraint (test_core.ScientificInvariants.test_primary_priority_and_relaxed_constraint) ... ok
+test_random_control_preserves_magnitude_scope_and_dtype (test_core.ScientificInvariants.test_random_control_preserves_magnitude_scope_and_dtype) ... ok
+test_repulsion_gradient (test_core.ScientificInvariants.test_repulsion_gradient) ... ok
+test_unique_float32_frame_conversion (test_core.ScientificInvariants.test_unique_float32_frame_conversion) ... ok
+test_unknown_check_is_not_silently_accepted (test_core.ScientificInvariants.test_unknown_check_is_not_silently_accepted) ... ok
+
+----------------------------------------------------------------------
+Ran 18 tests in 0.442s
+
+OK

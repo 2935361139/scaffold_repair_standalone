@@ -1,0 +1,18 @@
+{
+  "schema": "scaffold_repair_manifest_v1",
+  "samples": [
+    {
+      "id": "sample_001",
+      "input_id": "reference_ligand_001",
+      "model": "your_model_name",
+      "seed": 3001,
+      "sdf": "data/generated.sdf",
+      "sdf_index": 0,
+      "protein_pdb": "data/protein.pdb",
+      "reference_sdf": "data/reference.sdf",
+      "reference_index": 0,
+      "fixed_generated_indices": [0, 1, 2, 3],
+      "fixed_reference_indices": [24, 25, 26, 27]
+    }
+  ]
+}

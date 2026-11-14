@@ -1,0 +1,7 @@
+# Tested numerical versions of the supplied experiments. No FLOWR / GPU / checkpoint.
+numpy==2.5.3
+scipy==1.18.1
+rdkit==2026.3.6
+pandas==2.2.3
+PyYAML==6.0.3
+tqdm>=4.66,<5

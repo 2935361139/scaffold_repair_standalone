@@ -1,0 +1,19 @@
+{
+  "sdf_interface": {
+    "samples": 1,
+    "matched_endpoints": 19,
+    "matched_receipts": 19,
+    "matched_sdf_coordinates": 19,
+    "repaired": 1
+  },
+  "manifest_interface": {
+    "samples": 2,
+    "original_pass_preserved": true,
+    "unsupported_chemical_failure_retained": true,
+    "unnecessary_arms": 0
+  },
+  "no_flowr_runtime_import": true,
+  "no_torch_needed_for_regression": true,
+  "moved_input_snapshot_valid": true,
+  "tampered_input_rejected": true
+}

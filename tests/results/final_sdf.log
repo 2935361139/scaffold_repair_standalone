@@ -1,0 +1,30 @@
+CHECK 1/1 dataset_86dc8329df8851b0_lig5_seed_3001
+CHECK COMPLETE: 1 total; 0 passed; 1 failed
+RESULT: /workspace/scratch/fe2f321f10fc/review/portable_20261107/final_sdf/generated/review.zip
+OPTIMIZE dataset_86dc8329df8851b0_lig5_seed_3001 B
+OPTIMIZE dataset_86dc8329df8851b0_lig5_seed_3001 AB
+OPTIMIZE dataset_86dc8329df8851b0_lig5_seed_3001 UFF_only
+OPTIMIZE dataset_86dc8329df8851b0_lig5_seed_3001 A_UFF_only
+OPTIMIZE dataset_86dc8329df8851b0_lig5_seed_3001 C
+OPTIMIZE dataset_86dc8329df8851b0_lig5_seed_3001 C_UFF_only
+ARM dataset_86dc8329df8851b0_lig5_seed_3001 A: success=False
+ARM dataset_86dc8329df8851b0_lig5_seed_3001 B: success=False
+ARM dataset_86dc8329df8851b0_lig5_seed_3001 AB: success=False
+ARM dataset_86dc8329df8851b0_lig5_seed_3001 C: success=True
+ARM dataset_86dc8329df8851b0_lig5_seed_3001 UFF_only: success=False
+ARM dataset_86dc8329df8851b0_lig5_seed_3001 A_UFF_only: success=False
+ARM dataset_86dc8329df8851b0_lig5_seed_3001 C_UFF_only: success=False
+ARM dataset_86dc8329df8851b0_lig5_seed_3001 A_random_0: success=False
+ARM dataset_86dc8329df8851b0_lig5_seed_3001 A_random_1: success=False
+ARM dataset_86dc8329df8851b0_lig5_seed_3001 A_random_2: success=False
+ARM dataset_86dc8329df8851b0_lig5_seed_3001 B_random_0: success=False
+ARM dataset_86dc8329df8851b0_lig5_seed_3001 B_random_1: success=False
+ARM dataset_86dc8329df8851b0_lig5_seed_3001 B_random_2: success=False
+ARM dataset_86dc8329df8851b0_lig5_seed_3001 AB_random_0: success=False
+ARM dataset_86dc8329df8851b0_lig5_seed_3001 AB_random_1: success=False
+ARM dataset_86dc8329df8851b0_lig5_seed_3001 AB_random_2: success=False
+ARM dataset_86dc8329df8851b0_lig5_seed_3001 C_random_0: success=False
+ARM dataset_86dc8329df8851b0_lig5_seed_3001 C_random_1: success=False
+ARM dataset_86dc8329df8851b0_lig5_seed_3001 C_random_2: success=False
+INTERVENTION COMPLETE: 1/1 original failures repaired; 1 required relaxed fixed coordinates; 0 unevaluated branches
+RESULT: /workspace/scratch/fe2f321f10fc/review/portable_20261107/final_sdf/intervention/review.zip

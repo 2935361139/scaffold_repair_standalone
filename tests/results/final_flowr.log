@@ -1,0 +1,82 @@
+CHECK 1/3 dataset_86dc8329df8851b0_lig5_seed_3001
+CHECK 2/3 dataset_86dc8329df8851b0_lig5_seed_3002
+CHECK 3/3 dataset_86dc8329df8851b0_lig5_seed_3003
+CHECK COMPLETE: 3 total; 0 passed; 3 failed
+RESULT: /workspace/scratch/fe2f321f10fc/review/portable_20261107/final_flowr/generated/review.zip
+OPTIMIZE dataset_86dc8329df8851b0_lig5_seed_3001 B
+OPTIMIZE dataset_86dc8329df8851b0_lig5_seed_3001 AB
+OPTIMIZE dataset_86dc8329df8851b0_lig5_seed_3001 UFF_only
+OPTIMIZE dataset_86dc8329df8851b0_lig5_seed_3001 A_UFF_only
+OPTIMIZE dataset_86dc8329df8851b0_lig5_seed_3001 C
+OPTIMIZE dataset_86dc8329df8851b0_lig5_seed_3001 C_UFF_only
+ARM dataset_86dc8329df8851b0_lig5_seed_3001 A: success=False
+ARM dataset_86dc8329df8851b0_lig5_seed_3001 B: success=False
+ARM dataset_86dc8329df8851b0_lig5_seed_3001 AB: success=False
+ARM dataset_86dc8329df8851b0_lig5_seed_3001 C: success=True
+ARM dataset_86dc8329df8851b0_lig5_seed_3001 UFF_only: success=False
+ARM dataset_86dc8329df8851b0_lig5_seed_3001 A_UFF_only: success=False
+ARM dataset_86dc8329df8851b0_lig5_seed_3001 C_UFF_only: success=False
+ARM dataset_86dc8329df8851b0_lig5_seed_3001 A_random_0: success=False
+ARM dataset_86dc8329df8851b0_lig5_seed_3001 A_random_1: success=False
+ARM dataset_86dc8329df8851b0_lig5_seed_3001 A_random_2: success=False
+ARM dataset_86dc8329df8851b0_lig5_seed_3001 B_random_0: success=False
+ARM dataset_86dc8329df8851b0_lig5_seed_3001 B_random_1: success=False
+ARM dataset_86dc8329df8851b0_lig5_seed_3001 B_random_2: success=False
+ARM dataset_86dc8329df8851b0_lig5_seed_3001 AB_random_0: success=False
+ARM dataset_86dc8329df8851b0_lig5_seed_3001 AB_random_1: success=False
+ARM dataset_86dc8329df8851b0_lig5_seed_3001 AB_random_2: success=False
+ARM dataset_86dc8329df8851b0_lig5_seed_3001 C_random_0: success=False
+ARM dataset_86dc8329df8851b0_lig5_seed_3001 C_random_1: success=False
+ARM dataset_86dc8329df8851b0_lig5_seed_3001 C_random_2: success=False
+OPTIMIZE dataset_86dc8329df8851b0_lig5_seed_3002 B
+OPTIMIZE dataset_86dc8329df8851b0_lig5_seed_3002 AB
+OPTIMIZE dataset_86dc8329df8851b0_lig5_seed_3002 UFF_only
+OPTIMIZE dataset_86dc8329df8851b0_lig5_seed_3002 A_UFF_only
+OPTIMIZE dataset_86dc8329df8851b0_lig5_seed_3002 C
+OPTIMIZE dataset_86dc8329df8851b0_lig5_seed_3002 C_UFF_only
+ARM dataset_86dc8329df8851b0_lig5_seed_3002 A: success=False
+ARM dataset_86dc8329df8851b0_lig5_seed_3002 B: success=False
+ARM dataset_86dc8329df8851b0_lig5_seed_3002 AB: success=False
+ARM dataset_86dc8329df8851b0_lig5_seed_3002 C: success=True
+ARM dataset_86dc8329df8851b0_lig5_seed_3002 UFF_only: success=False
+ARM dataset_86dc8329df8851b0_lig5_seed_3002 A_UFF_only: success=False
+ARM dataset_86dc8329df8851b0_lig5_seed_3002 C_UFF_only: success=False
+ARM dataset_86dc8329df8851b0_lig5_seed_3002 A_random_0: success=False
+ARM dataset_86dc8329df8851b0_lig5_seed_3002 A_random_1: success=False
+ARM dataset_86dc8329df8851b0_lig5_seed_3002 A_random_2: success=False
+ARM dataset_86dc8329df8851b0_lig5_seed_3002 B_random_0: success=False
+ARM dataset_86dc8329df8851b0_lig5_seed_3002 B_random_1: success=False
+ARM dataset_86dc8329df8851b0_lig5_seed_3002 B_random_2: success=False
+ARM dataset_86dc8329df8851b0_lig5_seed_3002 AB_random_0: success=False
+ARM dataset_86dc8329df8851b0_lig5_seed_3002 AB_random_1: success=False
+ARM dataset_86dc8329df8851b0_lig5_seed_3002 AB_random_2: success=False
+ARM dataset_86dc8329df8851b0_lig5_seed_3002 C_random_0: success=False
+ARM dataset_86dc8329df8851b0_lig5_seed_3002 C_random_1: success=False
+ARM dataset_86dc8329df8851b0_lig5_seed_3002 C_random_2: success=False
+OPTIMIZE dataset_86dc8329df8851b0_lig5_seed_3003 B
+OPTIMIZE dataset_86dc8329df8851b0_lig5_seed_3003 AB
+OPTIMIZE dataset_86dc8329df8851b0_lig5_seed_3003 UFF_only
+OPTIMIZE dataset_86dc8329df8851b0_lig5_seed_3003 A_UFF_only
+OPTIMIZE dataset_86dc8329df8851b0_lig5_seed_3003 C
+OPTIMIZE dataset_86dc8329df8851b0_lig5_seed_3003 C_UFF_only
+ARM dataset_86dc8329df8851b0_lig5_seed_3003 A: success=False
+ARM dataset_86dc8329df8851b0_lig5_seed_3003 B: success=False
+ARM dataset_86dc8329df8851b0_lig5_seed_3003 AB: success=False
+ARM dataset_86dc8329df8851b0_lig5_seed_3003 C: success=True
+ARM dataset_86dc8329df8851b0_lig5_seed_3003 UFF_only: success=False
+ARM dataset_86dc8329df8851b0_lig5_seed_3003 A_UFF_only: success=False
+ARM dataset_86dc8329df8851b0_lig5_seed_3003 C_UFF_only: success=False
+ARM dataset_86dc8329df8851b0_lig5_seed_3003 A_random_0: success=False
+ARM dataset_86dc8329df8851b0_lig5_seed_3003 A_random_1: success=False
+ARM dataset_86dc8329df8851b0_lig5_seed_3003 A_random_2: success=False
+ARM dataset_86dc8329df8851b0_lig5_seed_3003 B_random_0: success=False
+ARM dataset_86dc8329df8851b0_lig5_seed_3003 B_random_1: success=False
+ARM dataset_86dc8329df8851b0_lig5_seed_3003 B_random_2: success=False
+ARM dataset_86dc8329df8851b0_lig5_seed_3003 AB_random_0: success=False
+ARM dataset_86dc8329df8851b0_lig5_seed_3003 AB_random_1: success=False
+ARM dataset_86dc8329df8851b0_lig5_seed_3003 AB_random_2: success=False
+ARM dataset_86dc8329df8851b0_lig5_seed_3003 C_random_0: success=False
+ARM dataset_86dc8329df8851b0_lig5_seed_3003 C_random_1: success=False
+ARM dataset_86dc8329df8851b0_lig5_seed_3003 C_random_2: success=False
+INTERVENTION COMPLETE: 3/3 original failures repaired; 3 required relaxed fixed coordinates; 0 unevaluated branches
+RESULT: /workspace/scratch/fe2f321f10fc/review/portable_20261107/final_flowr/intervention/review.zip

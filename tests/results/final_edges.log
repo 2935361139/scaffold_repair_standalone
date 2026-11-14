@@ -1,0 +1,8 @@
+CHECK 1/2 original_pass
+CHECK 2/2 chemical_failure
+[09:28:39] Explicit valence for atom # 0 C, 5, is greater than permitted
+CHECK COMPLETE: 2 total; 1 passed; 1 failed
+RESULT: /workspace/scratch/fe2f321f10fc/review/portable_20261107/final_edges/generated/review.zip
+[09:28:42] Explicit valence for atom # 0 C, 5, is greater than permitted
+INTERVENTION COMPLETE: 0/1 original failures repaired; 0 required relaxed fixed coordinates; 0 unevaluated branches
+RESULT: /workspace/scratch/fe2f321f10fc/review/portable_20261107/final_edges/intervention/review.zip
