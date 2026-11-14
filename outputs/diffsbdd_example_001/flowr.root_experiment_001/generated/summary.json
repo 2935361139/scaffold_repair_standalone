@@ -1,0 +1,283 @@
+{
+  "completed": true,
+  "requested_samples": 3,
+  "evaluated_samples": 3,
+  "passed": 0,
+  "failed": 3,
+  "supported_geometry_failures": 3,
+  "unsupported_failures": 0,
+  "errors": [],
+  "samples": [
+    {
+      "id": "dataset_86dc8329df8851b0_lig5_seed_3001",
+      "input_id": "dataset_86dc8329df8851b0_lig5",
+      "seed": 3001,
+      "success": false,
+      "route": {
+        "status": "supported_geometry",
+        "reason": "Run frozen geometry intervention bank, including fixed-region conflicts"
+      },
+      "evaluation": {
+        "rdkit_valid": true,
+        "fc_valid": true,
+        "root_fixed_substructure_match": true,
+        "fixed_chemistry_preserved": true,
+        "posebusters_valid": false,
+        "posebusters_checks": {
+          "mol_pred_loaded": true,
+          "mol_cond_loaded": true,
+          "sanitization": true,
+          "inchi_convertible": true,
+          "all_atoms_connected": true,
+          "bond_lengths": true,
+          "bond_angles": true,
+          "internal_steric_clash": true,
+          "aromatic_ring_flatness": true,
+          "double_bond_flatness": true,
+          "internal_energy": true,
+          "protein-ligand_maximum_distance": true,
+          "minimum_distance_to_protein": false,
+          "minimum_distance_to_organic_cofactors": true,
+          "minimum_distance_to_inorganic_cofactors": true,
+          "minimum_distance_to_waters": true,
+          "volume_overlap_with_protein": true,
+          "volume_overlap_with_organic_cofactors": true,
+          "volume_overlap_with_inorganic_cofactors": true,
+          "volume_overlap_with_waters": true
+        },
+        "posebusters_failed_checks": [
+          "minimum_distance_to_protein"
+        ],
+        "murcko_scaffold_changed": true,
+        "molecule_smiles": "NS(=O)(=O)c1ccc(Nc2nc(OCC3CCCCC3)c3[nH+]c[nH]c3n2)cc1",
+        "scaffold_smiles": "c1ccc(Nc2nc(OCC3CCCCC3)c3[nH+]c[nH]c3n2)cc1",
+        "fixed_missing_sites": [],
+        "fixed_element_changed_sites": [],
+        "fixed_charge_changed_sites": [],
+        "fixed_internal_bond_changed_pairs": [],
+        "fixed_rms_displacement_A": 0.38679458171640696,
+        "fixed_max_displacement_A": 0.623375459636537,
+        "strict_boundary_reference_match": true,
+        "strict_boundary_differing_sites": [],
+        "attachment_sites_without_generated_neighbor": [],
+        "nonattachment_sites_with_generated_neighbors": [],
+        "boundary_details": [
+          {
+            "fixed_site": 0,
+            "reference_bond_types": [
+              "SINGLE"
+            ],
+            "generated_bond_types": [
+              "SINGLE"
+            ],
+            "generated_neighbors": [
+              10
+            ]
+          },
+          {
+            "fixed_site": 1,
+            "reference_bond_types": [],
+            "generated_bond_types": [],
+            "generated_neighbors": []
+          },
+          {
+            "fixed_site": 2,
+            "reference_bond_types": [],
+            "generated_bond_types": [],
+            "generated_neighbors": []
+          },
+          {
+            "fixed_site": 3,
+            "reference_bond_types": [],
+            "generated_bond_types": [],
+            "generated_neighbors": []
+          }
+        ],
+        "geometry_status": "evaluated"
+      },
+      "localized_pair_count": 3,
+      "timing_status": "observed_saved_states"
+    },
+    {
+      "id": "dataset_86dc8329df8851b0_lig5_seed_3002",
+      "input_id": "dataset_86dc8329df8851b0_lig5",
+      "seed": 3002,
+      "success": false,
+      "route": {
+        "status": "supported_geometry",
+        "reason": "Run frozen geometry intervention bank, including fixed-region conflicts"
+      },
+      "evaluation": {
+        "rdkit_valid": true,
+        "fc_valid": true,
+        "root_fixed_substructure_match": true,
+        "fixed_chemistry_preserved": true,
+        "posebusters_valid": false,
+        "posebusters_checks": {
+          "mol_pred_loaded": true,
+          "mol_cond_loaded": true,
+          "sanitization": true,
+          "inchi_convertible": true,
+          "all_atoms_connected": true,
+          "bond_lengths": true,
+          "bond_angles": true,
+          "internal_steric_clash": true,
+          "aromatic_ring_flatness": true,
+          "double_bond_flatness": true,
+          "internal_energy": true,
+          "protein-ligand_maximum_distance": true,
+          "minimum_distance_to_protein": false,
+          "minimum_distance_to_organic_cofactors": true,
+          "minimum_distance_to_inorganic_cofactors": true,
+          "minimum_distance_to_waters": true,
+          "volume_overlap_with_protein": true,
+          "volume_overlap_with_organic_cofactors": true,
+          "volume_overlap_with_inorganic_cofactors": true,
+          "volume_overlap_with_waters": true
+        },
+        "posebusters_failed_checks": [
+          "minimum_distance_to_protein"
+        ],
+        "murcko_scaffold_changed": false,
+        "molecule_smiles": "NS(=O)(=O)c1ccc(Nc2nc(OCC3CCCCC3)c3nc[nH]c3n2)cc1",
+        "scaffold_smiles": "c1ccc(Nc2nc(OCC3CCCCC3)c3nc[nH]c3n2)cc1",
+        "fixed_missing_sites": [],
+        "fixed_element_changed_sites": [],
+        "fixed_charge_changed_sites": [],
+        "fixed_internal_bond_changed_pairs": [],
+        "fixed_rms_displacement_A": 0.41600063789279357,
+        "fixed_max_displacement_A": 0.6618423647333037,
+        "strict_boundary_reference_match": true,
+        "strict_boundary_differing_sites": [],
+        "attachment_sites_without_generated_neighbor": [],
+        "nonattachment_sites_with_generated_neighbors": [],
+        "boundary_details": [
+          {
+            "fixed_site": 0,
+            "reference_bond_types": [
+              "SINGLE"
+            ],
+            "generated_bond_types": [
+              "SINGLE"
+            ],
+            "generated_neighbors": [
+              21
+            ]
+          },
+          {
+            "fixed_site": 1,
+            "reference_bond_types": [],
+            "generated_bond_types": [],
+            "generated_neighbors": []
+          },
+          {
+            "fixed_site": 2,
+            "reference_bond_types": [],
+            "generated_bond_types": [],
+            "generated_neighbors": []
+          },
+          {
+            "fixed_site": 3,
+            "reference_bond_types": [],
+            "generated_bond_types": [],
+            "generated_neighbors": []
+          }
+        ],
+        "geometry_status": "evaluated"
+      },
+      "localized_pair_count": 3,
+      "timing_status": "observed_saved_states"
+    },
+    {
+      "id": "dataset_86dc8329df8851b0_lig5_seed_3003",
+      "input_id": "dataset_86dc8329df8851b0_lig5",
+      "seed": 3003,
+      "success": false,
+      "route": {
+        "status": "supported_geometry",
+        "reason": "Run frozen geometry intervention bank, including fixed-region conflicts"
+      },
+      "evaluation": {
+        "rdkit_valid": true,
+        "fc_valid": true,
+        "root_fixed_substructure_match": true,
+        "fixed_chemistry_preserved": true,
+        "posebusters_valid": false,
+        "posebusters_checks": {
+          "mol_pred_loaded": true,
+          "mol_cond_loaded": true,
+          "sanitization": true,
+          "inchi_convertible": true,
+          "all_atoms_connected": true,
+          "bond_lengths": true,
+          "bond_angles": true,
+          "internal_steric_clash": true,
+          "aromatic_ring_flatness": true,
+          "double_bond_flatness": true,
+          "internal_energy": true,
+          "protein-ligand_maximum_distance": true,
+          "minimum_distance_to_protein": false,
+          "minimum_distance_to_organic_cofactors": true,
+          "minimum_distance_to_inorganic_cofactors": true,
+          "minimum_distance_to_waters": true,
+          "volume_overlap_with_protein": true,
+          "volume_overlap_with_organic_cofactors": true,
+          "volume_overlap_with_inorganic_cofactors": true,
+          "volume_overlap_with_waters": true
+        },
+        "posebusters_failed_checks": [
+          "minimum_distance_to_protein"
+        ],
+        "murcko_scaffold_changed": false,
+        "molecule_smiles": "NS(=O)(=O)c1ccc(Nc2nc(OCC3CCCCC3)c3nc[nH]c3n2)cc1",
+        "scaffold_smiles": "c1ccc(Nc2nc(OCC3CCCCC3)c3nc[nH]c3n2)cc1",
+        "fixed_missing_sites": [],
+        "fixed_element_changed_sites": [],
+        "fixed_charge_changed_sites": [],
+        "fixed_internal_bond_changed_pairs": [],
+        "fixed_rms_displacement_A": 0.40446691746272834,
+        "fixed_max_displacement_A": 0.6031974258839532,
+        "strict_boundary_reference_match": true,
+        "strict_boundary_differing_sites": [],
+        "attachment_sites_without_generated_neighbor": [],
+        "nonattachment_sites_with_generated_neighbors": [],
+        "boundary_details": [
+          {
+            "fixed_site": 0,
+            "reference_bond_types": [
+              "SINGLE"
+            ],
+            "generated_bond_types": [
+              "SINGLE"
+            ],
+            "generated_neighbors": [
+              26
+            ]
+          },
+          {
+            "fixed_site": 1,
+            "reference_bond_types": [],
+            "generated_bond_types": [],
+            "generated_neighbors": []
+          },
+          {
+            "fixed_site": 2,
+            "reference_bond_types": [],
+            "generated_bond_types": [],
+            "generated_neighbors": []
+          },
+          {
+            "fixed_site": 3,
+            "reference_bond_types": [],
+            "generated_bond_types": [],
+            "generated_neighbors": []
+          }
+        ],
+        "geometry_status": "evaluated"
+      },
+      "localized_pair_count": 2,
+      "timing_status": "observed_saved_states"
+    }
+  ],
+  "new_generations": 0
+}

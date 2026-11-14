@@ -1,0 +1,4542 @@
+{
+  "pairs": [
+    {
+      "check": "minimum_distance_to_protein",
+      "ligand_sdf_atom_index": 1,
+      "sampler_atom_index": 1,
+      "fixed_reference_atom_index": 25,
+      "element": "O",
+      "region": "fixed_other",
+      "is_reference_attachment_atom": false,
+      "graph_hops_to_current_boundary": 1,
+      "environment_atom_index": 1476,
+      "environment_element": "C",
+      "pdb_serial": 1477,
+      "atom_name": "CD",
+      "residue": "LYS",
+      "residue_number": 89,
+      "chain": "A",
+      "distance_A": 2.4218122197142327,
+      "relative_distance": 0.7451729906813024,
+      "native_clash_cutoff": 0.75,
+      "reference_pair_comparison": "same_fixed_atom_environment_pair_already_clashes_in_reference",
+      "causal_status": "candidate_not_unique_upstream_cause"
+    },
+    {
+      "check": "minimum_distance_to_protein",
+      "ligand_sdf_atom_index": 3,
+      "sampler_atom_index": 3,
+      "fixed_reference_atom_index": 27,
+      "element": "N",
+      "region": "fixed_other",
+      "is_reference_attachment_atom": false,
+      "graph_hops_to_current_boundary": 1,
+      "environment_atom_index": 1478,
+      "environment_element": "N",
+      "pdb_serial": 1479,
+      "atom_name": "NZ",
+      "residue": "LYS",
+      "residue_number": 89,
+      "chain": "A",
+      "distance_A": 2.1582552218480577,
+      "relative_distance": 0.674454756827518,
+      "native_clash_cutoff": 0.75,
+      "reference_pair_comparison": "same_fixed_atom_environment_pair_already_clashes_in_reference",
+      "causal_status": "candidate_not_unique_upstream_cause"
+    }
+  ],
+  "unlocalized": [],
+  "temporal": {
+    "status": "observed_saved_states",
+    "observations": [
+      {
+        "check": "minimum_distance_to_protein",
+        "stream": "network_prediction",
+        "sampler_atom_index": 1,
+        "environment_atom_index": 1476,
+        "points": [
+          {
+            "index": 0,
+            "native_time": 0.0,
+            "stage": "raw_network_prediction",
+            "value": false,
+            "distance_A": 2.6206290098500253,
+            "relative_distance": 0.8063473876461617,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 1,
+            "native_time": 0.009999999776482582,
+            "stage": "raw_network_prediction",
+            "value": false,
+            "distance_A": 2.563649856296944,
+            "relative_distance": 0.7888153403990597,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 2,
+            "native_time": 0.019999999552965164,
+            "stage": "raw_network_prediction",
+            "value": false,
+            "distance_A": 2.480920219672855,
+            "relative_distance": 0.7633600675916477,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 3,
+            "native_time": 0.029999999329447746,
+            "stage": "raw_network_prediction",
+            "value": true,
+            "distance_A": 2.4121668597106316,
+            "relative_distance": 0.7422051876032713,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 4,
+            "native_time": 0.03999999910593033,
+            "stage": "raw_network_prediction",
+            "value": true,
+            "distance_A": 2.3601771945495633,
+            "relative_distance": 0.7262083675537118,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 5,
+            "native_time": 0.04999999701976776,
+            "stage": "raw_network_prediction",
+            "value": true,
+            "distance_A": 2.3249207435258548,
+            "relative_distance": 0.7153602287771861,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 6,
+            "native_time": 0.05999999865889549,
+            "stage": "raw_network_prediction",
+            "value": true,
+            "distance_A": 2.301910924069136,
+            "relative_distance": 0.708280284328965,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 7,
+            "native_time": 0.07000000029802322,
+            "stage": "raw_network_prediction",
+            "value": true,
+            "distance_A": 2.2823978882726292,
+            "relative_distance": 0.7022762733146551,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 8,
+            "native_time": 0.07999999821186066,
+            "stage": "raw_network_prediction",
+            "value": true,
+            "distance_A": 2.2669735626397136,
+            "relative_distance": 0.6975303269660658,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 9,
+            "native_time": 0.08999999612569809,
+            "stage": "raw_network_prediction",
+            "value": true,
+            "distance_A": 2.2526346676998457,
+            "relative_distance": 0.6931183592922602,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 10,
+            "native_time": 0.09999999403953552,
+            "stage": "raw_network_prediction",
+            "value": true,
+            "distance_A": 2.2414861952052245,
+            "relative_distance": 0.689688060063146,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 11,
+            "native_time": 0.10999999940395355,
+            "stage": "raw_network_prediction",
+            "value": true,
+            "distance_A": 2.2330581132145344,
+            "relative_distance": 0.6870948040660105,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 12,
+            "native_time": 0.11999999731779099,
+            "stage": "raw_network_prediction",
+            "value": true,
+            "distance_A": 2.224652988085865,
+            "relative_distance": 0.6845086117187277,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 13,
+            "native_time": 0.12999999523162842,
+            "stage": "raw_network_prediction",
+            "value": true,
+            "distance_A": 2.2164562758276727,
+            "relative_distance": 0.6819865464085146,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 14,
+            "native_time": 0.14000000059604645,
+            "stage": "raw_network_prediction",
+            "value": true,
+            "distance_A": 2.208307250188915,
+            "relative_distance": 0.6794791539042815,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 15,
+            "native_time": 0.14999999105930328,
+            "stage": "raw_network_prediction",
+            "value": true,
+            "distance_A": 2.199506359082347,
+            "relative_distance": 0.6767711874099529,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 16,
+            "native_time": 0.1599999964237213,
+            "stage": "raw_network_prediction",
+            "value": true,
+            "distance_A": 2.1891516685632983,
+            "relative_distance": 0.6735851287887071,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 17,
+            "native_time": 0.17000000178813934,
+            "stage": "raw_network_prediction",
+            "value": true,
+            "distance_A": 2.176977284442112,
+            "relative_distance": 0.6698391644437268,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 18,
+            "native_time": 0.17999999225139618,
+            "stage": "raw_network_prediction",
+            "value": true,
+            "distance_A": 2.16814904573038,
+            "relative_distance": 0.6671227833016554,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 19,
+            "native_time": 0.1899999976158142,
+            "stage": "raw_network_prediction",
+            "value": true,
+            "distance_A": 2.160496997940928,
+            "relative_distance": 0.664768307058747,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 20,
+            "native_time": 0.19999998807907104,
+            "stage": "raw_network_prediction",
+            "value": true,
+            "distance_A": 2.154776877362673,
+            "relative_distance": 0.6630082699577456,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 21,
+            "native_time": 0.20999999344348907,
+            "stage": "raw_network_prediction",
+            "value": true,
+            "distance_A": 2.1499938513723342,
+            "relative_distance": 0.6615365696530259,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 22,
+            "native_time": 0.2199999988079071,
+            "stage": "raw_network_prediction",
+            "value": true,
+            "distance_A": 2.1456732045919633,
+            "relative_distance": 0.6602071398744502,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 23,
+            "native_time": 0.22999998927116394,
+            "stage": "raw_network_prediction",
+            "value": true,
+            "distance_A": 2.1417918769064146,
+            "relative_distance": 0.6590128852019738,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 24,
+            "native_time": 0.23999999463558197,
+            "stage": "raw_network_prediction",
+            "value": true,
+            "distance_A": 2.1386971202866905,
+            "relative_distance": 0.6580606523959047,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 25,
+            "native_time": 0.25,
+            "stage": "raw_network_prediction",
+            "value": true,
+            "distance_A": 2.1370937783879844,
+            "relative_distance": 0.6575673164270721,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 26,
+            "native_time": 0.25999999046325684,
+            "stage": "raw_network_prediction",
+            "value": true,
+            "distance_A": 2.1357130622106526,
+            "relative_distance": 0.6571424806802008,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 27,
+            "native_time": 0.26999998092651367,
+            "stage": "raw_network_prediction",
+            "value": true,
+            "distance_A": 2.1342795319505505,
+            "relative_distance": 0.6567013944463232,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 28,
+            "native_time": 0.2800000011920929,
+            "stage": "raw_network_prediction",
+            "value": true,
+            "distance_A": 2.1323260939937785,
+            "relative_distance": 0.6561003366134703,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 29,
+            "native_time": 0.28999999165534973,
+            "stage": "raw_network_prediction",
+            "value": true,
+            "distance_A": 2.1304160334314632,
+            "relative_distance": 0.6555126256712195,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 30,
+            "native_time": 0.29999998211860657,
+            "stage": "raw_network_prediction",
+            "value": true,
+            "distance_A": 2.1298838265900994,
+            "relative_distance": 0.6553488697200306,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 31,
+            "native_time": 0.3100000023841858,
+            "stage": "raw_network_prediction",
+            "value": true,
+            "distance_A": 2.1256714068698774,
+            "relative_distance": 0.6540527405753469,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 32,
+            "native_time": 0.3199999928474426,
+            "stage": "raw_network_prediction",
+            "value": true,
+            "distance_A": 2.1204834472784198,
+            "relative_distance": 0.6524564453164369,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 33,
+            "native_time": 0.32999998331069946,
+            "stage": "raw_network_prediction",
+            "value": true,
+            "distance_A": 2.115622982219761,
+            "relative_distance": 0.6509609176060803,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 34,
+            "native_time": 0.3400000035762787,
+            "stage": "raw_network_prediction",
+            "value": true,
+            "distance_A": 2.112422934444064,
+            "relative_distance": 0.6499762875212505,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 35,
+            "native_time": 0.3499999940395355,
+            "stage": "raw_network_prediction",
+            "value": true,
+            "distance_A": 2.109261271247064,
+            "relative_distance": 0.6490034680760197,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 36,
+            "native_time": 0.35999998450279236,
+            "stage": "raw_network_prediction",
+            "value": true,
+            "distance_A": 2.110725043935726,
+            "relative_distance": 0.6494538596725311,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 37,
+            "native_time": 0.3700000047683716,
+            "stage": "raw_network_prediction",
+            "value": true,
+            "distance_A": 2.1103570080847622,
+            "relative_distance": 0.6493406178722345,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 38,
+            "native_time": 0.3799999952316284,
+            "stage": "raw_network_prediction",
+            "value": true,
+            "distance_A": 2.109032908248167,
+            "relative_distance": 0.6489332025378975,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 39,
+            "native_time": 0.38999998569488525,
+            "stage": "raw_network_prediction",
+            "value": true,
+            "distance_A": 2.1087236822689506,
+            "relative_distance": 0.648838056082754,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 40,
+            "native_time": 0.3999999761581421,
+            "stage": "raw_network_prediction",
+            "value": true,
+            "distance_A": 2.1098408339097996,
+            "relative_distance": 0.6491817950491691,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 41,
+            "native_time": 0.4099999964237213,
+            "stage": "raw_network_prediction",
+            "value": true,
+            "distance_A": 2.1112311388503997,
+            "relative_distance": 0.6496095811847383,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 42,
+            "native_time": 0.41999998688697815,
+            "stage": "raw_network_prediction",
+            "value": true,
+            "distance_A": 2.1125676383494074,
+            "relative_distance": 0.6500208117998176,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 43,
+            "native_time": 0.429999977350235,
+            "stage": "raw_network_prediction",
+            "value": true,
+            "distance_A": 2.112156464229376,
+            "relative_distance": 0.6498942966859619,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 44,
+            "native_time": 0.4399999976158142,
+            "stage": "raw_network_prediction",
+            "value": true,
+            "distance_A": 2.109524418984999,
+            "relative_distance": 0.649084436610769,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 45,
+            "native_time": 0.44999998807907104,
+            "stage": "raw_network_prediction",
+            "value": true,
+            "distance_A": 2.107716652029735,
+            "relative_distance": 0.6485282006245339,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 46,
+            "native_time": 0.4599999785423279,
+            "stage": "raw_network_prediction",
+            "value": true,
+            "distance_A": 2.1086402548024807,
+            "relative_distance": 0.648812386093071,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 47,
+            "native_time": 0.4699999988079071,
+            "stage": "raw_network_prediction",
+            "value": true,
+            "distance_A": 2.106204019285285,
+            "relative_distance": 0.648062775164703,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 48,
+            "native_time": 0.47999998927116394,
+            "stage": "raw_network_prediction",
+            "value": true,
+            "distance_A": 2.1093386348532364,
+            "relative_distance": 0.6490272722625343,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 49,
+            "native_time": 0.4899999797344208,
+            "stage": "raw_network_prediction",
+            "value": true,
+            "distance_A": 2.1119755830329607,
+            "relative_distance": 0.6498386409332186,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 50,
+            "native_time": 0.5,
+            "stage": "raw_network_prediction",
+            "value": true,
+            "distance_A": 2.1146827192482798,
+            "relative_distance": 0.6506716059225476,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 51,
+            "native_time": 0.5099999904632568,
+            "stage": "raw_network_prediction",
+            "value": true,
+            "distance_A": 2.1195742421949233,
+            "relative_distance": 0.6521766899061302,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 52,
+            "native_time": 0.5199999809265137,
+            "stage": "raw_network_prediction",
+            "value": true,
+            "distance_A": 2.125516897222442,
+            "relative_distance": 0.6540051991453667,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 53,
+            "native_time": 0.5300000309944153,
+            "stage": "raw_network_prediction",
+            "value": true,
+            "distance_A": 2.129160020010008,
+            "relative_distance": 0.6551261600030794,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 54,
+            "native_time": 0.5400000214576721,
+            "stage": "raw_network_prediction",
+            "value": true,
+            "distance_A": 2.134951157745071,
+            "relative_distance": 0.6569080485369448,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 55,
+            "native_time": 0.550000011920929,
+            "stage": "raw_network_prediction",
+            "value": true,
+            "distance_A": 2.14076768760735,
+            "relative_distance": 0.6586977500330308,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 56,
+            "native_time": 0.5600000023841858,
+            "stage": "raw_network_prediction",
+            "value": true,
+            "distance_A": 2.14426859321752,
+            "relative_distance": 0.6597749517592368,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 57,
+            "native_time": 0.5699999928474426,
+            "stage": "raw_network_prediction",
+            "value": true,
+            "distance_A": 2.147385059860997,
+            "relative_distance": 0.6607338645726144,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 58,
+            "native_time": 0.5799999833106995,
+            "stage": "raw_network_prediction",
+            "value": true,
+            "distance_A": 2.151462107269078,
+            "relative_distance": 0.6619883406981779,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 59,
+            "native_time": 0.5900000333786011,
+            "stage": "raw_network_prediction",
+            "value": true,
+            "distance_A": 2.158589179585232,
+            "relative_distance": 0.6641812860262253,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 60,
+            "native_time": 0.6000000238418579,
+            "stage": "raw_network_prediction",
+            "value": true,
+            "distance_A": 2.1657547065912124,
+            "relative_distance": 0.6663860635665269,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 61,
+            "native_time": 0.6100000143051147,
+            "stage": "raw_network_prediction",
+            "value": true,
+            "distance_A": 2.172630244777711,
+            "relative_distance": 0.6685016137777572,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 62,
+            "native_time": 0.6200000047683716,
+            "stage": "raw_network_prediction",
+            "value": true,
+            "distance_A": 2.178287911191129,
+            "relative_distance": 0.6702424342126551,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 63,
+            "native_time": 0.6299999952316284,
+            "stage": "raw_network_prediction",
+            "value": true,
+            "distance_A": 2.1836841684490365,
+            "relative_distance": 0.671902821061242,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 64,
+            "native_time": 0.6399999856948853,
+            "stage": "raw_network_prediction",
+            "value": true,
+            "distance_A": 2.1905438220931703,
+            "relative_distance": 0.6740134837209755,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 65,
+            "native_time": 0.6500000357627869,
+            "stage": "raw_network_prediction",
+            "value": true,
+            "distance_A": 2.196256910711819,
+            "relative_distance": 0.6757713571420981,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 66,
+            "native_time": 0.6600000262260437,
+            "stage": "raw_network_prediction",
+            "value": true,
+            "distance_A": 2.200709790200718,
+            "relative_distance": 0.6771414739079132,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 67,
+            "native_time": 0.6700000166893005,
+            "stage": "raw_network_prediction",
+            "value": true,
+            "distance_A": 2.205494949130341,
+            "relative_distance": 0.6786138305016434,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 68,
+            "native_time": 0.6800000071525574,
+            "stage": "raw_network_prediction",
+            "value": true,
+            "distance_A": 2.2102784422079402,
+            "relative_distance": 0.68008567452552,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 69,
+            "native_time": 0.6899999976158142,
+            "stage": "raw_network_prediction",
+            "value": true,
+            "distance_A": 2.2163256583805566,
+            "relative_distance": 0.6819463564247866,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 70,
+            "native_time": 0.699999988079071,
+            "stage": "raw_network_prediction",
+            "value": true,
+            "distance_A": 2.220261254511602,
+            "relative_distance": 0.6831573090804929,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 71,
+            "native_time": 0.7099999785423279,
+            "stage": "raw_network_prediction",
+            "value": true,
+            "distance_A": 2.2242954709121237,
+            "relative_distance": 0.6843986064344996,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 72,
+            "native_time": 0.7200000286102295,
+            "stage": "raw_network_prediction",
+            "value": true,
+            "distance_A": 2.2290364016525444,
+            "relative_distance": 0.685857354354629,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 73,
+            "native_time": 0.7300000190734863,
+            "stage": "raw_network_prediction",
+            "value": true,
+            "distance_A": 2.23372895772707,
+            "relative_distance": 0.6873012177621753,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 74,
+            "native_time": 0.7400000095367432,
+            "stage": "raw_network_prediction",
+            "value": true,
+            "distance_A": 2.23900873321984,
+            "relative_distance": 0.688925764067643,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 75,
+            "native_time": 0.75,
+            "stage": "raw_network_prediction",
+            "value": true,
+            "distance_A": 2.2439387702801312,
+            "relative_distance": 0.6904426985477327,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 76,
+            "native_time": 0.7599999904632568,
+            "stage": "raw_network_prediction",
+            "value": true,
+            "distance_A": 2.249632878442681,
+            "relative_distance": 0.6921947318285172,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 77,
+            "native_time": 0.7699999809265137,
+            "stage": "raw_network_prediction",
+            "value": true,
+            "distance_A": 2.256469641657861,
+            "relative_distance": 0.6942983512793419,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 78,
+            "native_time": 0.7800000309944153,
+            "stage": "raw_network_prediction",
+            "value": true,
+            "distance_A": 2.2628175373725674,
+            "relative_distance": 0.69625154996079,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 79,
+            "native_time": 0.7900000214576721,
+            "stage": "raw_network_prediction",
+            "value": true,
+            "distance_A": 2.2671423410224487,
+            "relative_distance": 0.6975822587761381,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 80,
+            "native_time": 0.800000011920929,
+            "stage": "raw_network_prediction",
+            "value": true,
+            "distance_A": 2.273641895639239,
+            "relative_distance": 0.6995821217351504,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 81,
+            "native_time": 0.8100000023841858,
+            "stage": "raw_network_prediction",
+            "value": true,
+            "distance_A": 2.2801171923431847,
+            "relative_distance": 0.7015745207209799,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 82,
+            "native_time": 0.8199999928474426,
+            "stage": "raw_network_prediction",
+            "value": true,
+            "distance_A": 2.2882284491496723,
+            "relative_distance": 0.704070292046053,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 83,
+            "native_time": 0.8299999833106995,
+            "stage": "raw_network_prediction",
+            "value": true,
+            "distance_A": 2.29704356516419,
+            "relative_distance": 0.7067826354351354,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 84,
+            "native_time": 0.8400000333786011,
+            "stage": "raw_network_prediction",
+            "value": true,
+            "distance_A": 2.304645879034025,
+            "relative_distance": 0.7091218089335461,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 85,
+            "native_time": 0.8500000238418579,
+            "stage": "raw_network_prediction",
+            "value": true,
+            "distance_A": 2.312891949596107,
+            "relative_distance": 0.7116590614141868,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 86,
+            "native_time": 0.8600000143051147,
+            "stage": "raw_network_prediction",
+            "value": true,
+            "distance_A": 2.3232488165660943,
+            "relative_distance": 0.7148457897126443,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 87,
+            "native_time": 0.8700000047683716,
+            "stage": "raw_network_prediction",
+            "value": true,
+            "distance_A": 2.3317867202781524,
+            "relative_distance": 0.7174728370086623,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 88,
+            "native_time": 0.8799999952316284,
+            "stage": "raw_network_prediction",
+            "value": true,
+            "distance_A": 2.3413545750782143,
+            "relative_distance": 0.7204167923317583,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 89,
+            "native_time": 0.8899999856948853,
+            "stage": "raw_network_prediction",
+            "value": true,
+            "distance_A": 2.3488081709269517,
+            "relative_distance": 0.722710206439062,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 90,
+            "native_time": 0.8999999761581421,
+            "stage": "raw_network_prediction",
+            "value": true,
+            "distance_A": 2.3562978931438745,
+            "relative_distance": 0.7250147363519613,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 91,
+            "native_time": 0.9100000262260437,
+            "stage": "raw_network_prediction",
+            "value": true,
+            "distance_A": 2.364666996874916,
+            "relative_distance": 0.7275898451922819,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 92,
+            "native_time": 0.9200000166893005,
+            "stage": "raw_network_prediction",
+            "value": true,
+            "distance_A": 2.3714258200786085,
+            "relative_distance": 0.7296694831011103,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 93,
+            "native_time": 0.9300000071525574,
+            "stage": "raw_network_prediction",
+            "value": true,
+            "distance_A": 2.3800888451950937,
+            "relative_distance": 0.7323350292907981,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 94,
+            "native_time": 0.9399999976158142,
+            "stage": "raw_network_prediction",
+            "value": true,
+            "distance_A": 2.3891506993525806,
+            "relative_distance": 0.7351232921084864,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 95,
+            "native_time": 0.949999988079071,
+            "stage": "raw_network_prediction",
+            "value": true,
+            "distance_A": 2.3983215990530202,
+            "relative_distance": 0.7379451074009293,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 96,
+            "native_time": 0.9599999785423279,
+            "stage": "raw_network_prediction",
+            "value": true,
+            "distance_A": 2.4088494723360485,
+            "relative_distance": 0.7411844530264765,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 97,
+            "native_time": 0.9700000286102295,
+            "stage": "raw_network_prediction",
+            "value": true,
+            "distance_A": 2.416603011391442,
+            "relative_distance": 0.7435701573512129,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 98,
+            "native_time": 0.9800000190734863,
+            "stage": "raw_network_prediction",
+            "value": true,
+            "distance_A": 2.4148486512486196,
+            "relative_distance": 0.7430303542303445,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 99,
+            "native_time": 0.9900000095367432,
+            "stage": "raw_network_prediction",
+            "value": true,
+            "distance_A": 2.4143044984395616,
+            "relative_distance": 0.7428629225967882,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 100,
+            "native_time": 0.9998999834060669,
+            "stage": "raw_network_prediction",
+            "value": true,
+            "distance_A": 2.4218126565937466,
+            "relative_distance": 0.7451731251057682,
+            "endpoint_element_present": true
+          }
+        ],
+        "status": "observed",
+        "first_observed": {
+          "index": 3,
+          "native_time": 0.029999999329447746,
+          "stage": "raw_network_prediction",
+          "value": true,
+          "distance_A": 2.4121668597106316,
+          "relative_distance": 0.7422051876032713,
+          "endpoint_element_present": true
+        },
+        "first_persistent_observation": {
+          "index": 3,
+          "native_time": 0.029999999329447746,
+          "stage": "raw_network_prediction",
+          "value": true,
+          "distance_A": 2.4121668597106316,
+          "relative_distance": 0.7422051876032713,
+          "endpoint_element_present": true
+        },
+        "last_observation": {
+          "index": 100,
+          "native_time": 0.9998999834060669,
+          "stage": "raw_network_prediction",
+          "value": true,
+          "distance_A": 2.4218126565937466,
+          "relative_distance": 0.7451731251057682,
+          "endpoint_element_present": true
+        },
+        "preceding_observation": {
+          "index": 2,
+          "native_time": 0.019999999552965164,
+          "stage": "raw_network_prediction",
+          "value": false,
+          "distance_A": 2.480920219672855,
+          "relative_distance": 0.7633600675916477,
+          "endpoint_element_present": true
+        },
+        "boundary_is_confirmed_change": true,
+        "causal_onset": null,
+        "internal_module": null,
+        "causal_status": "not_tested",
+        "scope": "Observed timing of this final clash pair; not a proven causal onset or earliest error anywhere."
+      },
+      {
+        "check": "minimum_distance_to_protein",
+        "stream": "sampler_state",
+        "sampler_atom_index": 1,
+        "environment_atom_index": 1476,
+        "points": [
+          {
+            "index": 0,
+            "native_time": null,
+            "stage": "integrated_state_after_inpainting",
+            "value": true,
+            "distance_A": 2.3978196281302764,
+            "relative_distance": 0.7377906548093158,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 1,
+            "native_time": null,
+            "stage": "integrated_state_after_inpainting",
+            "value": true,
+            "distance_A": 2.3978196281302764,
+            "relative_distance": 0.7377906548093158,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 2,
+            "native_time": null,
+            "stage": "integrated_state_after_inpainting",
+            "value": true,
+            "distance_A": 2.3978196281302764,
+            "relative_distance": 0.7377906548093158,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 3,
+            "native_time": null,
+            "stage": "integrated_state_after_inpainting",
+            "value": true,
+            "distance_A": 2.3978196281302764,
+            "relative_distance": 0.7377906548093158,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 4,
+            "native_time": null,
+            "stage": "integrated_state_after_inpainting",
+            "value": true,
+            "distance_A": 2.3978196281302764,
+            "relative_distance": 0.7377906548093158,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 5,
+            "native_time": null,
+            "stage": "integrated_state_after_inpainting",
+            "value": true,
+            "distance_A": 2.3978196281302764,
+            "relative_distance": 0.7377906548093158,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 6,
+            "native_time": null,
+            "stage": "integrated_state_after_inpainting",
+            "value": true,
+            "distance_A": 2.3978196281302764,
+            "relative_distance": 0.7377906548093158,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 7,
+            "native_time": null,
+            "stage": "integrated_state_after_inpainting",
+            "value": true,
+            "distance_A": 2.3978196281302764,
+            "relative_distance": 0.7377906548093158,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 8,
+            "native_time": null,
+            "stage": "integrated_state_after_inpainting",
+            "value": true,
+            "distance_A": 2.3978196281302764,
+            "relative_distance": 0.7377906548093158,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 9,
+            "native_time": null,
+            "stage": "integrated_state_after_inpainting",
+            "value": true,
+            "distance_A": 2.3978196281302764,
+            "relative_distance": 0.7377906548093158,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 10,
+            "native_time": null,
+            "stage": "integrated_state_after_inpainting",
+            "value": true,
+            "distance_A": 2.3978196281302764,
+            "relative_distance": 0.7377906548093158,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 11,
+            "native_time": null,
+            "stage": "integrated_state_after_inpainting",
+            "value": true,
+            "distance_A": 2.3978196281302764,
+            "relative_distance": 0.7377906548093158,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 12,
+            "native_time": null,
+            "stage": "integrated_state_after_inpainting",
+            "value": true,
+            "distance_A": 2.3978196281302764,
+            "relative_distance": 0.7377906548093158,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 13,
+            "native_time": null,
+            "stage": "integrated_state_after_inpainting",
+            "value": true,
+            "distance_A": 2.3978196281302764,
+            "relative_distance": 0.7377906548093158,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 14,
+            "native_time": null,
+            "stage": "integrated_state_after_inpainting",
+            "value": true,
+            "distance_A": 2.3978196281302764,
+            "relative_distance": 0.7377906548093158,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 15,
+            "native_time": null,
+            "stage": "integrated_state_after_inpainting",
+            "value": true,
+            "distance_A": 2.3978196281302764,
+            "relative_distance": 0.7377906548093158,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 16,
+            "native_time": null,
+            "stage": "integrated_state_after_inpainting",
+            "value": true,
+            "distance_A": 2.3978196281302764,
+            "relative_distance": 0.7377906548093158,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 17,
+            "native_time": null,
+            "stage": "integrated_state_after_inpainting",
+            "value": true,
+            "distance_A": 2.3978196281302764,
+            "relative_distance": 0.7377906548093158,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 18,
+            "native_time": null,
+            "stage": "integrated_state_after_inpainting",
+            "value": true,
+            "distance_A": 2.3978196281302764,
+            "relative_distance": 0.7377906548093158,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 19,
+            "native_time": null,
+            "stage": "integrated_state_after_inpainting",
+            "value": true,
+            "distance_A": 2.3978196281302764,
+            "relative_distance": 0.7377906548093158,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 20,
+            "native_time": null,
+            "stage": "integrated_state_after_inpainting",
+            "value": true,
+            "distance_A": 2.3978196281302764,
+            "relative_distance": 0.7377906548093158,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 21,
+            "native_time": null,
+            "stage": "integrated_state_after_inpainting",
+            "value": true,
+            "distance_A": 2.3978196281302764,
+            "relative_distance": 0.7377906548093158,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 22,
+            "native_time": null,
+            "stage": "integrated_state_after_inpainting",
+            "value": true,
+            "distance_A": 2.3978196281302764,
+            "relative_distance": 0.7377906548093158,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 23,
+            "native_time": null,
+            "stage": "integrated_state_after_inpainting",
+            "value": true,
+            "distance_A": 2.3978196281302764,
+            "relative_distance": 0.7377906548093158,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 24,
+            "native_time": null,
+            "stage": "integrated_state_after_inpainting",
+            "value": true,
+            "distance_A": 2.3978196281302764,
+            "relative_distance": 0.7377906548093158,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 25,
+            "native_time": null,
+            "stage": "integrated_state_after_inpainting",
+            "value": true,
+            "distance_A": 2.3978196281302764,
+            "relative_distance": 0.7377906548093158,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 26,
+            "native_time": null,
+            "stage": "integrated_state_after_inpainting",
+            "value": true,
+            "distance_A": 2.3978196281302764,
+            "relative_distance": 0.7377906548093158,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 27,
+            "native_time": null,
+            "stage": "integrated_state_after_inpainting",
+            "value": true,
+            "distance_A": 2.3978196281302764,
+            "relative_distance": 0.7377906548093158,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 28,
+            "native_time": null,
+            "stage": "integrated_state_after_inpainting",
+            "value": true,
+            "distance_A": 2.3978196281302764,
+            "relative_distance": 0.7377906548093158,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 29,
+            "native_time": null,
+            "stage": "integrated_state_after_inpainting",
+            "value": true,
+            "distance_A": 2.3978196281302764,
+            "relative_distance": 0.7377906548093158,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 30,
+            "native_time": null,
+            "stage": "integrated_state_after_inpainting",
+            "value": true,
+            "distance_A": 2.3978196281302764,
+            "relative_distance": 0.7377906548093158,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 31,
+            "native_time": null,
+            "stage": "integrated_state_after_inpainting",
+            "value": true,
+            "distance_A": 2.3978196281302764,
+            "relative_distance": 0.7377906548093158,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 32,
+            "native_time": null,
+            "stage": "integrated_state_after_inpainting",
+            "value": true,
+            "distance_A": 2.3978196281302764,
+            "relative_distance": 0.7377906548093158,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 33,
+            "native_time": null,
+            "stage": "integrated_state_after_inpainting",
+            "value": true,
+            "distance_A": 2.3978196281302764,
+            "relative_distance": 0.7377906548093158,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 34,
+            "native_time": null,
+            "stage": "integrated_state_after_inpainting",
+            "value": true,
+            "distance_A": 2.3978196281302764,
+            "relative_distance": 0.7377906548093158,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 35,
+            "native_time": null,
+            "stage": "integrated_state_after_inpainting",
+            "value": true,
+            "distance_A": 2.3978196281302764,
+            "relative_distance": 0.7377906548093158,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 36,
+            "native_time": null,
+            "stage": "integrated_state_after_inpainting",
+            "value": true,
+            "distance_A": 2.3978196281302764,
+            "relative_distance": 0.7377906548093158,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 37,
+            "native_time": null,
+            "stage": "integrated_state_after_inpainting",
+            "value": true,
+            "distance_A": 2.3978196281302764,
+            "relative_distance": 0.7377906548093158,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 38,
+            "native_time": null,
+            "stage": "integrated_state_after_inpainting",
+            "value": true,
+            "distance_A": 2.3978196281302764,
+            "relative_distance": 0.7377906548093158,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 39,
+            "native_time": null,
+            "stage": "integrated_state_after_inpainting",
+            "value": true,
+            "distance_A": 2.3978196281302764,
+            "relative_distance": 0.7377906548093158,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 40,
+            "native_time": null,
+            "stage": "integrated_state_after_inpainting",
+            "value": true,
+            "distance_A": 2.3978196281302764,
+            "relative_distance": 0.7377906548093158,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 41,
+            "native_time": null,
+            "stage": "integrated_state_after_inpainting",
+            "value": true,
+            "distance_A": 2.3978196281302764,
+            "relative_distance": 0.7377906548093158,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 42,
+            "native_time": null,
+            "stage": "integrated_state_after_inpainting",
+            "value": true,
+            "distance_A": 2.3978196281302764,
+            "relative_distance": 0.7377906548093158,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 43,
+            "native_time": null,
+            "stage": "integrated_state_after_inpainting",
+            "value": true,
+            "distance_A": 2.3978196281302764,
+            "relative_distance": 0.7377906548093158,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 44,
+            "native_time": null,
+            "stage": "integrated_state_after_inpainting",
+            "value": true,
+            "distance_A": 2.3978196281302764,
+            "relative_distance": 0.7377906548093158,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 45,
+            "native_time": null,
+            "stage": "integrated_state_after_inpainting",
+            "value": true,
+            "distance_A": 2.3978196281302764,
+            "relative_distance": 0.7377906548093158,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 46,
+            "native_time": null,
+            "stage": "integrated_state_after_inpainting",
+            "value": true,
+            "distance_A": 2.3978196281302764,
+            "relative_distance": 0.7377906548093158,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 47,
+            "native_time": null,
+            "stage": "integrated_state_after_inpainting",
+            "value": true,
+            "distance_A": 2.3978196281302764,
+            "relative_distance": 0.7377906548093158,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 48,
+            "native_time": null,
+            "stage": "integrated_state_after_inpainting",
+            "value": true,
+            "distance_A": 2.3978196281302764,
+            "relative_distance": 0.7377906548093158,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 49,
+            "native_time": null,
+            "stage": "integrated_state_after_inpainting",
+            "value": true,
+            "distance_A": 2.3978196281302764,
+            "relative_distance": 0.7377906548093158,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 50,
+            "native_time": null,
+            "stage": "integrated_state_after_inpainting",
+            "value": true,
+            "distance_A": 2.3978196281302764,
+            "relative_distance": 0.7377906548093158,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 51,
+            "native_time": null,
+            "stage": "integrated_state_after_inpainting",
+            "value": true,
+            "distance_A": 2.3978196281302764,
+            "relative_distance": 0.7377906548093158,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 52,
+            "native_time": null,
+            "stage": "integrated_state_after_inpainting",
+            "value": true,
+            "distance_A": 2.3978196281302764,
+            "relative_distance": 0.7377906548093158,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 53,
+            "native_time": null,
+            "stage": "integrated_state_after_inpainting",
+            "value": true,
+            "distance_A": 2.3978196281302764,
+            "relative_distance": 0.7377906548093158,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 54,
+            "native_time": null,
+            "stage": "integrated_state_after_inpainting",
+            "value": true,
+            "distance_A": 2.3978196281302764,
+            "relative_distance": 0.7377906548093158,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 55,
+            "native_time": null,
+            "stage": "integrated_state_after_inpainting",
+            "value": true,
+            "distance_A": 2.3978196281302764,
+            "relative_distance": 0.7377906548093158,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 56,
+            "native_time": null,
+            "stage": "integrated_state_after_inpainting",
+            "value": true,
+            "distance_A": 2.3978196281302764,
+            "relative_distance": 0.7377906548093158,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 57,
+            "native_time": null,
+            "stage": "integrated_state_after_inpainting",
+            "value": true,
+            "distance_A": 2.3978196281302764,
+            "relative_distance": 0.7377906548093158,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 58,
+            "native_time": null,
+            "stage": "integrated_state_after_inpainting",
+            "value": true,
+            "distance_A": 2.3978196281302764,
+            "relative_distance": 0.7377906548093158,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 59,
+            "native_time": null,
+            "stage": "integrated_state_after_inpainting",
+            "value": true,
+            "distance_A": 2.3978196281302764,
+            "relative_distance": 0.7377906548093158,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 60,
+            "native_time": null,
+            "stage": "integrated_state_after_inpainting",
+            "value": true,
+            "distance_A": 2.3978196281302764,
+            "relative_distance": 0.7377906548093158,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 61,
+            "native_time": null,
+            "stage": "integrated_state_after_inpainting",
+            "value": true,
+            "distance_A": 2.3978196281302764,
+            "relative_distance": 0.7377906548093158,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 62,
+            "native_time": null,
+            "stage": "integrated_state_after_inpainting",
+            "value": true,
+            "distance_A": 2.3978196281302764,
+            "relative_distance": 0.7377906548093158,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 63,
+            "native_time": null,
+            "stage": "integrated_state_after_inpainting",
+            "value": true,
+            "distance_A": 2.3978196281302764,
+            "relative_distance": 0.7377906548093158,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 64,
+            "native_time": null,
+            "stage": "integrated_state_after_inpainting",
+            "value": true,
+            "distance_A": 2.3978196281302764,
+            "relative_distance": 0.7377906548093158,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 65,
+            "native_time": null,
+            "stage": "integrated_state_after_inpainting",
+            "value": true,
+            "distance_A": 2.3978196281302764,
+            "relative_distance": 0.7377906548093158,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 66,
+            "native_time": null,
+            "stage": "integrated_state_after_inpainting",
+            "value": true,
+            "distance_A": 2.3978196281302764,
+            "relative_distance": 0.7377906548093158,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 67,
+            "native_time": null,
+            "stage": "integrated_state_after_inpainting",
+            "value": true,
+            "distance_A": 2.3978196281302764,
+            "relative_distance": 0.7377906548093158,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 68,
+            "native_time": null,
+            "stage": "integrated_state_after_inpainting",
+            "value": true,
+            "distance_A": 2.3978196281302764,
+            "relative_distance": 0.7377906548093158,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 69,
+            "native_time": null,
+            "stage": "integrated_state_after_inpainting",
+            "value": true,
+            "distance_A": 2.3978196281302764,
+            "relative_distance": 0.7377906548093158,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 70,
+            "native_time": null,
+            "stage": "integrated_state_after_inpainting",
+            "value": true,
+            "distance_A": 2.3978196281302764,
+            "relative_distance": 0.7377906548093158,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 71,
+            "native_time": null,
+            "stage": "integrated_state_after_inpainting",
+            "value": true,
+            "distance_A": 2.3978196281302764,
+            "relative_distance": 0.7377906548093158,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 72,
+            "native_time": null,
+            "stage": "integrated_state_after_inpainting",
+            "value": true,
+            "distance_A": 2.3978196281302764,
+            "relative_distance": 0.7377906548093158,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 73,
+            "native_time": null,
+            "stage": "integrated_state_after_inpainting",
+            "value": true,
+            "distance_A": 2.3978196281302764,
+            "relative_distance": 0.7377906548093158,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 74,
+            "native_time": null,
+            "stage": "integrated_state_after_inpainting",
+            "value": true,
+            "distance_A": 2.3978196281302764,
+            "relative_distance": 0.7377906548093158,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 75,
+            "native_time": null,
+            "stage": "integrated_state_after_inpainting",
+            "value": true,
+            "distance_A": 2.3978196281302764,
+            "relative_distance": 0.7377906548093158,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 76,
+            "native_time": null,
+            "stage": "integrated_state_after_inpainting",
+            "value": true,
+            "distance_A": 2.3978196281302764,
+            "relative_distance": 0.7377906548093158,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 77,
+            "native_time": null,
+            "stage": "integrated_state_after_inpainting",
+            "value": true,
+            "distance_A": 2.3978196281302764,
+            "relative_distance": 0.7377906548093158,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 78,
+            "native_time": null,
+            "stage": "integrated_state_after_inpainting",
+            "value": true,
+            "distance_A": 2.3978196281302764,
+            "relative_distance": 0.7377906548093158,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 79,
+            "native_time": null,
+            "stage": "integrated_state_after_inpainting",
+            "value": true,
+            "distance_A": 2.3978196281302764,
+            "relative_distance": 0.7377906548093158,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 80,
+            "native_time": null,
+            "stage": "integrated_state_after_inpainting",
+            "value": true,
+            "distance_A": 2.3978196281302764,
+            "relative_distance": 0.7377906548093158,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 81,
+            "native_time": null,
+            "stage": "integrated_state_after_inpainting",
+            "value": true,
+            "distance_A": 2.3978196281302764,
+            "relative_distance": 0.7377906548093158,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 82,
+            "native_time": null,
+            "stage": "integrated_state_after_inpainting",
+            "value": true,
+            "distance_A": 2.3978196281302764,
+            "relative_distance": 0.7377906548093158,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 83,
+            "native_time": null,
+            "stage": "integrated_state_after_inpainting",
+            "value": true,
+            "distance_A": 2.3978196281302764,
+            "relative_distance": 0.7377906548093158,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 84,
+            "native_time": null,
+            "stage": "integrated_state_after_inpainting",
+            "value": true,
+            "distance_A": 2.3978196281302764,
+            "relative_distance": 0.7377906548093158,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 85,
+            "native_time": null,
+            "stage": "integrated_state_after_inpainting",
+            "value": true,
+            "distance_A": 2.3978196281302764,
+            "relative_distance": 0.7377906548093158,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 86,
+            "native_time": null,
+            "stage": "integrated_state_after_inpainting",
+            "value": true,
+            "distance_A": 2.3978196281302764,
+            "relative_distance": 0.7377906548093158,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 87,
+            "native_time": null,
+            "stage": "integrated_state_after_inpainting",
+            "value": true,
+            "distance_A": 2.3978196281302764,
+            "relative_distance": 0.7377906548093158,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 88,
+            "native_time": null,
+            "stage": "integrated_state_after_inpainting",
+            "value": true,
+            "distance_A": 2.3978196281302764,
+            "relative_distance": 0.7377906548093158,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 89,
+            "native_time": null,
+            "stage": "integrated_state_after_inpainting",
+            "value": true,
+            "distance_A": 2.3978196281302764,
+            "relative_distance": 0.7377906548093158,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 90,
+            "native_time": null,
+            "stage": "integrated_state_after_inpainting",
+            "value": true,
+            "distance_A": 2.3978196281302764,
+            "relative_distance": 0.7377906548093158,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 91,
+            "native_time": null,
+            "stage": "integrated_state_after_inpainting",
+            "value": true,
+            "distance_A": 2.3978196281302764,
+            "relative_distance": 0.7377906548093158,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 92,
+            "native_time": null,
+            "stage": "integrated_state_after_inpainting",
+            "value": true,
+            "distance_A": 2.3978196281302764,
+            "relative_distance": 0.7377906548093158,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 93,
+            "native_time": null,
+            "stage": "integrated_state_after_inpainting",
+            "value": true,
+            "distance_A": 2.3978196281302764,
+            "relative_distance": 0.7377906548093158,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 94,
+            "native_time": null,
+            "stage": "integrated_state_after_inpainting",
+            "value": true,
+            "distance_A": 2.3978196281302764,
+            "relative_distance": 0.7377906548093158,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 95,
+            "native_time": null,
+            "stage": "integrated_state_after_inpainting",
+            "value": true,
+            "distance_A": 2.3978196281302764,
+            "relative_distance": 0.7377906548093158,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 96,
+            "native_time": null,
+            "stage": "integrated_state_after_inpainting",
+            "value": true,
+            "distance_A": 2.3978196281302764,
+            "relative_distance": 0.7377906548093158,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 97,
+            "native_time": null,
+            "stage": "integrated_state_after_inpainting",
+            "value": true,
+            "distance_A": 2.3978196281302764,
+            "relative_distance": 0.7377906548093158,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 98,
+            "native_time": null,
+            "stage": "integrated_state_after_inpainting",
+            "value": true,
+            "distance_A": 2.3978196281302764,
+            "relative_distance": 0.7377906548093158,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 99,
+            "native_time": null,
+            "stage": "integrated_state_after_inpainting",
+            "value": true,
+            "distance_A": 2.3978196281302764,
+            "relative_distance": 0.7377906548093158,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 100,
+            "native_time": null,
+            "stage": "final_corrector_prediction",
+            "value": true,
+            "distance_A": 2.4218126565937466,
+            "relative_distance": 0.7451731251057682,
+            "endpoint_element_present": true
+          }
+        ],
+        "status": "observed",
+        "first_observed": {
+          "index": 0,
+          "native_time": null,
+          "stage": "integrated_state_after_inpainting",
+          "value": true,
+          "distance_A": 2.3978196281302764,
+          "relative_distance": 0.7377906548093158,
+          "endpoint_element_present": true
+        },
+        "first_persistent_observation": {
+          "index": 0,
+          "native_time": null,
+          "stage": "integrated_state_after_inpainting",
+          "value": true,
+          "distance_A": 2.3978196281302764,
+          "relative_distance": 0.7377906548093158,
+          "endpoint_element_present": true
+        },
+        "last_observation": {
+          "index": 100,
+          "native_time": null,
+          "stage": "final_corrector_prediction",
+          "value": true,
+          "distance_A": 2.4218126565937466,
+          "relative_distance": 0.7451731251057682,
+          "endpoint_element_present": true
+        },
+        "preceding_observation": null,
+        "boundary_is_confirmed_change": false,
+        "causal_onset": null,
+        "internal_module": null,
+        "causal_status": "not_tested",
+        "scope": "Observed timing of this final clash pair; not a proven causal onset or earliest error anywhere."
+      },
+      {
+        "check": "minimum_distance_to_protein",
+        "stream": "network_prediction",
+        "sampler_atom_index": 3,
+        "environment_atom_index": 1478,
+        "points": [
+          {
+            "index": 0,
+            "native_time": 0.0,
+            "stage": "raw_network_prediction",
+            "value": true,
+            "distance_A": 2.150797691271496,
+            "relative_distance": 0.6721242785223425,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 1,
+            "native_time": 0.009999999776482582,
+            "stage": "raw_network_prediction",
+            "value": true,
+            "distance_A": 2.08974314495492,
+            "relative_distance": 0.6530447327984125,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 2,
+            "native_time": 0.019999999552965164,
+            "stage": "raw_network_prediction",
+            "value": true,
+            "distance_A": 2.020983815343992,
+            "relative_distance": 0.6315574422949974,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 3,
+            "native_time": 0.029999999329447746,
+            "stage": "raw_network_prediction",
+            "value": true,
+            "distance_A": 1.9709289779447419,
+            "relative_distance": 0.6159153056077318,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 4,
+            "native_time": 0.03999999910593033,
+            "stage": "raw_network_prediction",
+            "value": true,
+            "distance_A": 1.9335086768295666,
+            "relative_distance": 0.6042214615092395,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 5,
+            "native_time": 0.04999999701976776,
+            "stage": "raw_network_prediction",
+            "value": true,
+            "distance_A": 1.9057161287145163,
+            "relative_distance": 0.5955362902232864,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 6,
+            "native_time": 0.05999999865889549,
+            "stage": "raw_network_prediction",
+            "value": true,
+            "distance_A": 1.887532012015424,
+            "relative_distance": 0.58985375375482,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 7,
+            "native_time": 0.07000000029802322,
+            "stage": "raw_network_prediction",
+            "value": true,
+            "distance_A": 1.8748472340874234,
+            "relative_distance": 0.5858897606523198,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 8,
+            "native_time": 0.07999999821186066,
+            "stage": "raw_network_prediction",
+            "value": true,
+            "distance_A": 1.8685153430893344,
+            "relative_distance": 0.583911044715417,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 9,
+            "native_time": 0.08999999612569809,
+            "stage": "raw_network_prediction",
+            "value": true,
+            "distance_A": 1.8623189900980324,
+            "relative_distance": 0.581974684405635,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 10,
+            "native_time": 0.09999999403953552,
+            "stage": "raw_network_prediction",
+            "value": true,
+            "distance_A": 1.858640508781777,
+            "relative_distance": 0.5808251589943053,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 11,
+            "native_time": 0.10999999940395355,
+            "stage": "raw_network_prediction",
+            "value": true,
+            "distance_A": 1.854939064949263,
+            "relative_distance": 0.5796684577966447,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 12,
+            "native_time": 0.11999999731779099,
+            "stage": "raw_network_prediction",
+            "value": true,
+            "distance_A": 1.8493292209374583,
+            "relative_distance": 0.5779153815429557,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 13,
+            "native_time": 0.12999999523162842,
+            "stage": "raw_network_prediction",
+            "value": true,
+            "distance_A": 1.8452836968548665,
+            "relative_distance": 0.5766511552671457,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 14,
+            "native_time": 0.14000000059604645,
+            "stage": "raw_network_prediction",
+            "value": true,
+            "distance_A": 1.8419806143512736,
+            "relative_distance": 0.5756189419847729,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 15,
+            "native_time": 0.14999999105930328,
+            "stage": "raw_network_prediction",
+            "value": true,
+            "distance_A": 1.8374435595598646,
+            "relative_distance": 0.5742011123624576,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 16,
+            "native_time": 0.1599999964237213,
+            "stage": "raw_network_prediction",
+            "value": true,
+            "distance_A": 1.8305522881054521,
+            "relative_distance": 0.5720475900329538,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 17,
+            "native_time": 0.17000000178813934,
+            "stage": "raw_network_prediction",
+            "value": true,
+            "distance_A": 1.8196648229329562,
+            "relative_distance": 0.5686452571665488,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 18,
+            "native_time": 0.17999999225139618,
+            "stage": "raw_network_prediction",
+            "value": true,
+            "distance_A": 1.814478836725591,
+            "relative_distance": 0.5670246364767472,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 19,
+            "native_time": 0.1899999976158142,
+            "stage": "raw_network_prediction",
+            "value": true,
+            "distance_A": 1.810425783067466,
+            "relative_distance": 0.5657580572085831,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 20,
+            "native_time": 0.19999998807907104,
+            "stage": "raw_network_prediction",
+            "value": true,
+            "distance_A": 1.8075933164958071,
+            "relative_distance": 0.5648729114049397,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 21,
+            "native_time": 0.20999999344348907,
+            "stage": "raw_network_prediction",
+            "value": true,
+            "distance_A": 1.8049047858045826,
+            "relative_distance": 0.564032745563932,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 22,
+            "native_time": 0.2199999988079071,
+            "stage": "raw_network_prediction",
+            "value": true,
+            "distance_A": 1.8020191323297796,
+            "relative_distance": 0.5631309788530561,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 23,
+            "native_time": 0.22999998927116394,
+            "stage": "raw_network_prediction",
+            "value": true,
+            "distance_A": 1.8016715092202464,
+            "relative_distance": 0.563022346631327,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 24,
+            "native_time": 0.23999999463558197,
+            "stage": "raw_network_prediction",
+            "value": true,
+            "distance_A": 1.8028393084414827,
+            "relative_distance": 0.5633872838879633,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 25,
+            "native_time": 0.25,
+            "stage": "raw_network_prediction",
+            "value": true,
+            "distance_A": 1.8050355842923202,
+            "relative_distance": 0.5640736200913501,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 26,
+            "native_time": 0.25999999046325684,
+            "stage": "raw_network_prediction",
+            "value": true,
+            "distance_A": 1.807957526177833,
+            "relative_distance": 0.5649867269305727,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 27,
+            "native_time": 0.26999998092651367,
+            "stage": "raw_network_prediction",
+            "value": true,
+            "distance_A": 1.8102568099396688,
+            "relative_distance": 0.5657052531061465,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 28,
+            "native_time": 0.2800000011920929,
+            "stage": "raw_network_prediction",
+            "value": true,
+            "distance_A": 1.8123204546714744,
+            "relative_distance": 0.5663501420848357,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 29,
+            "native_time": 0.28999999165534973,
+            "stage": "raw_network_prediction",
+            "value": true,
+            "distance_A": 1.814216726444894,
+            "relative_distance": 0.5669427270140294,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 30,
+            "native_time": 0.29999998211860657,
+            "stage": "raw_network_prediction",
+            "value": true,
+            "distance_A": 1.8183483396962798,
+            "relative_distance": 0.5682338561550874,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 31,
+            "native_time": 0.3100000023841858,
+            "stage": "raw_network_prediction",
+            "value": true,
+            "distance_A": 1.8188034070202843,
+            "relative_distance": 0.5683760646938388,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 32,
+            "native_time": 0.3199999928474426,
+            "stage": "raw_network_prediction",
+            "value": true,
+            "distance_A": 1.8176170054228327,
+            "relative_distance": 0.5680053141946352,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 33,
+            "native_time": 0.32999998331069946,
+            "stage": "raw_network_prediction",
+            "value": true,
+            "distance_A": 1.815985745434616,
+            "relative_distance": 0.5674955454483175,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 34,
+            "native_time": 0.3400000035762787,
+            "stage": "raw_network_prediction",
+            "value": true,
+            "distance_A": 1.815589725859231,
+            "relative_distance": 0.5673717893310096,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 35,
+            "native_time": 0.3499999940395355,
+            "stage": "raw_network_prediction",
+            "value": true,
+            "distance_A": 1.8140346379664423,
+            "relative_distance": 0.5668858243645132,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 36,
+            "native_time": 0.35999998450279236,
+            "stage": "raw_network_prediction",
+            "value": true,
+            "distance_A": 1.8161386207672952,
+            "relative_distance": 0.5675433189897797,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 37,
+            "native_time": 0.3700000047683716,
+            "stage": "raw_network_prediction",
+            "value": true,
+            "distance_A": 1.8166084746852176,
+            "relative_distance": 0.5676901483391305,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 38,
+            "native_time": 0.3799999952316284,
+            "stage": "raw_network_prediction",
+            "value": true,
+            "distance_A": 1.8184211324832906,
+            "relative_distance": 0.5682566039010283,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 39,
+            "native_time": 0.38999998569488525,
+            "stage": "raw_network_prediction",
+            "value": true,
+            "distance_A": 1.821022174022097,
+            "relative_distance": 0.5690694293819053,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 40,
+            "native_time": 0.3999999761581421,
+            "stage": "raw_network_prediction",
+            "value": true,
+            "distance_A": 1.8254510907207975,
+            "relative_distance": 0.5704534658502491,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 41,
+            "native_time": 0.4099999964237213,
+            "stage": "raw_network_prediction",
+            "value": true,
+            "distance_A": 1.8292895356005678,
+            "relative_distance": 0.5716529798751774,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 42,
+            "native_time": 0.41999998688697815,
+            "stage": "raw_network_prediction",
+            "value": true,
+            "distance_A": 1.8347698938716197,
+            "relative_distance": 0.5733655918348811,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 43,
+            "native_time": 0.429999977350235,
+            "stage": "raw_network_prediction",
+            "value": true,
+            "distance_A": 1.8388560193218177,
+            "relative_distance": 0.574642506038068,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 44,
+            "native_time": 0.4399999976158142,
+            "stage": "raw_network_prediction",
+            "value": true,
+            "distance_A": 1.8407766795432703,
+            "relative_distance": 0.575242712357272,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 45,
+            "native_time": 0.44999998807907104,
+            "stage": "raw_network_prediction",
+            "value": true,
+            "distance_A": 1.8438941034924452,
+            "relative_distance": 0.5762169073413891,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 46,
+            "native_time": 0.4599999785423279,
+            "stage": "raw_network_prediction",
+            "value": true,
+            "distance_A": 1.848674250105623,
+            "relative_distance": 0.5777107031580072,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 47,
+            "native_time": 0.4699999988079071,
+            "stage": "raw_network_prediction",
+            "value": true,
+            "distance_A": 1.848183203430058,
+            "relative_distance": 0.5775572510718932,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 48,
+            "native_time": 0.47999998927116394,
+            "stage": "raw_network_prediction",
+            "value": true,
+            "distance_A": 1.8560801941676315,
+            "relative_distance": 0.5800250606773848,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 49,
+            "native_time": 0.4899999797344208,
+            "stage": "raw_network_prediction",
+            "value": true,
+            "distance_A": 1.8615136307415197,
+            "relative_distance": 0.5817230096067249,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 50,
+            "native_time": 0.5,
+            "stage": "raw_network_prediction",
+            "value": true,
+            "distance_A": 1.866223629751886,
+            "relative_distance": 0.5831948842974644,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 51,
+            "native_time": 0.5099999904632568,
+            "stage": "raw_network_prediction",
+            "value": true,
+            "distance_A": 1.8736444981815605,
+            "relative_distance": 0.5855139056817377,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 52,
+            "native_time": 0.5199999809265137,
+            "stage": "raw_network_prediction",
+            "value": true,
+            "distance_A": 1.8833673308096797,
+            "relative_distance": 0.5885522908780249,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 53,
+            "native_time": 0.5300000309944153,
+            "stage": "raw_network_prediction",
+            "value": true,
+            "distance_A": 1.889054354458469,
+            "relative_distance": 0.5903294857682715,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 54,
+            "native_time": 0.5400000214576721,
+            "stage": "raw_network_prediction",
+            "value": true,
+            "distance_A": 1.8939668073429203,
+            "relative_distance": 0.5918646272946626,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 55,
+            "native_time": 0.550000011920929,
+            "stage": "raw_network_prediction",
+            "value": true,
+            "distance_A": 1.899849859113663,
+            "relative_distance": 0.5937030809730196,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 56,
+            "native_time": 0.5600000023841858,
+            "stage": "raw_network_prediction",
+            "value": true,
+            "distance_A": 1.9048890438865864,
+            "relative_distance": 0.5952778262145583,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 57,
+            "native_time": 0.5699999928474426,
+            "stage": "raw_network_prediction",
+            "value": true,
+            "distance_A": 1.9068642918777075,
+            "relative_distance": 0.5958950912117835,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 58,
+            "native_time": 0.5799999833106995,
+            "stage": "raw_network_prediction",
+            "value": true,
+            "distance_A": 1.9103133239958876,
+            "relative_distance": 0.5969729137487149,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 59,
+            "native_time": 0.5900000333786011,
+            "stage": "raw_network_prediction",
+            "value": true,
+            "distance_A": 1.918770564073293,
+            "relative_distance": 0.599615801272904,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 60,
+            "native_time": 0.6000000238418579,
+            "stage": "raw_network_prediction",
+            "value": true,
+            "distance_A": 1.9272689904088016,
+            "relative_distance": 0.6022715595027505,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 61,
+            "native_time": 0.6100000143051147,
+            "stage": "raw_network_prediction",
+            "value": true,
+            "distance_A": 1.936679182408866,
+            "relative_distance": 0.6052122445027706,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 62,
+            "native_time": 0.6200000047683716,
+            "stage": "raw_network_prediction",
+            "value": true,
+            "distance_A": 1.9421158801446097,
+            "relative_distance": 0.6069112125451905,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 63,
+            "native_time": 0.6299999952316284,
+            "stage": "raw_network_prediction",
+            "value": true,
+            "distance_A": 1.9477659342452194,
+            "relative_distance": 0.608676854451631,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 64,
+            "native_time": 0.6399999856948853,
+            "stage": "raw_network_prediction",
+            "value": true,
+            "distance_A": 1.9543717033386372,
+            "relative_distance": 0.6107411572933241,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 65,
+            "native_time": 0.6500000357627869,
+            "stage": "raw_network_prediction",
+            "value": true,
+            "distance_A": 1.957569392891342,
+            "relative_distance": 0.6117404352785444,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 66,
+            "native_time": 0.6600000262260437,
+            "stage": "raw_network_prediction",
+            "value": true,
+            "distance_A": 1.9587855228541582,
+            "relative_distance": 0.6121204758919244,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 67,
+            "native_time": 0.6700000166893005,
+            "stage": "raw_network_prediction",
+            "value": true,
+            "distance_A": 1.9615185929330177,
+            "relative_distance": 0.6129745602915679,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 68,
+            "native_time": 0.6800000071525574,
+            "stage": "raw_network_prediction",
+            "value": true,
+            "distance_A": 1.96282877840801,
+            "relative_distance": 0.6133839932525031,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 69,
+            "native_time": 0.6899999976158142,
+            "stage": "raw_network_prediction",
+            "value": true,
+            "distance_A": 1.9677397653880873,
+            "relative_distance": 0.6149186766837772,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 70,
+            "native_time": 0.699999988079071,
+            "stage": "raw_network_prediction",
+            "value": true,
+            "distance_A": 1.9718914995848975,
+            "relative_distance": 0.6162160936202804,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 71,
+            "native_time": 0.7099999785423279,
+            "stage": "raw_network_prediction",
+            "value": true,
+            "distance_A": 1.9776511618333448,
+            "relative_distance": 0.6180159880729202,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 72,
+            "native_time": 0.7200000286102295,
+            "stage": "raw_network_prediction",
+            "value": true,
+            "distance_A": 1.981903314135851,
+            "relative_distance": 0.6193447856674534,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 73,
+            "native_time": 0.7300000190734863,
+            "stage": "raw_network_prediction",
+            "value": true,
+            "distance_A": 1.9855544993610645,
+            "relative_distance": 0.6204857810503326,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 74,
+            "native_time": 0.7400000095367432,
+            "stage": "raw_network_prediction",
+            "value": true,
+            "distance_A": 1.9933458464527485,
+            "relative_distance": 0.6229205770164838,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 75,
+            "native_time": 0.75,
+            "stage": "raw_network_prediction",
+            "value": true,
+            "distance_A": 1.9968623998718207,
+            "relative_distance": 0.6240194999599439,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 76,
+            "native_time": 0.7599999904632568,
+            "stage": "raw_network_prediction",
+            "value": true,
+            "distance_A": 1.9959064221674365,
+            "relative_distance": 0.6237207569273239,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 77,
+            "native_time": 0.7699999809265137,
+            "stage": "raw_network_prediction",
+            "value": true,
+            "distance_A": 1.9973540526084022,
+            "relative_distance": 0.6241731414401256,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 78,
+            "native_time": 0.7800000309944153,
+            "stage": "raw_network_prediction",
+            "value": true,
+            "distance_A": 1.9981059466252078,
+            "relative_distance": 0.6244081083203774,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 79,
+            "native_time": 0.7900000214576721,
+            "stage": "raw_network_prediction",
+            "value": true,
+            "distance_A": 1.9996604761224839,
+            "relative_distance": 0.6248938987882762,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 80,
+            "native_time": 0.800000011920929,
+            "stage": "raw_network_prediction",
+            "value": true,
+            "distance_A": 2.00136504505982,
+            "relative_distance": 0.6254265765811937,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 81,
+            "native_time": 0.8100000023841858,
+            "stage": "raw_network_prediction",
+            "value": true,
+            "distance_A": 2.0033996717141744,
+            "relative_distance": 0.6260623974106795,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 82,
+            "native_time": 0.8199999928474426,
+            "stage": "raw_network_prediction",
+            "value": true,
+            "distance_A": 2.009482527563056,
+            "relative_distance": 0.627963289863455,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 83,
+            "native_time": 0.8299999833106995,
+            "stage": "raw_network_prediction",
+            "value": true,
+            "distance_A": 2.014725148201267,
+            "relative_distance": 0.629601608812896,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 84,
+            "native_time": 0.8400000333786011,
+            "stage": "raw_network_prediction",
+            "value": true,
+            "distance_A": 2.0185812457268555,
+            "relative_distance": 0.6308066392896423,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 85,
+            "native_time": 0.8500000238418579,
+            "stage": "raw_network_prediction",
+            "value": true,
+            "distance_A": 2.023997348764669,
+            "relative_distance": 0.6324991714889591,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 86,
+            "native_time": 0.8600000143051147,
+            "stage": "raw_network_prediction",
+            "value": true,
+            "distance_A": 2.0338187523723654,
+            "relative_distance": 0.6355683601163642,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 87,
+            "native_time": 0.8700000047683716,
+            "stage": "raw_network_prediction",
+            "value": true,
+            "distance_A": 2.042685139080249,
+            "relative_distance": 0.6383391059625778,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 88,
+            "native_time": 0.8799999952316284,
+            "stage": "raw_network_prediction",
+            "value": true,
+            "distance_A": 2.05955014167324,
+            "relative_distance": 0.6436094192728875,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 89,
+            "native_time": 0.8899999856948853,
+            "stage": "raw_network_prediction",
+            "value": true,
+            "distance_A": 2.0723582389341177,
+            "relative_distance": 0.6476119496669117,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 90,
+            "native_time": 0.8999999761581421,
+            "stage": "raw_network_prediction",
+            "value": true,
+            "distance_A": 2.089902301110235,
+            "relative_distance": 0.6530944690969483,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 91,
+            "native_time": 0.9100000262260437,
+            "stage": "raw_network_prediction",
+            "value": true,
+            "distance_A": 2.1057456888650865,
+            "relative_distance": 0.6580455277703395,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 92,
+            "native_time": 0.9200000166893005,
+            "stage": "raw_network_prediction",
+            "value": true,
+            "distance_A": 2.1192200023408265,
+            "relative_distance": 0.6622562507315083,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 93,
+            "native_time": 0.9300000071525574,
+            "stage": "raw_network_prediction",
+            "value": true,
+            "distance_A": 2.131220072847038,
+            "relative_distance": 0.6660062727646994,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 94,
+            "native_time": 0.9399999976158142,
+            "stage": "raw_network_prediction",
+            "value": true,
+            "distance_A": 2.143367052743962,
+            "relative_distance": 0.6698022039824881,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 95,
+            "native_time": 0.949999988079071,
+            "stage": "raw_network_prediction",
+            "value": true,
+            "distance_A": 2.1536655470629826,
+            "relative_distance": 0.673020483457182,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 96,
+            "native_time": 0.9599999785423279,
+            "stage": "raw_network_prediction",
+            "value": true,
+            "distance_A": 2.164722903434804,
+            "relative_distance": 0.6764759073233763,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 97,
+            "native_time": 0.9700000286102295,
+            "stage": "raw_network_prediction",
+            "value": true,
+            "distance_A": 2.169366646855773,
+            "relative_distance": 0.6779270771424291,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 98,
+            "native_time": 0.9800000190734863,
+            "stage": "raw_network_prediction",
+            "value": true,
+            "distance_A": 2.1640944749659035,
+            "relative_distance": 0.6762795234268448,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 99,
+            "native_time": 0.9900000095367432,
+            "stage": "raw_network_prediction",
+            "value": true,
+            "distance_A": 2.1576641476008467,
+            "relative_distance": 0.6742700461252645,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 100,
+            "native_time": 0.9998999834060669,
+            "stage": "raw_network_prediction",
+            "value": true,
+            "distance_A": 2.158255687571629,
+            "relative_distance": 0.674454902366134,
+            "endpoint_element_present": true
+          }
+        ],
+        "status": "observed",
+        "first_observed": {
+          "index": 0,
+          "native_time": 0.0,
+          "stage": "raw_network_prediction",
+          "value": true,
+          "distance_A": 2.150797691271496,
+          "relative_distance": 0.6721242785223425,
+          "endpoint_element_present": true
+        },
+        "first_persistent_observation": {
+          "index": 0,
+          "native_time": 0.0,
+          "stage": "raw_network_prediction",
+          "value": true,
+          "distance_A": 2.150797691271496,
+          "relative_distance": 0.6721242785223425,
+          "endpoint_element_present": true
+        },
+        "last_observation": {
+          "index": 100,
+          "native_time": 0.9998999834060669,
+          "stage": "raw_network_prediction",
+          "value": true,
+          "distance_A": 2.158255687571629,
+          "relative_distance": 0.674454902366134,
+          "endpoint_element_present": true
+        },
+        "preceding_observation": null,
+        "boundary_is_confirmed_change": false,
+        "causal_onset": null,
+        "internal_module": null,
+        "causal_status": "not_tested",
+        "scope": "Observed timing of this final clash pair; not a proven causal onset or earliest error anywhere."
+      },
+      {
+        "check": "minimum_distance_to_protein",
+        "stream": "sampler_state",
+        "sampler_atom_index": 3,
+        "environment_atom_index": 1478,
+        "points": [
+          {
+            "index": 0,
+            "native_time": null,
+            "stage": "integrated_state_after_inpainting",
+            "value": true,
+            "distance_A": 1.9126103724346093,
+            "relative_distance": 0.5976907413858153,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 1,
+            "native_time": null,
+            "stage": "integrated_state_after_inpainting",
+            "value": true,
+            "distance_A": 1.9126103724346093,
+            "relative_distance": 0.5976907413858153,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 2,
+            "native_time": null,
+            "stage": "integrated_state_after_inpainting",
+            "value": true,
+            "distance_A": 1.9126103724346093,
+            "relative_distance": 0.5976907413858153,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 3,
+            "native_time": null,
+            "stage": "integrated_state_after_inpainting",
+            "value": true,
+            "distance_A": 1.9126103724346093,
+            "relative_distance": 0.5976907413858153,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 4,
+            "native_time": null,
+            "stage": "integrated_state_after_inpainting",
+            "value": true,
+            "distance_A": 1.9126103724346093,
+            "relative_distance": 0.5976907413858153,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 5,
+            "native_time": null,
+            "stage": "integrated_state_after_inpainting",
+            "value": true,
+            "distance_A": 1.9126103724346093,
+            "relative_distance": 0.5976907413858153,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 6,
+            "native_time": null,
+            "stage": "integrated_state_after_inpainting",
+            "value": true,
+            "distance_A": 1.9126103724346093,
+            "relative_distance": 0.5976907413858153,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 7,
+            "native_time": null,
+            "stage": "integrated_state_after_inpainting",
+            "value": true,
+            "distance_A": 1.9126103724346093,
+            "relative_distance": 0.5976907413858153,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 8,
+            "native_time": null,
+            "stage": "integrated_state_after_inpainting",
+            "value": true,
+            "distance_A": 1.9126103724346093,
+            "relative_distance": 0.5976907413858153,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 9,
+            "native_time": null,
+            "stage": "integrated_state_after_inpainting",
+            "value": true,
+            "distance_A": 1.9126103724346093,
+            "relative_distance": 0.5976907413858153,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 10,
+            "native_time": null,
+            "stage": "integrated_state_after_inpainting",
+            "value": true,
+            "distance_A": 1.9126103724346093,
+            "relative_distance": 0.5976907413858153,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 11,
+            "native_time": null,
+            "stage": "integrated_state_after_inpainting",
+            "value": true,
+            "distance_A": 1.9126103724346093,
+            "relative_distance": 0.5976907413858153,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 12,
+            "native_time": null,
+            "stage": "integrated_state_after_inpainting",
+            "value": true,
+            "distance_A": 1.9126103724346093,
+            "relative_distance": 0.5976907413858153,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 13,
+            "native_time": null,
+            "stage": "integrated_state_after_inpainting",
+            "value": true,
+            "distance_A": 1.9126103724346093,
+            "relative_distance": 0.5976907413858153,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 14,
+            "native_time": null,
+            "stage": "integrated_state_after_inpainting",
+            "value": true,
+            "distance_A": 1.9126103724346093,
+            "relative_distance": 0.5976907413858153,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 15,
+            "native_time": null,
+            "stage": "integrated_state_after_inpainting",
+            "value": true,
+            "distance_A": 1.9126103724346093,
+            "relative_distance": 0.5976907413858153,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 16,
+            "native_time": null,
+            "stage": "integrated_state_after_inpainting",
+            "value": true,
+            "distance_A": 1.9126103724346093,
+            "relative_distance": 0.5976907413858153,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 17,
+            "native_time": null,
+            "stage": "integrated_state_after_inpainting",
+            "value": true,
+            "distance_A": 1.9126103724346093,
+            "relative_distance": 0.5976907413858153,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 18,
+            "native_time": null,
+            "stage": "integrated_state_after_inpainting",
+            "value": true,
+            "distance_A": 1.9126103724346093,
+            "relative_distance": 0.5976907413858153,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 19,
+            "native_time": null,
+            "stage": "integrated_state_after_inpainting",
+            "value": true,
+            "distance_A": 1.9126103724346093,
+            "relative_distance": 0.5976907413858153,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 20,
+            "native_time": null,
+            "stage": "integrated_state_after_inpainting",
+            "value": true,
+            "distance_A": 1.9126103724346093,
+            "relative_distance": 0.5976907413858153,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 21,
+            "native_time": null,
+            "stage": "integrated_state_after_inpainting",
+            "value": true,
+            "distance_A": 1.9126103724346093,
+            "relative_distance": 0.5976907413858153,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 22,
+            "native_time": null,
+            "stage": "integrated_state_after_inpainting",
+            "value": true,
+            "distance_A": 1.9126103724346093,
+            "relative_distance": 0.5976907413858153,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 23,
+            "native_time": null,
+            "stage": "integrated_state_after_inpainting",
+            "value": true,
+            "distance_A": 1.9126103724346093,
+            "relative_distance": 0.5976907413858153,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 24,
+            "native_time": null,
+            "stage": "integrated_state_after_inpainting",
+            "value": true,
+            "distance_A": 1.9126103724346093,
+            "relative_distance": 0.5976907413858153,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 25,
+            "native_time": null,
+            "stage": "integrated_state_after_inpainting",
+            "value": true,
+            "distance_A": 1.9126103724346093,
+            "relative_distance": 0.5976907413858153,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 26,
+            "native_time": null,
+            "stage": "integrated_state_after_inpainting",
+            "value": true,
+            "distance_A": 1.9126103724346093,
+            "relative_distance": 0.5976907413858153,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 27,
+            "native_time": null,
+            "stage": "integrated_state_after_inpainting",
+            "value": true,
+            "distance_A": 1.9126103724346093,
+            "relative_distance": 0.5976907413858153,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 28,
+            "native_time": null,
+            "stage": "integrated_state_after_inpainting",
+            "value": true,
+            "distance_A": 1.9126103724346093,
+            "relative_distance": 0.5976907413858153,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 29,
+            "native_time": null,
+            "stage": "integrated_state_after_inpainting",
+            "value": true,
+            "distance_A": 1.9126103724346093,
+            "relative_distance": 0.5976907413858153,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 30,
+            "native_time": null,
+            "stage": "integrated_state_after_inpainting",
+            "value": true,
+            "distance_A": 1.9126103724346093,
+            "relative_distance": 0.5976907413858153,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 31,
+            "native_time": null,
+            "stage": "integrated_state_after_inpainting",
+            "value": true,
+            "distance_A": 1.9126103724346093,
+            "relative_distance": 0.5976907413858153,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 32,
+            "native_time": null,
+            "stage": "integrated_state_after_inpainting",
+            "value": true,
+            "distance_A": 1.9126103724346093,
+            "relative_distance": 0.5976907413858153,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 33,
+            "native_time": null,
+            "stage": "integrated_state_after_inpainting",
+            "value": true,
+            "distance_A": 1.9126103724346093,
+            "relative_distance": 0.5976907413858153,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 34,
+            "native_time": null,
+            "stage": "integrated_state_after_inpainting",
+            "value": true,
+            "distance_A": 1.9126103724346093,
+            "relative_distance": 0.5976907413858153,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 35,
+            "native_time": null,
+            "stage": "integrated_state_after_inpainting",
+            "value": true,
+            "distance_A": 1.9126103724346093,
+            "relative_distance": 0.5976907413858153,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 36,
+            "native_time": null,
+            "stage": "integrated_state_after_inpainting",
+            "value": true,
+            "distance_A": 1.9126103724346093,
+            "relative_distance": 0.5976907413858153,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 37,
+            "native_time": null,
+            "stage": "integrated_state_after_inpainting",
+            "value": true,
+            "distance_A": 1.9126103724346093,
+            "relative_distance": 0.5976907413858153,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 38,
+            "native_time": null,
+            "stage": "integrated_state_after_inpainting",
+            "value": true,
+            "distance_A": 1.9126103724346093,
+            "relative_distance": 0.5976907413858153,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 39,
+            "native_time": null,
+            "stage": "integrated_state_after_inpainting",
+            "value": true,
+            "distance_A": 1.9126103724346093,
+            "relative_distance": 0.5976907413858153,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 40,
+            "native_time": null,
+            "stage": "integrated_state_after_inpainting",
+            "value": true,
+            "distance_A": 1.9126103724346093,
+            "relative_distance": 0.5976907413858153,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 41,
+            "native_time": null,
+            "stage": "integrated_state_after_inpainting",
+            "value": true,
+            "distance_A": 1.9126103724346093,
+            "relative_distance": 0.5976907413858153,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 42,
+            "native_time": null,
+            "stage": "integrated_state_after_inpainting",
+            "value": true,
+            "distance_A": 1.9126103724346093,
+            "relative_distance": 0.5976907413858153,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 43,
+            "native_time": null,
+            "stage": "integrated_state_after_inpainting",
+            "value": true,
+            "distance_A": 1.9126103724346093,
+            "relative_distance": 0.5976907413858153,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 44,
+            "native_time": null,
+            "stage": "integrated_state_after_inpainting",
+            "value": true,
+            "distance_A": 1.9126103724346093,
+            "relative_distance": 0.5976907413858153,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 45,
+            "native_time": null,
+            "stage": "integrated_state_after_inpainting",
+            "value": true,
+            "distance_A": 1.9126103724346093,
+            "relative_distance": 0.5976907413858153,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 46,
+            "native_time": null,
+            "stage": "integrated_state_after_inpainting",
+            "value": true,
+            "distance_A": 1.9126103724346093,
+            "relative_distance": 0.5976907413858153,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 47,
+            "native_time": null,
+            "stage": "integrated_state_after_inpainting",
+            "value": true,
+            "distance_A": 1.9126103724346093,
+            "relative_distance": 0.5976907413858153,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 48,
+            "native_time": null,
+            "stage": "integrated_state_after_inpainting",
+            "value": true,
+            "distance_A": 1.9126103724346093,
+            "relative_distance": 0.5976907413858153,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 49,
+            "native_time": null,
+            "stage": "integrated_state_after_inpainting",
+            "value": true,
+            "distance_A": 1.9126103724346093,
+            "relative_distance": 0.5976907413858153,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 50,
+            "native_time": null,
+            "stage": "integrated_state_after_inpainting",
+            "value": true,
+            "distance_A": 1.9126103724346093,
+            "relative_distance": 0.5976907413858153,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 51,
+            "native_time": null,
+            "stage": "integrated_state_after_inpainting",
+            "value": true,
+            "distance_A": 1.9126103724346093,
+            "relative_distance": 0.5976907413858153,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 52,
+            "native_time": null,
+            "stage": "integrated_state_after_inpainting",
+            "value": true,
+            "distance_A": 1.9126103724346093,
+            "relative_distance": 0.5976907413858153,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 53,
+            "native_time": null,
+            "stage": "integrated_state_after_inpainting",
+            "value": true,
+            "distance_A": 1.9126103724346093,
+            "relative_distance": 0.5976907413858153,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 54,
+            "native_time": null,
+            "stage": "integrated_state_after_inpainting",
+            "value": true,
+            "distance_A": 1.9126103724346093,
+            "relative_distance": 0.5976907413858153,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 55,
+            "native_time": null,
+            "stage": "integrated_state_after_inpainting",
+            "value": true,
+            "distance_A": 1.9126103724346093,
+            "relative_distance": 0.5976907413858153,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 56,
+            "native_time": null,
+            "stage": "integrated_state_after_inpainting",
+            "value": true,
+            "distance_A": 1.9126103724346093,
+            "relative_distance": 0.5976907413858153,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 57,
+            "native_time": null,
+            "stage": "integrated_state_after_inpainting",
+            "value": true,
+            "distance_A": 1.9126103724346093,
+            "relative_distance": 0.5976907413858153,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 58,
+            "native_time": null,
+            "stage": "integrated_state_after_inpainting",
+            "value": true,
+            "distance_A": 1.9126103724346093,
+            "relative_distance": 0.5976907413858153,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 59,
+            "native_time": null,
+            "stage": "integrated_state_after_inpainting",
+            "value": true,
+            "distance_A": 1.9126103724346093,
+            "relative_distance": 0.5976907413858153,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 60,
+            "native_time": null,
+            "stage": "integrated_state_after_inpainting",
+            "value": true,
+            "distance_A": 1.9126103724346093,
+            "relative_distance": 0.5976907413858153,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 61,
+            "native_time": null,
+            "stage": "integrated_state_after_inpainting",
+            "value": true,
+            "distance_A": 1.9126103724346093,
+            "relative_distance": 0.5976907413858153,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 62,
+            "native_time": null,
+            "stage": "integrated_state_after_inpainting",
+            "value": true,
+            "distance_A": 1.9126103724346093,
+            "relative_distance": 0.5976907413858153,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 63,
+            "native_time": null,
+            "stage": "integrated_state_after_inpainting",
+            "value": true,
+            "distance_A": 1.9126103724346093,
+            "relative_distance": 0.5976907413858153,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 64,
+            "native_time": null,
+            "stage": "integrated_state_after_inpainting",
+            "value": true,
+            "distance_A": 1.9126103724346093,
+            "relative_distance": 0.5976907413858153,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 65,
+            "native_time": null,
+            "stage": "integrated_state_after_inpainting",
+            "value": true,
+            "distance_A": 1.9126103724346093,
+            "relative_distance": 0.5976907413858153,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 66,
+            "native_time": null,
+            "stage": "integrated_state_after_inpainting",
+            "value": true,
+            "distance_A": 1.9126103724346093,
+            "relative_distance": 0.5976907413858153,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 67,
+            "native_time": null,
+            "stage": "integrated_state_after_inpainting",
+            "value": true,
+            "distance_A": 1.9126103724346093,
+            "relative_distance": 0.5976907413858153,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 68,
+            "native_time": null,
+            "stage": "integrated_state_after_inpainting",
+            "value": true,
+            "distance_A": 1.9126103724346093,
+            "relative_distance": 0.5976907413858153,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 69,
+            "native_time": null,
+            "stage": "integrated_state_after_inpainting",
+            "value": true,
+            "distance_A": 1.9126103724346093,
+            "relative_distance": 0.5976907413858153,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 70,
+            "native_time": null,
+            "stage": "integrated_state_after_inpainting",
+            "value": true,
+            "distance_A": 1.9126103724346093,
+            "relative_distance": 0.5976907413858153,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 71,
+            "native_time": null,
+            "stage": "integrated_state_after_inpainting",
+            "value": true,
+            "distance_A": 1.9126103724346093,
+            "relative_distance": 0.5976907413858153,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 72,
+            "native_time": null,
+            "stage": "integrated_state_after_inpainting",
+            "value": true,
+            "distance_A": 1.9126103724346093,
+            "relative_distance": 0.5976907413858153,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 73,
+            "native_time": null,
+            "stage": "integrated_state_after_inpainting",
+            "value": true,
+            "distance_A": 1.9126103724346093,
+            "relative_distance": 0.5976907413858153,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 74,
+            "native_time": null,
+            "stage": "integrated_state_after_inpainting",
+            "value": true,
+            "distance_A": 1.9126103724346093,
+            "relative_distance": 0.5976907413858153,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 75,
+            "native_time": null,
+            "stage": "integrated_state_after_inpainting",
+            "value": true,
+            "distance_A": 1.9126103724346093,
+            "relative_distance": 0.5976907413858153,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 76,
+            "native_time": null,
+            "stage": "integrated_state_after_inpainting",
+            "value": true,
+            "distance_A": 1.9126103724346093,
+            "relative_distance": 0.5976907413858153,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 77,
+            "native_time": null,
+            "stage": "integrated_state_after_inpainting",
+            "value": true,
+            "distance_A": 1.9126103724346093,
+            "relative_distance": 0.5976907413858153,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 78,
+            "native_time": null,
+            "stage": "integrated_state_after_inpainting",
+            "value": true,
+            "distance_A": 1.9126103724346093,
+            "relative_distance": 0.5976907413858153,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 79,
+            "native_time": null,
+            "stage": "integrated_state_after_inpainting",
+            "value": true,
+            "distance_A": 1.9126103724346093,
+            "relative_distance": 0.5976907413858153,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 80,
+            "native_time": null,
+            "stage": "integrated_state_after_inpainting",
+            "value": true,
+            "distance_A": 1.9126103724346093,
+            "relative_distance": 0.5976907413858153,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 81,
+            "native_time": null,
+            "stage": "integrated_state_after_inpainting",
+            "value": true,
+            "distance_A": 1.9126103724346093,
+            "relative_distance": 0.5976907413858153,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 82,
+            "native_time": null,
+            "stage": "integrated_state_after_inpainting",
+            "value": true,
+            "distance_A": 1.9126103724346093,
+            "relative_distance": 0.5976907413858153,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 83,
+            "native_time": null,
+            "stage": "integrated_state_after_inpainting",
+            "value": true,
+            "distance_A": 1.9126103724346093,
+            "relative_distance": 0.5976907413858153,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 84,
+            "native_time": null,
+            "stage": "integrated_state_after_inpainting",
+            "value": true,
+            "distance_A": 1.9126103724346093,
+            "relative_distance": 0.5976907413858153,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 85,
+            "native_time": null,
+            "stage": "integrated_state_after_inpainting",
+            "value": true,
+            "distance_A": 1.9126103724346093,
+            "relative_distance": 0.5976907413858153,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 86,
+            "native_time": null,
+            "stage": "integrated_state_after_inpainting",
+            "value": true,
+            "distance_A": 1.9126103724346093,
+            "relative_distance": 0.5976907413858153,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 87,
+            "native_time": null,
+            "stage": "integrated_state_after_inpainting",
+            "value": true,
+            "distance_A": 1.9126103724346093,
+            "relative_distance": 0.5976907413858153,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 88,
+            "native_time": null,
+            "stage": "integrated_state_after_inpainting",
+            "value": true,
+            "distance_A": 1.9126103724346093,
+            "relative_distance": 0.5976907413858153,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 89,
+            "native_time": null,
+            "stage": "integrated_state_after_inpainting",
+            "value": true,
+            "distance_A": 1.9126103724346093,
+            "relative_distance": 0.5976907413858153,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 90,
+            "native_time": null,
+            "stage": "integrated_state_after_inpainting",
+            "value": true,
+            "distance_A": 1.9126103724346093,
+            "relative_distance": 0.5976907413858153,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 91,
+            "native_time": null,
+            "stage": "integrated_state_after_inpainting",
+            "value": true,
+            "distance_A": 1.9126103724346093,
+            "relative_distance": 0.5976907413858153,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 92,
+            "native_time": null,
+            "stage": "integrated_state_after_inpainting",
+            "value": true,
+            "distance_A": 1.9126103724346093,
+            "relative_distance": 0.5976907413858153,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 93,
+            "native_time": null,
+            "stage": "integrated_state_after_inpainting",
+            "value": true,
+            "distance_A": 1.9126103724346093,
+            "relative_distance": 0.5976907413858153,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 94,
+            "native_time": null,
+            "stage": "integrated_state_after_inpainting",
+            "value": true,
+            "distance_A": 1.9126103724346093,
+            "relative_distance": 0.5976907413858153,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 95,
+            "native_time": null,
+            "stage": "integrated_state_after_inpainting",
+            "value": true,
+            "distance_A": 1.9126103724346093,
+            "relative_distance": 0.5976907413858153,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 96,
+            "native_time": null,
+            "stage": "integrated_state_after_inpainting",
+            "value": true,
+            "distance_A": 1.9126103724346093,
+            "relative_distance": 0.5976907413858153,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 97,
+            "native_time": null,
+            "stage": "integrated_state_after_inpainting",
+            "value": true,
+            "distance_A": 1.9126103724346093,
+            "relative_distance": 0.5976907413858153,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 98,
+            "native_time": null,
+            "stage": "integrated_state_after_inpainting",
+            "value": true,
+            "distance_A": 1.9126103724346093,
+            "relative_distance": 0.5976907413858153,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 99,
+            "native_time": null,
+            "stage": "integrated_state_after_inpainting",
+            "value": true,
+            "distance_A": 1.9126103724346093,
+            "relative_distance": 0.5976907413858153,
+            "endpoint_element_present": true
+          },
+          {
+            "index": 100,
+            "native_time": null,
+            "stage": "final_corrector_prediction",
+            "value": true,
+            "distance_A": 2.158255687571629,
+            "relative_distance": 0.674454902366134,
+            "endpoint_element_present": true
+          }
+        ],
+        "status": "observed",
+        "first_observed": {
+          "index": 0,
+          "native_time": null,
+          "stage": "integrated_state_after_inpainting",
+          "value": true,
+          "distance_A": 1.9126103724346093,
+          "relative_distance": 0.5976907413858153,
+          "endpoint_element_present": true
+        },
+        "first_persistent_observation": {
+          "index": 0,
+          "native_time": null,
+          "stage": "integrated_state_after_inpainting",
+          "value": true,
+          "distance_A": 1.9126103724346093,
+          "relative_distance": 0.5976907413858153,
+          "endpoint_element_present": true
+        },
+        "last_observation": {
+          "index": 100,
+          "native_time": null,
+          "stage": "final_corrector_prediction",
+          "value": true,
+          "distance_A": 2.158255687571629,
+          "relative_distance": 0.674454902366134,
+          "endpoint_element_present": true
+        },
+        "preceding_observation": null,
+        "boundary_is_confirmed_change": false,
+        "causal_onset": null,
+        "internal_module": null,
+        "causal_status": "not_tested",
+        "scope": "Observed timing of this final clash pair; not a proven causal onset or earliest error anywhere."
+      }
+    ]
+  },
+  "imported_observations": {
+    "connection_report": {
+      "diagnosis": {
+        "temporal_observations": [],
+        "candidate_observation_windows": [],
+        "unlocalized_endpoint_problems": [
+          {
+            "problem": "minimum_distance_to_protein",
+            "endpoint_stages": [
+              "raw_without_repair",
+              "run_decode"
+            ],
+            "status": "endpoint_failure_detected_not_locally_or_temporally_localized",
+            "reason": "Atom-level geometry/environment tracing requires its own adapter; a PoseBusters failure alone does not establish a scaffold-fragment connection failure."
+          }
+        ],
+        "decode_stage_observations": [],
+        "scaffold_change": false,
+        "scaffold_change_note": "Unchanged Murcko scaffold is reported separately, not as a connection error.",
+        "causal_status": "not_tested",
+        "input_atom_contributions": "not_assessed"
+      },
+      "decoded_checks": {
+        "decoded_without_repair.sdf": {
+          "molecule_available": true,
+          "coordinate_mapping_max_abs_error_A": 4.7738647461770256e-05,
+          "fixed_site_checks": [
+            {
+              "fixed_sampler_index": 0,
+              "fixed_reference_index": 24,
+              "reference_element": "S",
+              "decoded_element": "S",
+              "fixed_element_preserved": true,
+              "fixed_charge_preserved": true,
+              "expected_bond_classes": [
+                1
+              ],
+              "actual_bond_classes": [
+                1
+              ],
+              "boundary_rule_satisfied": true,
+              "generated_neighbors": [
+                {
+                  "sampler_index": 26,
+                  "element": "C",
+                  "bond_class": 1
+                }
+              ]
+            },
+            {
+              "fixed_sampler_index": 1,
+              "fixed_reference_index": 25,
+              "reference_element": "O",
+              "decoded_element": "O",
+              "fixed_element_preserved": true,
+              "fixed_charge_preserved": true,
+              "expected_bond_classes": [],
+              "actual_bond_classes": [],
+              "boundary_rule_satisfied": true,
+              "generated_neighbors": []
+            },
+            {
+              "fixed_sampler_index": 2,
+              "fixed_reference_index": 26,
+              "reference_element": "O",
+              "decoded_element": "O",
+              "fixed_element_preserved": true,
+              "fixed_charge_preserved": true,
+              "expected_bond_classes": [],
+              "actual_bond_classes": [],
+              "boundary_rule_satisfied": true,
+              "generated_neighbors": []
+            },
+            {
+              "fixed_sampler_index": 3,
+              "fixed_reference_index": 27,
+              "reference_element": "N",
+              "decoded_element": "N",
+              "fixed_element_preserved": true,
+              "fixed_charge_preserved": true,
+              "expected_bond_classes": [],
+              "actual_bond_classes": [],
+              "boundary_rule_satisfied": true,
+              "generated_neighbors": []
+            }
+          ]
+        },
+        "decoded_before_filter.sdf": {
+          "molecule_available": true,
+          "coordinate_mapping_max_abs_error_A": 4.7738647461770256e-05,
+          "fixed_site_checks": [
+            {
+              "fixed_sampler_index": 0,
+              "fixed_reference_index": 24,
+              "reference_element": "S",
+              "decoded_element": "S",
+              "fixed_element_preserved": true,
+              "fixed_charge_preserved": true,
+              "expected_bond_classes": [
+                1
+              ],
+              "actual_bond_classes": [
+                1
+              ],
+              "boundary_rule_satisfied": true,
+              "generated_neighbors": [
+                {
+                  "sampler_index": 26,
+                  "element": "C",
+                  "bond_class": 1
+                }
+              ]
+            },
+            {
+              "fixed_sampler_index": 1,
+              "fixed_reference_index": 25,
+              "reference_element": "O",
+              "decoded_element": "O",
+              "fixed_element_preserved": true,
+              "fixed_charge_preserved": true,
+              "expected_bond_classes": [],
+              "actual_bond_classes": [],
+              "boundary_rule_satisfied": true,
+              "generated_neighbors": []
+            },
+            {
+              "fixed_sampler_index": 2,
+              "fixed_reference_index": 26,
+              "reference_element": "O",
+              "decoded_element": "O",
+              "fixed_element_preserved": true,
+              "fixed_charge_preserved": true,
+              "expected_bond_classes": [],
+              "actual_bond_classes": [],
+              "boundary_rule_satisfied": true,
+              "generated_neighbors": []
+            },
+            {
+              "fixed_sampler_index": 3,
+              "fixed_reference_index": 27,
+              "reference_element": "N",
+              "decoded_element": "N",
+              "fixed_element_preserved": true,
+              "fixed_charge_preserved": true,
+              "expected_bond_classes": [],
+              "actual_bond_classes": [],
+              "boundary_rule_satisfied": true,
+              "generated_neighbors": []
+            }
+          ]
+        }
+      },
+      "timing_note": "Early noisy bond choices are expected. Persistent terminal patterns describe observations, not causal failure onset. Call and sampler indices are different counters.",
+      "scope": "Boundary topology and fixed-atom diagnostics; no full geometry/scaffold-change assessment, hidden-layer analysis or causal intervention."
+    },
+    "study": {
+      "run_id": "dataset_86dc8329df8851b0_lig5_seed_3003",
+      "input_id": "dataset_86dc8329df8851b0_lig5",
+      "input_group": "d6fdf8bd1880b848aea13172720f63f3246c1364de080f5cc2e401c4f48a9fcf:55be5cb91426420f7e55f0d4ba0dd6187130ba93378f7c7b542481e94f0ab23c",
+      "seed": 3003,
+      "endpoints": {
+        "raw": {
+          "chemical_valid": true,
+          "connected": true,
+          "fixed_chemistry_preserved": true,
+          "fixed_substructure_match": true,
+          "geometry_valid": false,
+          "geometry_failed_checks": [
+            "minimum_distance_to_protein"
+          ],
+          "scaffold_changed": false,
+          "fixed_changed_atoms": [],
+          "neutral_carbon_overvalent_atoms": [],
+          "fixed_max_displacement_A": 0.6031974258839532,
+          "native_chemical_connection_endpoint": true
+        },
+        "decoded": {
+          "chemical_valid": true,
+          "connected": true,
+          "fixed_chemistry_preserved": true,
+          "fixed_substructure_match": true,
+          "geometry_valid": false,
+          "geometry_failed_checks": [
+            "minimum_distance_to_protein"
+          ],
+          "scaffold_changed": false,
+          "fixed_changed_atoms": [],
+          "neutral_carbon_overvalent_atoms": [],
+          "fixed_max_displacement_A": 0.6031974258839532,
+          "native_chemical_connection_endpoint": true
+        }
+      },
+      "issues": [
+        {
+          "problem": "geometry_failed",
+          "endpoint_stage": "raw",
+          "locations": [
+            {
+              "id": "dataset_86dc8329df8851b0_lig5_seed_3003",
+              "input_id": "dataset_86dc8329df8851b0_lig5",
+              "seed": "3003",
+              "stage": "raw_without_repair",
+              "check": "minimum_distance_to_protein",
+              "ligand_sdf_atom_index": 1,
+              "sampler_atom_index": 1,
+              "fixed_reference_atom_index": "25",
+              "element": "O",
+              "region": "fixed_other",
+              "is_reference_attachment_atom": false,
+              "graph_hops_to_current_boundary": "1",
+              "environment_atom_index": 1476,
+              "environment_element": "C",
+              "pdb_serial": "1477",
+              "atom_name": "CD",
+              "residue": "LYS",
+              "residue_number": "89",
+              "chain": "A",
+              "distance_A": 2.4218122197142327,
+              "relative_distance": 0.7451729906813024,
+              "native_clash_cutoff": 0.75,
+              "reference_check_pass": false,
+              "reference_pair_comparison": "same_fixed_atom_environment_pair_already_clashes_in_reference",
+              "environment_visibility_to_model": "not_assessed",
+              "causal_status": "not_tested"
+            },
+            {
+              "id": "dataset_86dc8329df8851b0_lig5_seed_3003",
+              "input_id": "dataset_86dc8329df8851b0_lig5",
+              "seed": "3003",
+              "stage": "raw_without_repair",
+              "check": "minimum_distance_to_protein",
+              "ligand_sdf_atom_index": 3,
+              "sampler_atom_index": 3,
+              "fixed_reference_atom_index": "27",
+              "element": "N",
+              "region": "fixed_other",
+              "is_reference_attachment_atom": false,
+              "graph_hops_to_current_boundary": "1",
+              "environment_atom_index": 1478,
+              "environment_element": "N",
+              "pdb_serial": "1479",
+              "atom_name": "NZ",
+              "residue": "LYS",
+              "residue_number": "89",
+              "chain": "A",
+              "distance_A": 2.1582552218480577,
+              "relative_distance": 0.674454756827518,
+              "native_clash_cutoff": 0.75,
+              "reference_check_pass": false,
+              "reference_pair_comparison": "same_fixed_atom_environment_pair_already_clashes_in_reference",
+              "environment_visibility_to_model": "not_assessed",
+              "causal_status": "not_tested"
+            }
+          ],
+          "temporal_evidence": [
+            {
+              "check": "minimum_distance_to_protein",
+              "stream": "network_prediction",
+              "entity": "slot:1/environment:1476",
+              "signature": "final_pair_clash",
+              "scope": "Same final atom pair and element; not the earliest clash anywhere in the molecule. Intermediate noisy states are observations, not failed molecules.",
+              "status": "observed",
+              "first_persistent_observation": {
+                "index": 3,
+                "native_time": 0.029999999329447746,
+                "stage": "raw_network_prediction",
+                "value": true,
+                "distance_A": 2.4121668597106316,
+                "relative_distance": 0.7422051876032713,
+                "endpoint_element_present": true
+              },
+              "last_observation": {
+                "index": 100,
+                "native_time": 0.9998999834060669,
+                "stage": "raw_network_prediction",
+                "value": true,
+                "distance_A": 2.4218126565937466,
+                "relative_distance": 0.7451731251057682,
+                "endpoint_element_present": true
+              },
+              "preceding_observation": {
+                "index": 2,
+                "native_time": 0.019999999552965164,
+                "stage": "raw_network_prediction",
+                "value": false,
+                "distance_A": 2.480920219672855,
+                "relative_distance": 0.7633600675916477,
+                "endpoint_element_present": true
+              },
+              "boundary_is_confirmed_change": true,
+              "causal_onset": null
+            },
+            {
+              "check": "minimum_distance_to_protein",
+              "stream": "sampler_state",
+              "entity": "slot:1/environment:1476",
+              "signature": "final_pair_clash",
+              "scope": "Same final atom pair and element; not the earliest clash anywhere in the molecule. Intermediate noisy states are observations, not failed molecules.",
+              "status": "observed",
+              "first_persistent_observation": {
+                "index": 0,
+                "native_time": null,
+                "stage": "integrated_state_after_inpainting",
+                "value": true,
+                "distance_A": 2.3978196281302764,
+                "relative_distance": 0.7377906548093158,
+                "endpoint_element_present": true
+              },
+              "last_observation": {
+                "index": 100,
+                "native_time": null,
+                "stage": "final_corrector_prediction",
+                "value": true,
+                "distance_A": 2.4218126565937466,
+                "relative_distance": 0.7451731251057682,
+                "endpoint_element_present": true
+              },
+              "preceding_observation": null,
+              "boundary_is_confirmed_change": false,
+              "causal_onset": null
+            },
+            {
+              "check": "minimum_distance_to_protein",
+              "stream": "network_prediction",
+              "entity": "slot:3/environment:1478",
+              "signature": "final_pair_clash",
+              "scope": "Same final atom pair and element; not the earliest clash anywhere in the molecule. Intermediate noisy states are observations, not failed molecules.",
+              "status": "observed",
+              "first_persistent_observation": {
+                "index": 0,
+                "native_time": 0.0,
+                "stage": "raw_network_prediction",
+                "value": true,
+                "distance_A": 2.150797691271496,
+                "relative_distance": 0.6721242785223425,
+                "endpoint_element_present": true
+              },
+              "last_observation": {
+                "index": 100,
+                "native_time": 0.9998999834060669,
+                "stage": "raw_network_prediction",
+                "value": true,
+                "distance_A": 2.158255687571629,
+                "relative_distance": 0.674454902366134,
+                "endpoint_element_present": true
+              },
+              "preceding_observation": null,
+              "boundary_is_confirmed_change": false,
+              "causal_onset": null
+            },
+            {
+              "check": "minimum_distance_to_protein",
+              "stream": "sampler_state",
+              "entity": "slot:3/environment:1478",
+              "signature": "final_pair_clash",
+              "scope": "Same final atom pair and element; not the earliest clash anywhere in the molecule. Intermediate noisy states are observations, not failed molecules.",
+              "status": "observed",
+              "first_persistent_observation": {
+                "index": 0,
+                "native_time": null,
+                "stage": "integrated_state_after_inpainting",
+                "value": true,
+                "distance_A": 1.9126103724346093,
+                "relative_distance": 0.5976907413858153,
+                "endpoint_element_present": true
+              },
+              "last_observation": {
+                "index": 100,
+                "native_time": null,
+                "stage": "final_corrector_prediction",
+                "value": true,
+                "distance_A": 2.158255687571629,
+                "relative_distance": 0.674454902366134,
+                "endpoint_element_present": true
+              },
+              "preceding_observation": null,
+              "boundary_is_confirmed_change": false,
+              "causal_onset": null
+            }
+          ],
+          "causal_status": "not_tested",
+          "internal_module": null,
+          "evidence_level": "trajectory_observation",
+          "failed_native_checks": [
+            "minimum_distance_to_protein"
+          ],
+          "reference_context": {
+            "id": "dataset_86dc8329df8851b0_lig5_seed_3003",
+            "input_id": "dataset_86dc8329df8851b0_lig5",
+            "seed": "3003",
+            "stage": "raw_without_repair",
+            "posebusters_valid": "False",
+            "fixed_chemistry_preserved": "True",
+            "failed_checks": "[\"minimum_distance_to_protein\"]",
+            "reference_failed_checks": "[\"minimum_distance_to_protein\"]",
+            "n_native_clash_pairs": "2",
+            "regions_with_clashes": "[\"fixed_other\"]",
+            "n_boundary_clash_pairs": "0",
+            "n_original_attachment_clash_pairs": "0",
+            "n_fixed_pairs_already_clashing_in_reference": "2",
+            "same_failed_check_in_reference": "[\"minimum_distance_to_protein\"]",
+            "native_checks_reproduced": "8",
+            "causal_status": "not_tested"
+          },
+          "unlocalized_checks": [],
+          "localization_status": "observed_window_available"
+        },
+        {
+          "problem": "scaffold_unchanged",
+          "endpoint_stage": "raw",
+          "locations": [],
+          "temporal_evidence": [],
+          "causal_status": "not_tested",
+          "internal_module": null,
+          "evidence_level": "endpoint_observation",
+          "localization_status": "time_and_module_unresolved"
+        },
+        {
+          "problem": "geometry_failed",
+          "endpoint_stage": "decoded",
+          "locations": [
+            {
+              "id": "dataset_86dc8329df8851b0_lig5_seed_3003",
+              "input_id": "dataset_86dc8329df8851b0_lig5",
+              "seed": "3003",
+              "stage": "run_decode",
+              "check": "minimum_distance_to_protein",
+              "ligand_sdf_atom_index": 1,
+              "sampler_atom_index": 1,
+              "fixed_reference_atom_index": "25",
+              "element": "O",
+              "region": "fixed_other",
+              "is_reference_attachment_atom": false,
+              "graph_hops_to_current_boundary": "1",
+              "environment_atom_index": 1476,
+              "environment_element": "C",
+              "pdb_serial": "1477",
+              "atom_name": "CD",
+              "residue": "LYS",
+              "residue_number": "89",
+              "chain": "A",
+              "distance_A": 2.4218122197142327,
+              "relative_distance": 0.7451729906813024,
+              "native_clash_cutoff": 0.75,
+              "reference_check_pass": false,
+              "reference_pair_comparison": "same_fixed_atom_environment_pair_already_clashes_in_reference",
+              "environment_visibility_to_model": "not_assessed",
+              "causal_status": "not_tested"
+            },
+            {
+              "id": "dataset_86dc8329df8851b0_lig5_seed_3003",
+              "input_id": "dataset_86dc8329df8851b0_lig5",
+              "seed": "3003",
+              "stage": "run_decode",
+              "check": "minimum_distance_to_protein",
+              "ligand_sdf_atom_index": 3,
+              "sampler_atom_index": 3,
+              "fixed_reference_atom_index": "27",
+              "element": "N",
+              "region": "fixed_other",
+              "is_reference_attachment_atom": false,
+              "graph_hops_to_current_boundary": "1",
+              "environment_atom_index": 1478,
+              "environment_element": "N",
+              "pdb_serial": "1479",
+              "atom_name": "NZ",
+              "residue": "LYS",
+              "residue_number": "89",
+              "chain": "A",
+              "distance_A": 2.1582552218480577,
+              "relative_distance": 0.674454756827518,
+              "native_clash_cutoff": 0.75,
+              "reference_check_pass": false,
+              "reference_pair_comparison": "same_fixed_atom_environment_pair_already_clashes_in_reference",
+              "environment_visibility_to_model": "not_assessed",
+              "causal_status": "not_tested"
+            }
+          ],
+          "temporal_evidence": [],
+          "causal_status": "not_tested",
+          "internal_module": null,
+          "evidence_level": "localized_endpoint_observation",
+          "failed_native_checks": [
+            "minimum_distance_to_protein"
+          ],
+          "reference_context": {
+            "id": "dataset_86dc8329df8851b0_lig5_seed_3003",
+            "input_id": "dataset_86dc8329df8851b0_lig5",
+            "seed": "3003",
+            "stage": "run_decode",
+            "posebusters_valid": "False",
+            "fixed_chemistry_preserved": "True",
+            "failed_checks": "[\"minimum_distance_to_protein\"]",
+            "reference_failed_checks": "[\"minimum_distance_to_protein\"]",
+            "n_native_clash_pairs": "2",
+            "regions_with_clashes": "[\"fixed_other\"]",
+            "n_boundary_clash_pairs": "0",
+            "n_original_attachment_clash_pairs": "0",
+            "n_fixed_pairs_already_clashing_in_reference": "2",
+            "same_failed_check_in_reference": "[\"minimum_distance_to_protein\"]",
+            "native_checks_reproduced": "8",
+            "causal_status": "not_tested"
+          },
+          "unlocalized_checks": [],
+          "localization_status": "time_and_module_unresolved"
+        },
+        {
+          "problem": "scaffold_unchanged",
+          "endpoint_stage": "decoded",
+          "locations": [],
+          "temporal_evidence": [],
+          "causal_status": "not_tested",
+          "internal_module": null,
+          "evidence_level": "endpoint_observation",
+          "localization_status": "time_and_module_unresolved"
+        }
+      ],
+      "decode_stage_changes": [],
+      "fixed_displacement_observations": [
+        {
+          "stream": "network_prediction",
+          "atom": 0,
+          "penultimate": {
+            "index": 99,
+            "stage": "raw_network_prediction",
+            "distance_A": 0.314933717250824
+          },
+          "terminal": {
+            "index": 100,
+            "stage": "raw_network_prediction",
+            "distance_A": 0.31116676330566406
+          },
+          "failure_threshold_A": null,
+          "causal_status": "not_tested"
+        },
+        {
+          "stream": "network_prediction",
+          "atom": 1,
+          "penultimate": {
+            "index": 99,
+            "stage": "raw_network_prediction",
+            "distance_A": 0.11940567195415497
+          },
+          "terminal": {
+            "index": 100,
+            "stage": "raw_network_prediction",
+            "distance_A": 0.10284891724586487
+          },
+          "failure_threshold_A": null,
+          "causal_status": "not_tested"
+        },
+        {
+          "stream": "network_prediction",
+          "atom": 2,
+          "penultimate": {
+            "index": 99,
+            "stage": "raw_network_prediction",
+            "distance_A": 0.4284341335296631
+          },
+          "terminal": {
+            "index": 100,
+            "stage": "raw_network_prediction",
+            "distance_A": 0.42792946100234985
+          },
+          "failure_threshold_A": null,
+          "causal_status": "not_tested"
+        },
+        {
+          "stream": "network_prediction",
+          "atom": 3,
+          "penultimate": {
+            "index": 99,
+            "stage": "raw_network_prediction",
+            "distance_A": 0.6094453930854797
+          },
+          "terminal": {
+            "index": 100,
+            "stage": "raw_network_prediction",
+            "distance_A": 0.6031976342201233
+          },
+          "failure_threshold_A": null,
+          "causal_status": "not_tested"
+        },
+        {
+          "stream": "sampler_state",
+          "atom": 0,
+          "penultimate": {
+            "index": 99,
+            "stage": "integrated_state_after_inpainting",
+            "distance_A": 0.0
+          },
+          "terminal": {
+            "index": 100,
+            "stage": "final_corrector_prediction",
+            "distance_A": 0.31116676330566406
+          },
+          "failure_threshold_A": null,
+          "causal_status": "not_tested"
+        },
+        {
+          "stream": "sampler_state",
+          "atom": 1,
+          "penultimate": {
+            "index": 99,
+            "stage": "integrated_state_after_inpainting",
+            "distance_A": 0.0
+          },
+          "terminal": {
+            "index": 100,
+            "stage": "final_corrector_prediction",
+            "distance_A": 0.10284891724586487
+          },
+          "failure_threshold_A": null,
+          "causal_status": "not_tested"
+        },
+        {
+          "stream": "sampler_state",
+          "atom": 2,
+          "penultimate": {
+            "index": 99,
+            "stage": "integrated_state_after_inpainting",
+            "distance_A": 0.0
+          },
+          "terminal": {
+            "index": 100,
+            "stage": "final_corrector_prediction",
+            "distance_A": 0.42792946100234985
+          },
+          "failure_threshold_A": null,
+          "causal_status": "not_tested"
+        },
+        {
+          "stream": "sampler_state",
+          "atom": 3,
+          "penultimate": {
+            "index": 99,
+            "stage": "integrated_state_after_inpainting",
+            "distance_A": 0.0
+          },
+          "terminal": {
+            "index": 100,
+            "stage": "final_corrector_prediction",
+            "distance_A": 0.6031976342201233
+          },
+          "failure_threshold_A": null,
+          "causal_status": "not_tested"
+        }
+      ],
+      "runtime_settings": {
+        "final_inpaint": false
+      },
+      "causal_status": "not_tested",
+      "full_scaffold_hopping_success": null,
+      "full_success_note": "No complete predeclared task contract, including fixed geometry tolerance; component outcomes remain separate."
+    },
+    "status": "preserved_prior_observations_not_new_neural_analysis"
+  },
+  "candidates": [
+    {
+      "arm": "A",
+      "hypothesis": "Fixed atoms drifted from conditioning coordinates"
+    },
+    {
+      "arm": "B",
+      "hypothesis": "Generated-region geometry conflicts"
+    },
+    {
+      "arm": "AB",
+      "hypothesis": "Fixed drift and generated-region geometry interact"
+    },
+    {
+      "arm": "C",
+      "hypothesis": "Geometry requires moving fixed atoms too; relax fixed-coordinate constraint"
+    }
+  ],
+  "interpretation": "Candidates are tested by a fixed intervention bank, not asserted as unique neural causes."
+}

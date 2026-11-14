@@ -1,0 +1,426 @@
+{
+  "schema": "standalone_scaffold_method_v1",
+  "versions": {
+    "python": "3.12.13",
+    "rdkit": "2026.03.6",
+    "numpy": "2.5.3",
+    "scipy": "1.18.1",
+    "pandas": "3.0.5",
+    "pyyaml": "6.0.3"
+  },
+  "code_sha256": {
+    "scaffold_repair/__init__.py": "27e8febb48ada44153ea2add9969a2c50a9831a74d9755fdd53c549a888b1cc2",
+    "scaffold_repair/adapters/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "scaffold_repair/adapters/flowr_records.py": "aea03f3611b00b9579361aaab0ebe62d5a3d3739ec5af1cfbdb96c3d218dcd62",
+    "scaffold_repair/adapters/sdf.py": "22a50c4ae2dc8069b900dfb5091a017e93356309f71195525b15b6465cb2e2f5",
+    "scaffold_repair/diagnosis.py": "64fce7829a4261a0f2f84b62ef839578fbb7ed2c20121f833ee75e831562d56c",
+    "scaffold_repair/engine.py": "b02917882268f026e62a858b0363f7f6c980017d6e0e7c485458e353feddae7f",
+    "scaffold_repair/evaluation.py": "15aac8052bd8aba7981f3691748d262d44af01f9de6fdf21127f20fc657de4d5",
+    "scaffold_repair/geometry_intervention.py": "4ba7443ab3c96cf5cf9156884ed2a0fd7e97ed350ecc68a4e165182734768d6f",
+    "scaffold_repair/io.py": "b152f948b72324fe033a7ceb56ed8193c3622d061e2cb7aaf3940287aa65c0ce",
+    "scaffold_repair/legacy_functions.py": "d58813cd0ec7744acde7c46d22bbcc48acb7f292a22b854951ce8bf4e1e50d27",
+    "scaffold_repair/pipeline.py": "6b6e0ad51fe2702ed59a46807c14a12427c0da764e440ba13621c2d448e9e27f",
+    "scaffold_repair/regions.py": "293589b0d904e070894ca63e2b1e3765722e0c9e86752ddde194d1041b20a090",
+    "posebusters/__init__.py": "f9369696c3a5c76f055da09a532fb6221e2c4a59a592a985ff62e65d0b817158",
+    "posebusters/__main__.py": "35fae304373c67a7712f9eb537005a3e30443b74b8c0219f81877e4f80e3d43e",
+    "posebusters/cli.py": "0aa907d69594750fba20ea3c0aa8a0b633de23c8e4d0a6acfd75b1c6bc1bd24d",
+    "posebusters/config/dock.yml": "6b76d53a01fe9f7a8ac503eed87995e6323f1bc06274dc8f810ef970f89608f3",
+    "posebusters/config/gen.yml": "517b36f5ea397083a546bde3d87be47632c12a610e534895df5b37a595289191",
+    "posebusters/config/mol.yml": "13a9fe4c2b69918d2ea53a3789e5b857946bb47b7d42e9e248561684cd152370",
+    "posebusters/config/redock.yml": "3cc1d43aec480e77abea92c9a7d652cf76194719059e9c4a87ca8cb35cd5665d",
+    "posebusters/datasets/__init__.py": "a2f04ea354155a80ef6ac3edba0416ba471a720cf1ca7f81639208d899283ffb",
+    "posebusters/datasets/load_datasets.py": "81e971263b1d2934998afc837721504a912c62485e6d2c3543d4381127452392",
+    "posebusters/modules/__init__.py": "d5c3f7ca7336851a691707ac80161c94c73eeef942b274863a20fdc88a71a5d9",
+    "posebusters/modules/distance_geometry.py": "da51961279f1ab30506647555ab4c112a6e96d1b687971951a705f6570dc5cec",
+    "posebusters/modules/energy_ratio.py": "0ca424becd1ca9048cbdf2511294f2bf09cb4cf4d5d31ebc9b86088fecf5fda5",
+    "posebusters/modules/flatness.py": "c12dc3338cd382dd76d1cdb6d5a35a86eef97e6f03caee1419ed64174a96f8c0",
+    "posebusters/modules/identity.py": "32f12dc7661eed90083cae7cae64894c7365e91b08308dff32090ac09b71008e",
+    "posebusters/modules/intermolecular_distance.py": "9b6ab7a1361254df3b8479af46bbd7817dd04457c114b2fc1c8f891f145eae10",
+    "posebusters/modules/loading.py": "c3bbd411bb27988d0e537fd234bb1aefe121ac2045b863ccee2c3249a63c9d72",
+    "posebusters/modules/rmsd.py": "de37b33b762430df44cfc4971e059863d6123ea7ed637e61661dda533bd117d6",
+    "posebusters/modules/sanity.py": "ca0e7c0b0fbd29221b570bef9608e422c957f7554224321aedf18895454dda02",
+    "posebusters/modules/sucos.py": "85bd2ed7bb8a2ec02787e524a76559236be81090fdc456418c78d18b532bf5cb",
+    "posebusters/modules/volume_overlap.py": "07b4a3259f49b7d98cda27404ed30f0de230862035e8d1e29152735381afa70e",
+    "posebusters/posebusters.py": "a054d78eddd79b70b18d960aeb518f1e797421ea0f62119efe4894e0235d72b0",
+    "posebusters/tools/__init__.py": "d10a324ec1488ed8c41fd76775c06ef39714d0a75d5817cd54c2c1f555cfd036",
+    "posebusters/tools/formatting.py": "27112c682e7145c9c8ddf36f138961669334b72f379a2f1b8a256a312067dffa",
+    "posebusters/tools/inchi.py": "95fa026d41168a7c535ba065daa0c73711ffd9190e02191f4fa5ec4cee06fdc0",
+    "posebusters/tools/loading.py": "ed0e18ed402d021b01a8ee3e6ea42aaff87101e0ba6b0e7b1361af6f8b8d8939",
+    "posebusters/tools/logging.py": "2cbf3bdee666bea6fda3f95063302ab88c46d18bb43cfac05d94d8a664afc44b",
+    "posebusters/tools/molecules.py": "123c5d4e7371bc884e2a9a93a819de6d64be26d350ef32765fc4f5d993571322",
+    "posebusters/tools/parallel.py": "20522da22b127ba0c8d0da3a68947b4f94d8af6b8e1f7172797f1163baa98175",
+    "posebusters/tools/protein.py": "e67b3092ec193a627a9a4ab0267bc0abcf998c02246bd03dff8cc6c720afb079",
+    "posebusters/tools/stats.py": "f041994837694abdc179de4132914544405c87c77aa90f8f5c9fb54414bf9996"
+  },
+  "evaluator_config": {
+    "modules": [
+      {
+        "name": "Loading",
+        "function": "loading",
+        "chosen_binary_test_output": [
+          "mol_pred_loaded",
+          "mol_cond_loaded"
+        ],
+        "rename_outputs": {
+          "mol_pred_loaded": "MOL_PRED loaded",
+          "mol_cond_loaded": "MOL_COND loaded"
+        }
+      },
+      {
+        "name": "Chemistry",
+        "function": "rdkit_sanity",
+        "chosen_binary_test_output": [
+          "passes_rdkit_sanity_checks"
+        ],
+        "rename_outputs": {
+          "passes_rdkit_sanity_checks": "Sanitization"
+        }
+      },
+      {
+        "name": "Chemistry",
+        "function": "inchi_convertible",
+        "chosen_binary_test_output": [
+          "inchi_convertible"
+        ],
+        "rename_outputs": {
+          "inchi_convertible": "InChI convertible"
+        }
+      },
+      {
+        "name": "Chemistry",
+        "function": "atoms_connected",
+        "chosen_binary_test_output": [
+          "all_atoms_connected"
+        ],
+        "rename_outputs": {
+          "all_atoms_connected": "All atoms connected"
+        }
+      },
+      {
+        "name": "Geometry",
+        "function": "distance_geometry",
+        "parameters": {
+          "bound_matrix_params": {
+            "set15bounds": true,
+            "scaleVDW": true,
+            "doTriangleSmoothing": true,
+            "useMacrocycle14config": false
+          },
+          "threshold_bad_bond_length": 0.25,
+          "threshold_bad_angle": 0.25,
+          "threshold_clash": 0.3,
+          "ignore_hydrogens": true,
+          "sanitize": true
+        },
+        "chosen_binary_test_output": [
+          "bond_lengths_within_bounds",
+          "bond_angles_within_bounds",
+          "no_internal_clash"
+        ],
+        "rename_outputs": {
+          "bond_lengths_within_bounds": "Bond lengths",
+          "bond_angles_within_bounds": "Bond angles",
+          "no_internal_clash": "Internal steric clash"
+        }
+      },
+      {
+        "name": "Ring flatness",
+        "function": "flatness",
+        "parameters": {
+          "flat_systems": {
+            "aromatic_5_membered_rings_sp2": "[ar5^2]1[ar5^2][ar5^2][ar5^2][ar5^2]1",
+            "aromatic_6_membered_rings_sp2": "[ar6^2]1[ar6^2][ar6^2][ar6^2][ar6^2][ar6^2]1"
+          },
+          "threshold_flatness": 0.25
+        },
+        "chosen_binary_test_output": [
+          "flatness_passes"
+        ],
+        "rename_outputs": {
+          "num_systems_checked": "number_aromatic_rings_checked",
+          "num_systems_passed": "number_aromatic_rings_pass",
+          "max_distance": "aromatic_ring_maximum_distance_from_plane",
+          "flatness_passes": "Aromatic ring flatness"
+        }
+      },
+      {
+        "name": "Double bond flatness",
+        "function": "flatness",
+        "parameters": {
+          "flat_systems": {
+            "trigonal_planar_double_bonds": "[C;X3;^2](*)(*)=[C;X3;^2](*)(*)"
+          },
+          "threshold_flatness": 0.25
+        },
+        "chosen_binary_test_output": [
+          "flatness_passes"
+        ],
+        "rename_outputs": {
+          "num_systems_checked": "number_double_bonds_checked",
+          "num_systems_passed": "number_double_bonds_pass",
+          "max_distance": "double_bond_maximum_distance_from_plane",
+          "flatness_passes": "Double bond flatness"
+        }
+      },
+      {
+        "name": "Energy ratio",
+        "function": "energy_ratio",
+        "parameters": {
+          "threshold_energy_ratio": 100.0,
+          "ensemble_number_conformations": 50
+        },
+        "chosen_binary_test_output": [
+          "energy_ratio_passes"
+        ],
+        "rename_outputs": {
+          "energy_ratio_passes": "Internal energy"
+        }
+      },
+      {
+        "name": "Distance to protein",
+        "function": "intermolecular_distance",
+        "parameters": {
+          "radius_type": "vdw",
+          "radius_scale": 1.0,
+          "clash_cutoff": 0.75,
+          "ignore_types": [
+            "hydrogens",
+            "organic_cofactors",
+            "inorganic_cofactors",
+            "waters"
+          ],
+          "max_distance": 5.0
+        },
+        "chosen_binary_test_output": [
+          "not_too_far_away",
+          "no_clashes"
+        ],
+        "rename_outputs": {
+          "not_too_far_away": "Protein-ligand maximum distance",
+          "no_clashes": "Minimum distance to protein"
+        },
+        "rename_suffix": "_protein"
+      },
+      {
+        "name": "Distance to organic cofactors",
+        "function": "intermolecular_distance",
+        "parameters": {
+          "radius_type": "vdw",
+          "radius_scale": 1.0,
+          "clash_cutoff": 0.75,
+          "ignore_types": [
+            "hydrogens",
+            "protein",
+            "inorganic_cofactors",
+            "waters"
+          ],
+          "max_distance": 5.0
+        },
+        "chosen_binary_test_output": [
+          "no_clashes"
+        ],
+        "rename_outputs": {
+          "no_clashes": "Minimum distance to organic cofactors"
+        },
+        "rename_suffix": "_organic_cofactors"
+      },
+      {
+        "name": "Distance to inorganic cofactors",
+        "function": "intermolecular_distance",
+        "parameters": {
+          "radius_type": "covalent",
+          "radius_scale": 1.0,
+          "clash_cutoff": 0.75,
+          "ignore_types": [
+            "hydrogens",
+            "protein",
+            "organic_cofactors",
+            "waters"
+          ],
+          "max_distance": 5.0
+        },
+        "chosen_binary_test_output": [
+          "no_clashes"
+        ],
+        "rename_outputs": {
+          "no_clashes": "Minimum distance to inorganic cofactors"
+        },
+        "rename_suffix": "_inorganic_cofactors"
+      },
+      {
+        "name": "Distance to waters",
+        "function": "intermolecular_distance",
+        "parameters": {
+          "radius_type": "vdw",
+          "radius_scale": 1.0,
+          "clash_cutoff": 0.75,
+          "ignore_types": [
+            "hydrogens",
+            "protein",
+            "organic_cofactors",
+            "inorganic_cofactors"
+          ],
+          "max_distance": 5.0
+        },
+        "chosen_binary_test_output": [
+          "no_clashes"
+        ],
+        "rename_outputs": {
+          "no_clashes": "Minimum distance to waters"
+        },
+        "rename_suffix": "_waters"
+      },
+      {
+        "name": "Volume overlap with protein",
+        "function": "volume_overlap",
+        "parameters": {
+          "clash_cutoff": 0.075,
+          "vdw_scale": 0.8,
+          "ignore_types": [
+            "hydrogens",
+            "organic_cofactors",
+            "inorganic_cofactors",
+            "waters"
+          ]
+        },
+        "chosen_binary_test_output": [
+          "no_volume_clash"
+        ],
+        "rename_outputs": {
+          "volume_overlap": "volume_overlap_protein",
+          "no_volume_clash": "Volume overlap with protein"
+        },
+        "rename_suffix": "_protein"
+      },
+      {
+        "name": "Volume overlap with organic cofactors",
+        "function": "volume_overlap",
+        "parameters": {
+          "clash_cutoff": 0.075,
+          "vdw_scale": 0.8,
+          "ignore_types": [
+            "hydrogens",
+            "protein",
+            "inorganic_cofactors",
+            "waters"
+          ]
+        },
+        "chosen_binary_test_output": [
+          "no_volume_clash"
+        ],
+        "rename_outputs": {
+          "volume_overlap": "volume_overlap_organic_cofactors",
+          "no_volume_clash": "Volume overlap with organic cofactors"
+        },
+        "rename_suffix": "_organic_cofactors"
+      },
+      {
+        "name": "Volume overlap with inorganic cofactors",
+        "function": "volume_overlap",
+        "parameters": {
+          "clash_cutoff": 0.075,
+          "vdw_scale": 0.5,
+          "ignore_types": [
+            "hydrogens",
+            "protein",
+            "organic_cofactors",
+            "waters"
+          ]
+        },
+        "chosen_binary_test_output": [
+          "no_volume_clash"
+        ],
+        "rename_outputs": {
+          "volume_overlap": "volume_overlap_inorganic_cofactors",
+          "no_volume_clash": "Volume overlap with inorganic cofactors"
+        },
+        "rename_suffix": "_inorganic_cofactors"
+      },
+      {
+        "name": "Volume overlap with waters",
+        "function": "volume_overlap",
+        "parameters": {
+          "clash_cutoff": 0.075,
+          "vdw_scale": 0.5,
+          "ignore_types": [
+            "hydrogens",
+            "protein",
+            "organic_cofactors",
+            "inorganic_cofactors"
+          ]
+        },
+        "chosen_binary_test_output": [
+          "no_volume_clash"
+        ],
+        "rename_outputs": {
+          "volume_overlap": "volume_overlap_waters",
+          "no_volume_clash": "Volume overlap with waters"
+        },
+        "rename_suffix": "_waters"
+      }
+    ],
+    "loading": {
+      "mol_pred": {
+        "cleanup": false,
+        "sanitize": false,
+        "add_hs": false,
+        "assign_stereo": false,
+        "load_all": true
+      },
+      "mol_true": {
+        "cleanup": false,
+        "sanitize": false,
+        "add_hs": false,
+        "assign_stereo": false,
+        "load_all": true
+      },
+      "mol_cond": {
+        "cleanup": false,
+        "sanitize": false,
+        "add_hs": false,
+        "assign_stereo": false,
+        "proximityBonding": false
+      }
+    },
+    "top_n": null
+  },
+  "optimizer_settings": {
+    "max_iterations": 80,
+    "max_objective_calls": 200,
+    "max_component_shift_A": 2.0,
+    "repulsion_weight": 500.0,
+    "tether_weight": 2.0,
+    "clearance_margin_A": 0.1
+  },
+  "arms": [
+    "A",
+    "B",
+    "AB",
+    "C",
+    "UFF_only",
+    "A_UFF_only",
+    "C_UFF_only",
+    "A_random_0",
+    "A_random_1",
+    "A_random_2",
+    "B_random_0",
+    "B_random_1",
+    "B_random_2",
+    "AB_random_0",
+    "AB_random_1",
+    "AB_random_2",
+    "C_random_0",
+    "C_random_1",
+    "C_random_2"
+  ],
+  "primary_priority": [
+    "A",
+    "B",
+    "AB",
+    "C"
+  ],
+  "new_generations": 0,
+  "neural_interventions": 0,
+  "stop_rule": "One fixed bank per eligible sample; no retries or outcome-based parameter tuning",
+  "interpretation": "Operational terminal-coordinate repair. C relaxes fixed coordinates. No unique upstream cause claim."
+}

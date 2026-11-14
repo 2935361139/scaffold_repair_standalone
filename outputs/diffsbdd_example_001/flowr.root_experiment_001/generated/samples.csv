@@ -1,0 +1,4 @@
+﻿id,input_id,success,route,failed_checks,localized_pairs,timing,murcko_scaffold_changed
+dataset_86dc8329df8851b0_lig5_seed_3001,dataset_86dc8329df8851b0_lig5,False,supported_geometry,"[""minimum_distance_to_protein""]",3,observed_saved_states,True
+dataset_86dc8329df8851b0_lig5_seed_3002,dataset_86dc8329df8851b0_lig5,False,supported_geometry,"[""minimum_distance_to_protein""]",3,observed_saved_states,False
+dataset_86dc8329df8851b0_lig5_seed_3003,dataset_86dc8329df8851b0_lig5,False,supported_geometry,"[""minimum_distance_to_protein""]",2,observed_saved_states,False
