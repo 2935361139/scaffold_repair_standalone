@@ -1,0 +1,159 @@
+[14:49:10] Explicit valence for atom # 5 C, 5, is greater than permitted
+[14:49:11] Explicit valence for atom # 4 C, 5, is greater than permitted
+[14:49:12] Explicit valence for atom # 1 O, 3, is greater than permitted
+OPTIMIZE diffshape_000000 B
+OPTIMIZE diffshape_000000 AB
+OPTIMIZE diffshape_000000 C
+ARM diffshape_000000 A: success=True
+ARM diffshape_000000 B: success=True
+ARM diffshape_000000 AB: success=True
+ARM diffshape_000000 C: success=True
+ARM diffshape_000000 A_random_0: success=True
+ARM diffshape_000000 A_random_1: success=True
+ARM diffshape_000000 A_random_2: success=True
+ARM diffshape_000000 B_random_0: success=False
+ARM diffshape_000000 B_random_1: success=False
+ARM diffshape_000000 B_random_2: success=False
+ARM diffshape_000000 AB_random_0: success=False
+ARM diffshape_000000 AB_random_1: success=False
+ARM diffshape_000000 AB_random_2: success=False
+ARM diffshape_000000 C_random_0: success=True
+ARM diffshape_000000 C_random_1: success=False
+ARM diffshape_000000 C_random_2: success=False
+ARM diffshape_000001 E1: success=True
+ARM diffshape_000001 E1_B: success=True
+ARM diffshape_000001 E1_C: success=True
+ARM diffshape_000001 E2: success=False
+ARM diffshape_000001 E2_B: success=True
+ARM diffshape_000001 E2_C: success=True
+ARM diffshape_000001 E3: success=False
+ARM diffshape_000001 E3_B: success=True
+ARM diffshape_000001 E3_C: success=True
+ARM diffshape_000001 E4: success=False
+ARM diffshape_000001 E4_B: success=False
+ARM diffshape_000001 E4_C: success=False
+OPTIMIZE diffshape_000002 B
+OPTIMIZE diffshape_000002 AB
+OPTIMIZE diffshape_000002 C
+ARM diffshape_000002 A: success=True
+ARM diffshape_000002 B: success=True
+ARM diffshape_000002 AB: success=True
+ARM diffshape_000002 C: success=True
+ARM diffshape_000002 A_random_0: success=True
+ARM diffshape_000002 A_random_1: success=True
+ARM diffshape_000002 A_random_2: success=True
+ARM diffshape_000002 B_random_0: success=False
+ARM diffshape_000002 B_random_1: success=False
+ARM diffshape_000002 B_random_2: success=False
+ARM diffshape_000002 AB_random_0: success=False
+ARM diffshape_000002 AB_random_1: success=False
+ARM diffshape_000002 AB_random_2: success=True
+ARM diffshape_000002 C_random_0: success=False
+ARM diffshape_000002 C_random_1: success=False
+ARM diffshape_000002 C_random_2: success=True
+ARM diffshape_000003 E1: success=True
+ARM diffshape_000003 E1_B: success=True
+ARM diffshape_000003 E1_C: success=True
+OPTIMIZE diffshape_000004 B
+OPTIMIZE diffshape_000004 AB
+OPTIMIZE diffshape_000004 C
+ARM diffshape_000004 A: success=True
+ARM diffshape_000004 B: success=False
+ARM diffshape_000004 AB: success=False
+ARM diffshape_000004 C: success=True
+ARM diffshape_000004 A_random_0: success=True
+ARM diffshape_000004 A_random_1: success=True
+ARM diffshape_000004 A_random_2: success=True
+ARM diffshape_000004 B_random_0: success=False
+ARM diffshape_000004 B_random_1: success=False
+ARM diffshape_000004 B_random_2: success=False
+ARM diffshape_000004 AB_random_0: success=False
+ARM diffshape_000004 AB_random_1: success=False
+ARM diffshape_000004 AB_random_2: success=False
+ARM diffshape_000004 C_random_0: success=False
+ARM diffshape_000004 C_random_1: success=False
+ARM diffshape_000004 C_random_2: success=False
+OPTIMIZE diffshape_000005 B
+OPTIMIZE diffshape_000005 AB
+OPTIMIZE diffshape_000005 C
+ARM diffshape_000005 A: success=True
+ARM diffshape_000005 B: success=True
+ARM diffshape_000005 AB: success=True
+ARM diffshape_000005 C: success=True
+ARM diffshape_000005 A_random_0: success=True
+ARM diffshape_000005 A_random_1: success=True
+ARM diffshape_000005 A_random_2: success=True
+ARM diffshape_000005 B_random_0: success=False
+ARM diffshape_000005 B_random_1: success=False
+ARM diffshape_000005 B_random_2: success=False
+ARM diffshape_000005 AB_random_0: success=False
+ARM diffshape_000005 AB_random_1: success=False
+ARM diffshape_000005 AB_random_2: success=False
+ARM diffshape_000005 C_random_0: success=False
+ARM diffshape_000005 C_random_1: success=True
+ARM diffshape_000005 C_random_2: success=False
+ARM diffshape_000006 E1: success=True
+ARM diffshape_000006 E1_B: success=True
+ARM diffshape_000006 E1_C: success=True
+OPTIMIZE diffshape_000007 B
+OPTIMIZE diffshape_000007 AB
+OPTIMIZE diffshape_000007 C
+ARM diffshape_000007 A: success=True
+ARM diffshape_000007 B: success=True
+ARM diffshape_000007 AB: success=True
+ARM diffshape_000007 C: success=True
+ARM diffshape_000007 A_random_0: success=True
+ARM diffshape_000007 A_random_1: success=True
+ARM diffshape_000007 A_random_2: success=True
+ARM diffshape_000007 B_random_0: success=False
+ARM diffshape_000007 B_random_1: success=False
+ARM diffshape_000007 B_random_2: success=False
+ARM diffshape_000007 AB_random_0: success=False
+ARM diffshape_000007 AB_random_1: success=False
+ARM diffshape_000007 AB_random_2: success=False
+ARM diffshape_000007 C_random_0: success=False
+ARM diffshape_000007 C_random_1: success=False
+ARM diffshape_000007 C_random_2: success=False
+OPTIMIZE diffshape_000008 B
+OPTIMIZE diffshape_000008 AB
+OPTIMIZE diffshape_000008 C
+ARM diffshape_000008 A: success=False
+ARM diffshape_000008 B: success=True
+ARM diffshape_000008 AB: success=True
+ARM diffshape_000008 C: success=True
+ARM diffshape_000008 A_random_0: success=False
+ARM diffshape_000008 A_random_1: success=False
+ARM diffshape_000008 A_random_2: success=False
+ARM diffshape_000008 B_random_0: success=False
+ARM diffshape_000008 B_random_1: success=False
+ARM diffshape_000008 B_random_2: success=False
+ARM diffshape_000008 AB_random_0: success=False
+ARM diffshape_000008 AB_random_1: success=False
+ARM diffshape_000008 AB_random_2: success=False
+ARM diffshape_000008 C_random_0: success=False
+ARM diffshape_000008 C_random_1: success=False
+ARM diffshape_000008 C_random_2: success=False
+OPTIMIZE diffshape_000009 B
+OPTIMIZE diffshape_000009 AB
+OPTIMIZE diffshape_000009 C
+ARM diffshape_000009 A: success=True
+ARM diffshape_000009 B: success=True
+ARM diffshape_000009 AB: success=True
+ARM diffshape_000009 C: success=True
+ARM diffshape_000009 A_random_0: success=True
+ARM diffshape_000009 A_random_1: success=True
+ARM diffshape_000009 A_random_2: success=True
+ARM diffshape_000009 B_random_0: success=False
+ARM diffshape_000009 B_random_1: success=False
+ARM diffshape_000009 B_random_2: success=False
+ARM diffshape_000009 AB_random_0: success=False
+ARM diffshape_000009 AB_random_1: success=False
+ARM diffshape_000009 AB_random_2: success=False
+ARM diffshape_000009 C_random_0: success=False
+ARM diffshape_000009 C_random_1: success=False
+ARM diffshape_000009 C_random_2: success=False
+INTERVENTION COMPLETE: 4/4 original failures repaired; 0 required relaxed fixed coordinates; 0 unevaluated branches
+ATTEMPTED FAILURES: 4; UNSUPPORTED: 0; EVALUATED ARMS: 130/130
+RESULT: /workspace/scratch/fe2f321f10fc/review/protein_optional_test/experiment/intervention/review.zip
+EVALUATION SCOPES: {'molecule_only': {'total': 10, 'passed': 10, 'failed': 0, 'rescued': 4}}
+MOLECULE ONLY: repaired means molecular checks pass; protein environment NOT evaluated.

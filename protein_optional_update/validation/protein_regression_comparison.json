@@ -1,0 +1,17 @@
+{
+  "with_protein_baselines_identical": 3,
+  "diagnosis_and_timing_identical": 3,
+  "intervention_and_control_records_identical": 65,
+  "optimized_arrays_identical": 65,
+  "sdf_bytes_identical": 65,
+  "selected_repairs_identical": 3,
+  "additional_fields_only": [
+    "evaluation_scope",
+    "success_meaning",
+    "not_evaluated_checks",
+    "protein_context_status",
+    "environment_intervention",
+    "by_evaluation_scope"
+  ],
+  "comparison": "Every original evaluation field, intervention receipt, pair list, arm role and selected conclusion matched the stored v2 FLOWR regression; only explicit context metadata added."
+}

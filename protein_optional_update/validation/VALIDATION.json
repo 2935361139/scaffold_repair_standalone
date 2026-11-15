@@ -1,0 +1,51 @@
+{
+  "schema": "protein_optional_update_validation_v1",
+  "tests": 66,
+  "tests_passed": 66,
+  "input_samples": 10,
+  "conversion_failures": 0,
+  "molecular_original_passed": 6,
+  "molecular_original_failed": 4,
+  "molecular_rescued": 4,
+  "molecular_final_passed": 10,
+  "molecular_unresolved": 0,
+  "relaxed_fixed_coordinates": 0,
+  "planned_intervention_control_arms": 130,
+  "completed_intervention_control_arms": 130,
+  "branch_errors": 0,
+  "protein_checks": "not_evaluated; omitted tests explicitly null, not passed",
+  "with_protein_regression": {
+    "with_protein_baselines_identical": 3,
+    "diagnosis_and_timing_identical": 3,
+    "intervention_and_control_records_identical": 65,
+    "optimized_arrays_identical": 65,
+    "sdf_bytes_identical": 65,
+    "selected_repairs_identical": 3,
+    "additional_fields_only": [
+      "evaluation_scope",
+      "success_meaning",
+      "not_evaluated_checks",
+      "protein_context_status",
+      "environment_intervention",
+      "by_evaluation_scope"
+    ],
+    "comparison": "Every original evaluation field, intervention receipt, pair list, arm role and selected conclusion matched the stored v2 FLOWR regression; only explicit context metadata added."
+  },
+  "runtime_versions": {
+    "python": "3.12.14",
+    "rdkit": "2026.03.6",
+    "numpy": "2.5.3",
+    "scipy": "1.18.1",
+    "pandas": "2.2.3",
+    "pyyaml": "6.0.3"
+  },
+  "unchanged_numerical_budgets": {
+    "max_iterations": 80,
+    "max_objective_calls": 200,
+    "max_component_shift_A": 2.0,
+    "repulsion_weight": 500.0,
+    "tether_weight": 2.0,
+    "clearance_margin_A": 0.1
+  },
+  "note": "Measured on the uploaded DiffShape raw ten-sample batch and stored FLOWR v2 regression. Does not establish general repair rate, binding activity or upstream causal attribution."
+}

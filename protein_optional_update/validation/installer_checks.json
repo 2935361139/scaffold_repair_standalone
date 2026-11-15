@@ -1,0 +1,6 @@
+{
+  "first_install": true,
+  "idempotent_reinstall": true,
+  "config_and_import_config_preserved": true,
+  "unknown_edit_rejected_without_writes": true
+}

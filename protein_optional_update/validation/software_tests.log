@@ -1,0 +1,79 @@
+test_aromatic_fixed_query_remains_strict (test_core.ScientificInvariants.test_aromatic_fixed_query_remains_strict) ... ok
+test_atom_mapping_rejects_duplicates (test_core.ScientificInvariants.test_atom_mapping_rejects_duplicates) ... ok
+test_controls_cannot_supply_a_repair (test_core.ScientificInvariants.test_controls_cannot_supply_a_repair) ... ok
+test_discrete_failure_reaches_bounded_topology_bank (test_core.ScientificInvariants.test_discrete_failure_reaches_bounded_topology_bank) ... ok
+test_existing_output_is_preserved (test_core.ScientificInvariants.test_existing_output_is_preserved) ... ok
+test_geometry_routing_is_not_water_specific (test_core.ScientificInvariants.test_geometry_routing_is_not_water_specific) ... ok
+test_geometry_source_remains_byte_identical (test_core.ScientificInvariants.test_geometry_source_remains_byte_identical) ... ok
+test_missing_input_stops_before_experiment (test_core.ScientificInvariants.test_missing_input_stops_before_experiment) ... ok
+test_no_flowr_runtime_imports (test_core.ScientificInvariants.test_no_flowr_runtime_imports) ... ok
+test_observation_is_not_causal_onset (test_core.ScientificInvariants.test_observation_is_not_causal_onset) ... ok
+test_optimizer_hard_budget (test_core.ScientificInvariants.test_optimizer_hard_budget) ... ok
+test_original_success_is_preserved (test_core.ScientificInvariants.test_original_success_is_preserved) ... ok
+test_path_ids_cannot_escape_output (test_core.ScientificInvariants.test_path_ids_cannot_escape_output) ... ok
+test_primary_priority_and_relaxed_constraint (test_core.ScientificInvariants.test_primary_priority_and_relaxed_constraint) ... ok
+test_random_control_preserves_magnitude_scope_and_dtype (test_core.ScientificInvariants.test_random_control_preserves_magnitude_scope_and_dtype) ... ok
+test_repulsion_gradient (test_core.ScientificInvariants.test_repulsion_gradient) ... ok
+test_unique_float32_frame_conversion (test_core.ScientificInvariants.test_unique_float32_frame_conversion) ... ok
+test_unknown_check_is_not_silently_accepted (test_core.ScientificInvariants.test_unknown_check_is_not_silently_accepted) ... ok
+test_batch_metrics_do_not_call_missing_novelty_a_pass (test_coverage.CoverageTests.test_batch_metrics_do_not_call_missing_novelty_a_pass) ... ok
+test_catalog_separates_structural_repairs_from_drug_discovery_oracles (test_coverage.CoverageTests.test_catalog_separates_structural_repairs_from_drug_discovery_oracles) ... ok
+test_conformer_rebuild_preserves_graph_and_fixed_coordinates (test_coverage.CoverageTests.test_conformer_rebuild_preserves_graph_and_fixed_coordinates) ... ok
+test_disconnected_graph_is_not_disguised_as_a_new_conformer (test_coverage.CoverageTests.test_disconnected_graph_is_not_disguised_as_a_new_conformer) ... ok
+test_generated_region_overvalence_has_a_bounded_generic_hypothesis (test_coverage.CoverageTests.test_generated_region_overvalence_has_a_bounded_generic_hypothesis) ... ok
+test_invalid_bond_geometry_is_localized_to_atoms (test_coverage.CoverageTests.test_invalid_bond_geometry_is_localized_to_atoms) ... ok
+test_local_stereo_inversion_is_reported_without_a_cip_shortcut (test_coverage.CoverageTests.test_local_stereo_inversion_is_reported_without_a_cip_shortcut) ... ok
+test_absent_environment_is_null_never_passed (test_protein_optional.ProteinOptionalTests.test_absent_environment_is_null_never_passed) ... ok
+test_bad_bond_is_still_detected_without_protein (test_protein_optional.ProteinOptionalTests.test_bad_bond_is_still_detected_without_protein) ... ok
+test_broken_pdb_does_not_fall_back (test_protein_optional.ProteinOptionalTests.test_broken_pdb_does_not_fall_back) ... ok
+test_conversion_absent_mode_produces_executable_manifest (test_protein_optional.ProteinOptionalTests.test_conversion_absent_mode_produces_executable_manifest) ... ok
+test_converter_conflict_is_not_a_partial_batch (test_protein_optional.ProteinOptionalTests.test_converter_conflict_is_not_a_partial_batch) ... ok
+test_invalid_chemistry_keeps_scope_and_is_not_passed (test_protein_optional.ProteinOptionalTests.test_invalid_chemistry_keeps_scope_and_is_not_passed) ... [14:50:29] Explicit valence for atom # 0 C, 6, is greater than permitted
+ok
+test_malformed_pdb_is_runtime_input_error (test_protein_optional.ProteinOptionalTests.test_malformed_pdb_is_runtime_input_error) ... CHECK 1/1 sample
+ok
+test_missing_protein_does_not_opt_in (test_protein_optional.ProteinOptionalTests.test_missing_protein_does_not_opt_in) ... ok
+test_mixed_batch_reports_separate_scopes (test_protein_optional.ProteinOptionalTests.test_mixed_batch_reports_separate_scopes) ... CHECK 1/2 sample
+CHECK 2/2 second
+ok
+test_molecular_thresholds_are_identical_subsets (test_protein_optional.ProteinOptionalTests.test_molecular_thresholds_are_identical_subsets) ... ok
+test_protein_free_plan_excludes_duplicate_environment_controls (test_protein_optional.ProteinOptionalTests.test_protein_free_plan_excludes_duplicate_environment_controls) ... ok
+test_receptor_scope_tampering_cannot_enter_intervention (test_protein_optional.ProteinOptionalTests.test_receptor_scope_tampering_cannot_enter_intervention) ... CHECK 1/1 sample
+ok
+test_same_input_id_cannot_mix_contexts (test_protein_optional.ProteinOptionalTests.test_same_input_id_cannot_mix_contexts) ... ok
+test_scoped_snapshot_replay_and_no_fake_protein (test_protein_optional.ProteinOptionalTests.test_scoped_snapshot_replay_and_no_fake_protein) ... CHECK 1/1 sample
+ok
+test_unknown_mode_rejected (test_protein_optional.ProteinOptionalTests.test_unknown_mode_rejected) ... ok
+test_with_protein_native_evaluation_is_unchanged (test_protein_optional.ProteinOptionalTests.test_with_protein_native_evaluation_is_unchanged) ... ok
+test_aromatic_nh_survives_serialization (test_universal_input.TestUniversalInput.test_aromatic_nh_survives_serialization) ... ok
+test_asymmetric_npz_rejected (test_universal_input.TestUniversalInput.test_asymmetric_npz_rejected) ... ok
+test_author_labels_do_not_change_structure (test_universal_input.TestUniversalInput.test_author_labels_do_not_change_structure) ... ok
+test_bad_mapping_does_not_disappear (test_universal_input.TestUniversalInput.test_bad_mapping_does_not_disappear) ... ok
+test_bond_end_order_is_not_a_different_graph (test_universal_input.TestUniversalInput.test_bond_end_order_is_not_a_different_graph) ... ok
+test_chiral_disconnected_sdf_keeps_structure (test_universal_input.TestUniversalInput.test_chiral_disconnected_sdf_keeps_structure) ... ok
+test_custom_npz_fields (test_universal_input.TestUniversalInput.test_custom_npz_fields) ... ok
+test_missing_protein_pending (test_universal_input.TestUniversalInput.test_missing_protein_pending) ... ok
+test_nonstandard_hydrogen_rejected (test_universal_input.TestUniversalInput.test_nonstandard_hydrogen_rejected) ... [14:50:30] WARNING: not removing hydrogen atom without neighbors
+ok
+test_overvalence_survives_hydrogen_removal (test_universal_input.TestUniversalInput.test_overvalence_survives_hydrogen_removal) ... [14:50:30] Explicit valence for atom # 0 C, 5, is greater than permitted
+ok
+test_overwrite_blocked (test_universal_input.TestUniversalInput.test_overwrite_blocked) ... ok
+test_readwrite_preserves_atom_state (test_universal_input.TestUniversalInput.test_readwrite_preserves_atom_state) ... ok
+test_refuses_partial_mapping (test_universal_input.TestUniversalInput.test_refuses_partial_mapping) ... ok
+test_sdf_ready_and_v2_reader (test_universal_input.TestUniversalInput.test_sdf_ready_and_v2_reader) ... ok
+test_environment_categories_are_disjoint (test_v2.ReceptorTests.test_environment_categories_are_disjoint) ... ok
+test_reference_exclusion_preserves_water_and_original (test_v2.ReceptorTests.test_reference_exclusion_preserves_water_and_original) ... ok
+test_unmatched_cofactor_is_not_removed (test_v2.ReceptorTests.test_unmatched_cofactor_is_not_removed) ... ok
+test_aromatic_serialization_is_not_a_repair (test_v2.TopologyTests.test_aromatic_serialization_is_not_a_repair) ... ok
+test_far_components_are_not_falsely_connected (test_v2.TopologyTests.test_far_components_are_not_falsely_connected) ... ok
+test_fixed_double_bond_is_restored_without_copying_core (test_v2.TopologyTests.test_fixed_double_bond_is_restored_without_copying_core) ... ok
+test_fixed_fixed_new_bridge_is_forbidden (test_v2.TopologyTests.test_fixed_fixed_new_bridge_is_forbidden) ... ok
+test_incompatible_external_halogen_bond_is_not_left_overvalent (test_v2.TopologyTests.test_incompatible_external_halogen_bond_is_not_left_overvalent) ... ok
+test_metadata_does_not_select_model_specific_rules (test_v2.TopologyTests.test_metadata_does_not_select_model_specific_rules) ... ok
+test_missing_bridge_is_proposed_and_atoms_are_preserved (test_v2.TopologyTests.test_missing_bridge_is_proposed_and_atoms_are_preserved) ... ok
+test_unsupported_inputs_are_explicit (test_v2.TopologyTests.test_unsupported_inputs_are_explicit) ... ok
+
+----------------------------------------------------------------------
+Ran 66 tests in 1.377s
+
+OK
