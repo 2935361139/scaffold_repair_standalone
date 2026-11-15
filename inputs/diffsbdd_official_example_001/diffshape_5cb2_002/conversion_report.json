@@ -1,0 +1,25 @@
+{
+  "total_samples": 10,
+  "converted_samples": 10,
+  "conversion_errors": [],
+  "status": "ready",
+  "needs": [],
+  "source_files": {
+    "/home/ljl/projects/Diff-shape/outputs/5cb2_raw_001/raw/raw_manifest.json": {
+      "copy": "source/000_raw_manifest.json",
+      "sha256": "6810567b63f243748fdcfba58fd0595f74c2f8a096d6720d33e6a15e73b3e0d4"
+    },
+    "/home/ljl/projects/Diff-shape/outputs/5cb2_raw_001/raw/template_original.sdf": {
+      "copy": "source/001_template_original.sdf",
+      "sha256": "2573fe3726d094fd6f3d44e2d53510b2829700d7a7e17f4991fa4f52ed5d839a"
+    },
+    "/home/ljl/projects/Diff-shape/outputs/5cb2_raw_001/raw/raw_graphs.npz": {
+      "copy": "source/002_raw_graphs.npz",
+      "sha256": "39ddda5ed98014993b0e6a6dc368299458127196be38f6d97e924a2294b74b56"
+    }
+  },
+  "report": "/home/ljl/projects/scaffold_repair_standalone_v2/inputs/diffshape_5cb2_002/conversion_report.json",
+  "no_author_labels_used": true,
+  "no_molecular_repairs": true,
+  "interpretation": "Conversion success is NOT molecular validity. Retain all inputs and report conversion failures separately."
+}
