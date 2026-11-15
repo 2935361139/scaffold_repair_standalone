@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Check already-generated molecules, then run the unchanged finite repair bank."""
+"""Check already-generated molecules, then run a bounded structural intervention bank."""
 import argparse
 import importlib.util
 import os
@@ -33,17 +33,22 @@ def main(argv=None):
             items = load(resolve(config.FLOWR_GENERATED_DIR, path.parent), protein)
         elif config.INPUT_MODE == 'sdf':
             from scaffold_repair.adapters.sdf import load_sdf
-            require(config.PROTEIN_PDB, 'Fill PROTEIN_PDB for SDF input')
-            items = load_sdf(*(resolve(getattr(config, name), path.parent) for name in
-                ('INPUT_SDF', 'PROTEIN_PDB', 'REFERENCE_SDF', 'ATOM_MAPPING_FILE')),
-                record_indices=config.INPUT_RECORD_INDICES)
+            from scaffold_repair.context import protein_input
+            mode = getattr(config, 'PROTEIN_MODE', 'required')
+            protein = protein_input(mode, config.PROTEIN_PDB, path.parent)
+            items = load_sdf(resolve(config.INPUT_SDF, path.parent), protein,
+                resolve(config.REFERENCE_SDF, path.parent), resolve(config.ATOM_MAPPING_FILE, path.parent),
+                record_indices=config.INPUT_RECORD_INDICES, protein_mode=mode)
         elif config.INPUT_MODE == 'manifest':
             from scaffold_repair.adapters.sdf import load_manifest
             items = load_manifest(resolve(config.MANIFEST_PATH, path.parent))
         else:
             raise ValueError('INPUT_MODE must be flowr_records, sdf or manifest')
-        result = check(items, output / 'generated')
+        result = check(items, output / 'generated', getattr(config, 'RECEPTOR_OPTIONS', None))
         print(f"CHECK COMPLETE: {result['evaluated_samples']} total; {result['passed']} passed; {result['failed']} failed")
+        print('EVALUATION SCOPES:', result['by_evaluation_scope'])
+        if 'molecule_only' in result['by_evaluation_scope']:
+            print('MOLECULE ONLY: protein environment NOT evaluated; success is molecular checks only.')
         print(f"RESULT: {output / 'generated/review.zip'}")
     if not args.check_only:
         failed = resolve(config.INTERVENTION_INPUT_DIR, path.parent) if config.INTERVENTION_INPUT_DIR else output / 'generated/failed'
@@ -51,7 +56,12 @@ def main(argv=None):
         print(f"INTERVENTION COMPLETE: {result['rescued']}/{result['original_failed']} original failures repaired; "
               f"{result['rescued_with_relaxed_fixed_coordinates']} required relaxed fixed coordinates; "
               f"{result['branch_errors']} unevaluated branches")
+        print(f"ATTEMPTED FAILURES: {result['attempted_failures']}; UNSUPPORTED: {result['unsupported_failures']}; "
+              f"EVALUATED ARMS: {result['completed_arms']}/{result['planned_arms']}")
         print(f"RESULT: {output / 'intervention/review.zip'}")
+        print('EVALUATION SCOPES:', result['by_evaluation_scope'])
+        if 'molecule_only' in result['by_evaluation_scope']:
+            print('MOLECULE ONLY: repaired means molecular checks pass; protein environment NOT evaluated.')
 
 
 if __name__ == '__main__':

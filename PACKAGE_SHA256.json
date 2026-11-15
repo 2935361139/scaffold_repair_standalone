@@ -1,0 +1,12 @@
+{
+  "INPUT_TESTS.log": "15d586cdf94f8a38d7ee36f7ca7e8c749ea70fb4ae17978ddc7209182a664f5d",
+  "README_UNIVERSAL_CN.md": "ddd94968fc35d921db0b3ebf50964c048a9a5c97f90effbd816e989a88cf789e",
+  "VALIDATION_INPUTS.json": "20c14a1a7657f8b37ca481ad8aa4756ea5e5490ec40bf7d2058cf46840dd8f93",
+  "convert_inputs.py": "de56d4ae25702fa1a97b857a1269b1fc855803cd5af9a81f1b33ce7c568cbc06",
+  "import_config.py": "0e9be7d0336be001c3185d0a6c05a11badf0da1129253d2f6450a66a6ff974ee",
+  "install_inputs.py": "b256100f3d6fbd548daf23fd81e442567cdde89e81c407a8d6d99a105e3152c1",
+  "scaffold_repair/import_state.py": "b922dbabff44ef83b81b0872420bf83ea7f7a281fc563157f898b6fdc9464915",
+  "tests/test_universal_input.py": "9c5797c1d4e9427b139597452df866fb9552889d07a4af0a696aaa0a517588f7",
+  "universal_input/__init__.py": "f92b0e694444305c013aadabf2a568f8bbe4125cb34f9c9a064883e610a1d756",
+  "universal_input/normalize.py": "c4e764c9e60c5663baad4184daa300e8cbc7b3ed7425d8f0035a85859d8b71c9"
+}

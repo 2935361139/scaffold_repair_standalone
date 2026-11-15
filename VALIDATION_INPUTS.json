@@ -1,0 +1,17 @@
+{
+  "tests": 50,
+  "tests_passed": 50,
+  "original_tests": 36,
+  "new_tests": 14,
+  "actual_samples": 10,
+  "converted_samples": 10,
+  "parser_integration_samples": 10,
+  "original_invalid_count": 3,
+  "converted_invalid_count": 3,
+  "internal_heavy_distances_preserved": true,
+  "matching_protein_provided": false,
+  "full_quality_or_intervention_run": false,
+  "installer_idempotence_passed": true,
+  "unknown_version_rejection_passed": true,
+  "maximum_fixed_registration_residual_A": 0.0019036113987347906
+}

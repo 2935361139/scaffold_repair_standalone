@@ -80,8 +80,9 @@
   {
     "source": "review/portable_20261107/source/posebusters/tools/protein.py",
     "destination": "posebusters/tools/protein.py",
-    "sha256": "e67b3092ec193a627a9a4ab0267bc0abcf998c02246bd03dff8cc6c720afb079",
-    "change": "byte-for-byte copy"
+    "sha256": "f23a94f8a53bc23be0dd62da04e5e9ec54a6177ba9062b3b72cb1b4501c5eaea",
+    "change": "modified in v2; bounded topology routing or corrected environment classification",
+    "v1_sha256": "e67b3092ec193a627a9a4ab0267bc0abcf998c02246bd03dff8cc6c720afb079"
   },
   {
     "source": "review/portable_20261107/source/posebusters/tools/inchi.py",
@@ -182,8 +183,9 @@
   {
     "source": "deliver/scaffold_rescue_v2/scaffold_study_v1/geometry_intervention.py",
     "destination": "scaffold_repair/geometry_intervention.py",
-    "sha256": "4ba7443ab3c96cf5cf9156884ed2a0fd7e97ed350ecc68a4e165182734768d6f",
-    "change": "byte-for-byte copy"
+    "sha256": "7a9089987a73961a1480d7d2d7dcfafd1709047c71c7425e1a93d32291ac7528",
+    "change": "modified in v2; bounded topology routing or corrected environment classification",
+    "v1_sha256": "4ba7443ab3c96cf5cf9156884ed2a0fd7e97ed350ecc68a4e165182734768d6f"
   },
   {
     "source": "review/portable_20261107/source/scaffold_geometry_audit_v1/core.py",

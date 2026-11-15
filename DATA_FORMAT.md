@@ -45,7 +45,7 @@ Where original `inputs.pt` is unavailable, the adapter recovers the translation 
 
 `generated/integrity.json` checks this one batch. It is not a history log and does not exclude reused ligands. This protects separation of checking and intervention: a modified molecule, mapping, protein or method cannot silently enter the old experiment.
 
-FLOWR raw-graph fixed-identity labels for chemically invalid/undecodable outputs are preserved from the checksum-verified previous audit and explicitly labeled `previous_checksum_verified_raw_graph_audit`; they are not claimed to be newly inferred from an empty SDF. Such samples are unsupported by the coordinate repair bank. For readable valid molecules, the fixed-identity check is recomputed from the mapped graph.
+FLOWR raw-graph fixed-identity labels for chemically invalid/undecodable outputs are preserved from the checksum-verified previous audit and explicitly labeled `previous_checksum_verified_raw_graph_audit`; they are not claimed to be newly inferred from an empty SDF. Such unreadable samples remain unsupported; readable invalid graphs may enter the bounded v2 topology bank. For readable valid molecules, the fixed-identity check is recomputed from the mapped graph.
 
 External SDF stereochemical annotations are preserved. In the FLOWR record adapter only, reader-inferred 3D chirality is removed to match the original tensor decoder, which did not assign those tags; this is necessary for exact historical output comparison.
 
