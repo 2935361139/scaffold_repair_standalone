@@ -1,0 +1,29 @@
+{
+  "source_sha256": "9fa75906993cf1da0cf3e8169e43223caab0e6124e44185969ea0187f13b6989",
+  "prepared_sha256": "3ed1695d24251460691acec7b0a75de7253793cbe3b676089c99bbfeb7501b32",
+  "settings": {
+    "auto_exclude_reference": true,
+    "exclude_residues": [],
+    "match_tolerance_A": 0.01
+  },
+  "matched_reference_residues": [
+    [
+      "A",
+      201,
+      "",
+      "8V2"
+    ]
+  ],
+  "automatic_exclusions": [
+    [
+      "A",
+      201,
+      "",
+      "8V2"
+    ]
+  ],
+  "explicit_exclusions": [],
+  "removed_coordinate_records": 91,
+  "unchanged_retained_coordinates": true,
+  "is_molecular_repair": false
+}

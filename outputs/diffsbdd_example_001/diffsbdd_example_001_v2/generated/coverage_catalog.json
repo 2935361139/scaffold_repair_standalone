@@ -1,0 +1,138 @@
+{
+  "categories": [
+    {
+      "id": "input_integrity",
+      "problems": "Unreadable SDF, missing files/mapping, invalid coordinate frame",
+      "detection": "Input validation; missing evidence stops, unreadable molecule retained",
+      "interventions": [],
+      "scope": "Repair input/export upstream; molecular edits cannot reconstruct absent evidence",
+      "sources": [
+        "PoseBusters"
+      ]
+    },
+    {
+      "id": "chemical_graph",
+      "problems": "Valence, bond order, aromaticity, fixed elements/charges",
+      "detection": "RDKit chemistry problems with atom IDs; mapped fixed graph comparison",
+      "interventions": [
+        "F",
+        "E",
+        "FL",
+        "EL"
+      ],
+      "scope": "Bounded template restoration or local invalid-bond hypotheses; no arbitrary generated-core reconstruction",
+      "sources": [
+        "PoseBusters",
+        "DiffSBDD"
+      ]
+    },
+    {
+      "id": "connectivity",
+      "problems": "Disconnected components, missing or incompatible attachments",
+      "detection": "Connected components; fixed-boundary signatures; spatial candidate pairs",
+      "interventions": [
+        "L",
+        "FL",
+        "EL"
+      ],
+      "scope": "Nearby admissible single bonds only; no long missing-linker invention",
+      "sources": [
+        "DiffHopp",
+        "TurboHopp"
+      ]
+    },
+    {
+      "id": "intramolecular_geometry",
+      "problems": "Bond length/angle, internal clash, aromatic/double-bond planarity, strain",
+      "detection": "All configured PoseBusters intramolecular checks, local geometry details",
+      "interventions": [
+        "A",
+        "B",
+        "AB",
+        "C",
+        "G"
+      ],
+      "scope": "Bounded force field relaxation or anchored conformer reconstruction",
+      "sources": [
+        "PoseBusters",
+        "PoseCheck"
+      ]
+    },
+    {
+      "id": "environment",
+      "problems": "Protein, water, organic/inorganic cofactor clashes and volume overlap; wrong pocket placement",
+      "detection": "All configured PoseBusters environment checks; residue-resolved distance pairs",
+      "interventions": [
+        "B",
+        "AB",
+        "C",
+        "G"
+      ],
+      "scope": "No protein movement or deletion of real cofactors; frame mismatch requires corrected inputs",
+      "sources": [
+        "PoseBusters",
+        "PoseCheck"
+      ]
+    },
+    {
+      "id": "task_constraints",
+      "problems": "Fixed-fragment drift, fixed stereochemistry, attachment signature, unchanged scaffold",
+      "detection": "Mapping, displacement, local fully mapped tetrahedral geometry, boundary signatures, Murcko identity",
+      "interventions": [
+        "A",
+        "F",
+        "L",
+        "G"
+      ],
+      "scope": "Only applicable structural interventions. Extra task flags remain separate; novel scaffold design is not a coordinate repair",
+      "sources": [
+        "DiffHopp",
+        "FLOWR.ROOT"
+      ]
+    },
+    {
+      "id": "chemical_properties",
+      "problems": "Low drug-likeness, difficult synthesis, structural alerts",
+      "detection": "QED, SA when available, logP, molecular weight, PAINS alerts",
+      "interventions": [],
+      "scope": "Descriptive scores/alerts, not universal binary failures; no automatic efficacy/toxicity/synthesis claim",
+      "sources": [
+        "DiffSBDD",
+        "TurboHopp",
+        "MolGenBench"
+      ]
+    },
+    {
+      "id": "distribution",
+      "problems": "Duplicates, low diversity, lack of novelty",
+      "detection": "Batch uniqueness/diversity. Training-set novelty unassessed without comparison data",
+      "interventions": [],
+      "scope": "Resampling/retraining needs generator access; deleting duplicates is not repairing molecules",
+      "sources": [
+        "DiffSBDD",
+        "TurboHopp"
+      ]
+    },
+    {
+      "id": "binding",
+      "problems": "Poor binding/interaction retention, docking-workflow inconsistency, activity/selectivity",
+      "detection": "Explicitly unassessed: no docking/interaction/experimental oracle configured",
+      "interventions": [],
+      "scope": "Requires target-specific oracle and fixed protocol; structural pass does not establish activity",
+      "sources": [
+        "PoseCheck",
+        "MolGenBench"
+      ]
+    }
+  ],
+  "sources": {
+    "DiffSBDD": "https://www.nature.com/articles/s43588-024-00737-x",
+    "DiffHopp": "https://icml-compbio.github.io/2023/papers/WCBICML2023_paper69.pdf",
+    "TurboHopp": "https://arxiv.org/abs/2410.20660",
+    "PoseBusters": "https://pubs.rsc.org/en/content/articlehtml/2024/sc/d3sc04185a",
+    "PoseCheck": "https://openreview.net/pdf/afaf5d2ccada64db4c2fcd8f0434ac552e1d563d.pdf",
+    "FLOWR.ROOT": "https://www.nature.com/articles/s41467-026-74130-9",
+    "MolGenBench": "https://www.nature.com/articles/s41467-026-78105-8",
+    "RDKit": "https://www.rdkit.org/docs/source/rdkit.Chem.rdDistGeom.html"
+  }
+}

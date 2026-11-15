@@ -1,0 +1,14 @@
+{
+  "total_records": 5,
+  "rdkit_valid_records": 5,
+  "unique_molecules": 5,
+  "uniqueness_among_valid": 1.0,
+  "duplicate_counts": {},
+  "training_novelty": {
+    "status": "not_assessed",
+    "reason": "No training-set comparison database supplied"
+  },
+  "diversity_1_minus_morgan_tanimoto": 0.8329201527244562,
+  "diversity_pairs": 10,
+  "diversity_estimated": false
+}

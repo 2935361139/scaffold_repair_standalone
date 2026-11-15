@@ -1,0 +1,6 @@
+﻿id,input_id,success,route,failed_checks,localized_pairs,timing,murcko_scaffold_changed
+diffsbdd_001,5ndu_official_fragment_linking,False,supported_topology,"[""fc_valid"", ""all_atoms_connected""]",0,unavailable_final_SDF_only,True
+diffsbdd_002,5ndu_official_fragment_linking,False,supported_topology,"[""root_fixed_substructure_match"", ""fixed_chemistry_preserved"", ""internal_steric_clash"", ""internal_energy""]",0,unavailable_final_SDF_only,True
+diffsbdd_003,5ndu_official_fragment_linking,False,supported_topology,"[""fc_valid"", ""root_fixed_substructure_match"", ""fixed_chemistry_preserved"", ""all_atoms_connected"", ""internal_steric_clash"", ""internal_energy""]",0,unavailable_final_SDF_only,True
+diffsbdd_004,5ndu_official_fragment_linking,False,supported_topology,"[""root_fixed_substructure_match"", ""fixed_chemistry_preserved""]",0,unavailable_final_SDF_only,True
+diffsbdd_005,5ndu_official_fragment_linking,False,supported_topology,"[""root_fixed_substructure_match"", ""fixed_chemistry_preserved"", ""internal_steric_clash"", ""internal_energy""]",0,unavailable_final_SDF_only,True

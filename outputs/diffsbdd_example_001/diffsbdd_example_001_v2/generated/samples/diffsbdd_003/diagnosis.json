@@ -1,0 +1,270 @@
+{
+  "pairs": [],
+  "unlocalized": [
+    {
+      "check": "all_atoms_connected",
+      "status": "endpoint_failure_not_assigned_to_one_atom"
+    },
+    {
+      "check": "internal_steric_clash",
+      "status": "endpoint_failure_not_assigned_to_one_atom"
+    },
+    {
+      "check": "internal_energy",
+      "status": "endpoint_failure_not_assigned_to_one_atom"
+    },
+    {
+      "check": "fc_valid",
+      "status": "see_graph_diagnosis_and_bounded_topology_plan"
+    },
+    {
+      "check": "root_fixed_substructure_match",
+      "status": "see_graph_diagnosis_and_bounded_topology_plan"
+    },
+    {
+      "check": "fixed_chemistry_preserved",
+      "status": "see_graph_diagnosis_and_bounded_topology_plan"
+    }
+  ],
+  "graph": {
+    "status": "observed_final_graph",
+    "components": [
+      [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        24,
+        25
+      ],
+      [
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        23,
+        26
+      ]
+    ],
+    "fixed_bond_changes": [
+      {
+        "generated_atoms": [
+          1,
+          0
+        ],
+        "reference_atoms": [
+          3,
+          12
+        ],
+        "expected": "AROMATIC",
+        "observed": "SINGLE"
+      },
+      {
+        "generated_atoms": [
+          2,
+          0
+        ],
+        "reference_atoms": [
+          13,
+          12
+        ],
+        "expected": "AROMATIC",
+        "observed": "DOUBLE"
+      },
+      {
+        "generated_atoms": [
+          3,
+          1
+        ],
+        "reference_atoms": [
+          14,
+          3
+        ],
+        "expected": "AROMATIC",
+        "observed": "DOUBLE"
+      },
+      {
+        "generated_atoms": [
+          4,
+          2
+        ],
+        "reference_atoms": [
+          4,
+          13
+        ],
+        "expected": "AROMATIC",
+        "observed": "SINGLE"
+      },
+      {
+        "generated_atoms": [
+          5,
+          2
+        ],
+        "reference_atoms": [
+          48,
+          13
+        ],
+        "expected": "SINGLE",
+        "observed": null
+      },
+      {
+        "generated_atoms": [
+          6,
+          3
+        ],
+        "reference_atoms": [
+          15,
+          14
+        ],
+        "expected": "AROMATIC",
+        "observed": "SINGLE"
+      },
+      {
+        "generated_atoms": [
+          6,
+          4
+        ],
+        "reference_atoms": [
+          15,
+          4
+        ],
+        "expected": "AROMATIC",
+        "observed": "SINGLE"
+      }
+    ],
+    "proposed_cross_component_pairs": []
+  },
+  "temporal": {
+    "status": "unavailable_final_SDF_only",
+    "observations": [],
+    "explanation": "No saved trajectory: generation step and neural module cannot be inferred from final SDF."
+  },
+  "imported_observations": null,
+  "candidates": [
+    {
+      "kind": "F",
+      "hypothesis": "Mapped fixed-template bond/charge inconsistency",
+      "evidence": [
+        {
+          "generated_atoms": [
+            1,
+            0
+          ],
+          "reference_atoms": [
+            3,
+            12
+          ],
+          "expected": "AROMATIC",
+          "observed": "SINGLE"
+        },
+        {
+          "generated_atoms": [
+            2,
+            0
+          ],
+          "reference_atoms": [
+            13,
+            12
+          ],
+          "expected": "AROMATIC",
+          "observed": "DOUBLE"
+        },
+        {
+          "generated_atoms": [
+            3,
+            1
+          ],
+          "reference_atoms": [
+            14,
+            3
+          ],
+          "expected": "AROMATIC",
+          "observed": "DOUBLE"
+        },
+        {
+          "generated_atoms": [
+            4,
+            2
+          ],
+          "reference_atoms": [
+            4,
+            13
+          ],
+          "expected": "AROMATIC",
+          "observed": "SINGLE"
+        },
+        {
+          "generated_atoms": [
+            5,
+            2
+          ],
+          "reference_atoms": [
+            48,
+            13
+          ],
+          "expected": "SINGLE",
+          "observed": null
+        },
+        {
+          "generated_atoms": [
+            6,
+            3
+          ],
+          "reference_atoms": [
+            15,
+            14
+          ],
+          "expected": "AROMATIC",
+          "observed": "SINGLE"
+        },
+        {
+          "generated_atoms": [
+            6,
+            4
+          ],
+          "reference_atoms": [
+            15,
+            4
+          ],
+          "expected": "AROMATIC",
+          "observed": "SINGLE"
+        }
+      ]
+    },
+    {
+      "kind": "L",
+      "hypothesis": "Disconnected components may admit a local covalent connection",
+      "component_count": 2
+    },
+    {
+      "kind": "A",
+      "hypothesis": "Observed fixed-coordinate drift",
+      "max_displacement_A": 0.07953615530059312
+    },
+    {
+      "kind": "geometry",
+      "hypothesis": "Reported internal or environmental geometry failures",
+      "failed_checks": [
+        "all_atoms_connected",
+        "internal_steric_clash",
+        "internal_energy"
+      ]
+    }
+  ],
+  "interpretation": "Observed graph/geometry failures select bounded intervention families. A successful repair is not proof of a unique upstream cause."
+}

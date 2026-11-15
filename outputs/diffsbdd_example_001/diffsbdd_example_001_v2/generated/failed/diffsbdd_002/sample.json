@@ -1,0 +1,214 @@
+{
+  "id": "diffsbdd_002",
+  "input_id": "5ndu_official_fragment_linking",
+  "seed": null,
+  "success": false,
+  "route": {
+    "status": "supported_topology",
+    "reason": "Attempt bounded fixed-template and connectivity graph interventions, with geometry-only controls"
+  },
+  "evaluation": {
+    "rdkit_valid": true,
+    "fc_valid": true,
+    "root_fixed_substructure_match": false,
+    "fixed_chemistry_preserved": false,
+    "posebusters_valid": false,
+    "posebusters_checks": {
+      "mol_pred_loaded": true,
+      "mol_cond_loaded": true,
+      "sanitization": true,
+      "inchi_convertible": true,
+      "all_atoms_connected": true,
+      "bond_lengths": true,
+      "bond_angles": true,
+      "internal_steric_clash": false,
+      "aromatic_ring_flatness": true,
+      "double_bond_flatness": true,
+      "internal_energy": false,
+      "protein-ligand_maximum_distance": true,
+      "minimum_distance_to_protein": true,
+      "minimum_distance_to_organic_cofactors": true,
+      "minimum_distance_to_inorganic_cofactors": true,
+      "minimum_distance_to_waters": true,
+      "volume_overlap_with_protein": true,
+      "volume_overlap_with_organic_cofactors": true,
+      "volume_overlap_with_inorganic_cofactors": true,
+      "volume_overlap_with_waters": true
+    },
+    "posebusters_failed_checks": [
+      "internal_steric_clash",
+      "internal_energy"
+    ],
+    "murcko_scaffold_changed": true,
+    "molecule_smiles": "CC1C(=O)CC2CCC(C)(C(=O)NC(CCl)Cc3cccc(O)c3)C(=O)N21",
+    "scaffold_smiles": "O=C1CC2CCC(C(=O)NCCc3ccccc3)C(=O)N2C1",
+    "molecule_readable": true,
+    "fixed_missing_sites": [],
+    "fixed_element_changed_sites": [],
+    "fixed_charge_changed_sites": [],
+    "fixed_internal_bond_changed_pairs": [
+      [
+        5,
+        2
+      ],
+      [
+        16,
+        15
+      ]
+    ],
+    "fixed_rms_displacement_A": 0.05685533758377247,
+    "fixed_max_displacement_A": 0.08848728722251561,
+    "strict_boundary_reference_match": false,
+    "strict_boundary_differing_sites": [
+      4,
+      5,
+      9
+    ],
+    "attachment_sites_without_generated_neighbor": [],
+    "nonattachment_sites_with_generated_neighbors": [
+      4,
+      5,
+      9
+    ],
+    "boundary_details": [
+      {
+        "fixed_site": 0,
+        "reference_bond_types": [
+          "SINGLE"
+        ],
+        "generated_bond_types": [
+          "SINGLE"
+        ],
+        "generated_neighbors": [
+          26
+        ]
+      },
+      {
+        "fixed_site": 1,
+        "reference_bond_types": [],
+        "generated_bond_types": [],
+        "generated_neighbors": []
+      },
+      {
+        "fixed_site": 2,
+        "reference_bond_types": [],
+        "generated_bond_types": [],
+        "generated_neighbors": []
+      },
+      {
+        "fixed_site": 3,
+        "reference_bond_types": [],
+        "generated_bond_types": [],
+        "generated_neighbors": []
+      },
+      {
+        "fixed_site": 4,
+        "reference_bond_types": [],
+        "generated_bond_types": [
+          "SINGLE"
+        ],
+        "generated_neighbors": [
+          23
+        ]
+      },
+      {
+        "fixed_site": 5,
+        "reference_bond_types": [],
+        "generated_bond_types": [
+          "SINGLE"
+        ],
+        "generated_neighbors": [
+          22
+        ]
+      },
+      {
+        "fixed_site": 6,
+        "reference_bond_types": [],
+        "generated_bond_types": [],
+        "generated_neighbors": []
+      },
+      {
+        "fixed_site": 7,
+        "reference_bond_types": [
+          "SINGLE"
+        ],
+        "generated_bond_types": [
+          "SINGLE"
+        ],
+        "generated_neighbors": [
+          17
+        ]
+      },
+      {
+        "fixed_site": 8,
+        "reference_bond_types": [],
+        "generated_bond_types": [],
+        "generated_neighbors": []
+      },
+      {
+        "fixed_site": 9,
+        "reference_bond_types": [],
+        "generated_bond_types": [
+          "DOUBLE"
+        ],
+        "generated_neighbors": [
+          24
+        ]
+      },
+      {
+        "fixed_site": 10,
+        "reference_bond_types": [],
+        "generated_bond_types": [],
+        "generated_neighbors": []
+      },
+      {
+        "fixed_site": 11,
+        "reference_bond_types": [],
+        "generated_bond_types": [],
+        "generated_neighbors": []
+      },
+      {
+        "fixed_site": 12,
+        "reference_bond_types": [],
+        "generated_bond_types": [],
+        "generated_neighbors": []
+      },
+      {
+        "fixed_site": 13,
+        "reference_bond_types": [
+          "SINGLE",
+          "SINGLE"
+        ],
+        "generated_bond_types": [
+          "SINGLE",
+          "SINGLE"
+        ],
+        "generated_neighbors": [
+          19,
+          18
+        ]
+      },
+      {
+        "fixed_site": 14,
+        "reference_bond_types": [],
+        "generated_bond_types": [],
+        "generated_neighbors": []
+      },
+      {
+        "fixed_site": 15,
+        "reference_bond_types": [],
+        "generated_bond_types": [],
+        "generated_neighbors": []
+      },
+      {
+        "fixed_site": 16,
+        "reference_bond_types": [],
+        "generated_bond_types": [],
+        "generated_neighbors": []
+      }
+    ],
+    "geometry_status": "evaluated"
+  },
+  "localized_pair_count": 0,
+  "timing_status": "unavailable_final_SDF_only"
+}

@@ -1,0 +1,70 @@
+{
+  "pairs": [],
+  "unlocalized": [
+    {
+      "check": "all_atoms_connected",
+      "status": "endpoint_failure_not_assigned_to_one_atom"
+    },
+    {
+      "check": "fc_valid",
+      "status": "see_graph_diagnosis_and_bounded_topology_plan"
+    }
+  ],
+  "graph": {
+    "status": "observed_final_graph",
+    "components": [
+      [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        26
+      ],
+      [
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        25
+      ]
+    ],
+    "fixed_bond_changes": [],
+    "proposed_cross_component_pairs": []
+  },
+  "temporal": {
+    "status": "unavailable_final_SDF_only",
+    "observations": [],
+    "explanation": "No saved trajectory: generation step and neural module cannot be inferred from final SDF."
+  },
+  "imported_observations": null,
+  "candidates": [
+    {
+      "kind": "L",
+      "hypothesis": "Disconnected components may admit a local covalent connection",
+      "component_count": 2
+    },
+    {
+      "kind": "A",
+      "hypothesis": "Observed fixed-coordinate drift",
+      "max_displacement_A": 0.12601983970788078
+    }
+  ],
+  "interpretation": "Observed graph/geometry failures select bounded intervention families. A successful repair is not proof of a unique upstream cause."
+}

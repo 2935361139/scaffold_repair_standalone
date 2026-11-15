@@ -1,0 +1,179 @@
+{
+  "structural_endpoint_pass": false,
+  "chemistry_problems": [],
+  "geometry_locations": [],
+  "task_checks": {
+    "scaffold_changed": true,
+    "strict_attachment_signature_matches_reference": false,
+    "attachment_details": [
+      {
+        "fixed_site": 0,
+        "reference_bond_types": [
+          "SINGLE"
+        ],
+        "generated_bond_types": [
+          "SINGLE"
+        ],
+        "generated_neighbors": [
+          22
+        ]
+      },
+      {
+        "fixed_site": 1,
+        "reference_bond_types": [],
+        "generated_bond_types": [
+          "SINGLE"
+        ],
+        "generated_neighbors": [
+          24
+        ]
+      },
+      {
+        "fixed_site": 2,
+        "reference_bond_types": [],
+        "generated_bond_types": [],
+        "generated_neighbors": []
+      },
+      {
+        "fixed_site": 3,
+        "reference_bond_types": [],
+        "generated_bond_types": [],
+        "generated_neighbors": []
+      },
+      {
+        "fixed_site": 4,
+        "reference_bond_types": [],
+        "generated_bond_types": [],
+        "generated_neighbors": []
+      },
+      {
+        "fixed_site": 5,
+        "reference_bond_types": [],
+        "generated_bond_types": [],
+        "generated_neighbors": []
+      },
+      {
+        "fixed_site": 6,
+        "reference_bond_types": [],
+        "generated_bond_types": [
+          "SINGLE"
+        ],
+        "generated_neighbors": [
+          20
+        ]
+      },
+      {
+        "fixed_site": 7,
+        "reference_bond_types": [
+          "SINGLE"
+        ],
+        "generated_bond_types": [],
+        "generated_neighbors": []
+      },
+      {
+        "fixed_site": 8,
+        "reference_bond_types": [],
+        "generated_bond_types": [],
+        "generated_neighbors": []
+      },
+      {
+        "fixed_site": 9,
+        "reference_bond_types": [],
+        "generated_bond_types": [
+          "DOUBLE"
+        ],
+        "generated_neighbors": [
+          25
+        ]
+      },
+      {
+        "fixed_site": 10,
+        "reference_bond_types": [],
+        "generated_bond_types": [],
+        "generated_neighbors": []
+      },
+      {
+        "fixed_site": 11,
+        "reference_bond_types": [],
+        "generated_bond_types": [],
+        "generated_neighbors": []
+      },
+      {
+        "fixed_site": 12,
+        "reference_bond_types": [],
+        "generated_bond_types": [],
+        "generated_neighbors": []
+      },
+      {
+        "fixed_site": 13,
+        "reference_bond_types": [
+          "SINGLE",
+          "SINGLE"
+        ],
+        "generated_bond_types": [
+          "SINGLE"
+        ],
+        "generated_neighbors": [
+          17
+        ]
+      },
+      {
+        "fixed_site": 14,
+        "reference_bond_types": [],
+        "generated_bond_types": [],
+        "generated_neighbors": []
+      },
+      {
+        "fixed_site": 15,
+        "reference_bond_types": [],
+        "generated_bond_types": [],
+        "generated_neighbors": []
+      },
+      {
+        "fixed_site": 16,
+        "reference_bond_types": [],
+        "generated_bond_types": [],
+        "generated_neighbors": []
+      }
+    ],
+    "fixed_max_displacement_A": 0.12601983970788078,
+    "fixed_stereochemistry": {
+      "centers": [
+        {
+          "atom": 7,
+          "reference_atom": 8,
+          "status": "unassessed_incomplete_local_mapping"
+        },
+        {
+          "atom": 11,
+          "reference_atom": 23,
+          "status": "same_orientation",
+          "generated_signed_volume": -2.436853472999997,
+          "reference_signed_volume": -2.5586995940000072
+        },
+        {
+          "atom": 13,
+          "reference_atom": 32,
+          "status": "unassessed_incomplete_local_mapping"
+        }
+      ],
+      "scope": "Fully mapped tetrahedral neighborhoods only; E/Z and boundary stereo unassessed",
+      "automatically_repaired": false
+    },
+    "interpretation": "Attachment signatures and novel scaffold requirements depend on task; no universal threshold is invented"
+  },
+  "properties": {
+    "qed": 0.6284663068930391,
+    "logp": 2.6591000000000005,
+    "molecular_weight": 398.83700000000016,
+    "sa_score": 3.8825140848112945,
+    "pains_alerts": [],
+    "interpretation": "Descriptive only; PAINS alerts are not proof of toxicity, SA is not a synthesis route, QED is not activity"
+  },
+  "binding": {
+    "status": "not_assessed",
+    "reason": "No docking, interaction or activity oracle configured"
+  },
+  "inference_time_cause": "unavailable_from_final_SDF",
+  "scope": "Supplementary task/property coverage; not silently added to the five-part endpoint"
+}
