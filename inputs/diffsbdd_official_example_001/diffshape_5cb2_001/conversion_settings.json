@@ -1,0 +1,12 @@
+{
+  "format": "diffshape_capture",
+  "source": "/home/ljl/projects/Diff-shape/outputs/5cb2_raw_001/raw",
+  "output": "inputs/diffshape_5cb2_001",
+  "model": "Diff-Shape",
+  "protein_pdb": "",
+  "protein_frame_confirmed": false,
+  "frame": "fixed_centroid_translation",
+  "units": "angstrom",
+  "maximum_registration_residual_A": 0.01,
+  "experiment_output": "outputs/diffshape_5cb2_001"
+}
