@@ -1,0 +1,99 @@
+{
+  "files": {
+    "run.py": true,
+    "scaffold_repair/adapters/sdf.py": true,
+    "scaffold_repair/context.py": false,
+    "scaffold_repair/coverage.py": true,
+    "scaffold_repair/diagnosis.py": true,
+    "scaffold_repair/engine.py": true,
+    "scaffold_repair/evaluation.py": true,
+    "scaffold_repair/pipeline.py": true,
+    "tests/test_protein_optional.py": false,
+    "universal_input/normalize.py": true
+  },
+  "package_manifest": {
+    "schema": "protein_optional_update_v1",
+    "files": {
+      "run.py": {
+        "before": "faa471dd852a922441898c6bdf18a67295fb6fa1631ad509d6e9b79e9dd60e7d",
+        "after": "ab34c3a5679c55f47c6baa33482d0f27ccaffa986e6a98d3f69f4bc139a68dd0"
+      },
+      "scaffold_repair/adapters/sdf.py": {
+        "before": "2e8cac8fa9baff25692d10dd76050c06a2446c4e560134c3414714e4b9277e12",
+        "after": "991b073034e35dd5a2021c62b7b65903b135ae38db9e3e83997bf53f1a73d09d"
+      },
+      "scaffold_repair/context.py": {
+        "before": null,
+        "after": "84511771469edfb800ae41a043fca2e9191b65bf5049945917c0abf72d0e43e7"
+      },
+      "scaffold_repair/coverage.py": {
+        "before": "0db78c9b3670dc84a45e305da4a3bce1f2418a3438ff7dbde57b08dd8125d8b1",
+        "after": "f75d878dd92154c89761aff2e637bf018630ee2d9f589d16e3ce7a43608c610b"
+      },
+      "scaffold_repair/diagnosis.py": {
+        "before": "1d7b6a0331a92b177ad5fa1f723b93cb9fbb04f129362358a55f8b838ab4c137",
+        "after": "190ae3da2f2f8034c41c21ae36245bb0926cd9170e24c6502e951f5bde37a603"
+      },
+      "scaffold_repair/engine.py": {
+        "before": "4ba631785a4c26122846c37c2b4e2672a52e67b19ccd9b6d8db8e79c2f38ad5d",
+        "after": "fb5f95c41e682713500bd1f64fbd27d1e415e946a53eb7008cc2a6260e3c5b53"
+      },
+      "scaffold_repair/evaluation.py": {
+        "before": "344141fbce07743dcc9ce7ef6eb95c3ee8b76ae56390d49d776c7c0ad74d3153",
+        "after": "7e3d96eac91b48096c193226407d8ca90ab03828cd70e8e9c411d3b0630a3e02"
+      },
+      "scaffold_repair/pipeline.py": {
+        "before": "1352dd34fbef88d9991ac9e14237cc36d1a775adc634323b6f9ff100cdb254b3",
+        "after": "daa026920a250c7933c3fab4efabae7c7bc1856f1c77fb908b2478be349e4188"
+      },
+      "tests/test_protein_optional.py": {
+        "before": null,
+        "after": "892470ffd0392ae8c7d902907af9c8897510f4050e9b23df86aa143ab0070564"
+      },
+      "universal_input/normalize.py": {
+        "before": "c4e764c9e60c5663baad4184daa300e8cbc7b3ed7425d8f0035a85859d8b71c9",
+        "after": "4c06401cba34f30321bf6fce54ae5598c163acd1b689dba7eb4285d74aa98006"
+      }
+    },
+    "unchanged_dependencies": {
+      "posebusters/__main__.py": "35fae304373c67a7712f9eb537005a3e30443b74b8c0219f81877e4f80e3d43e",
+      "posebusters/posebusters.py": "a054d78eddd79b70b18d960aeb518f1e797421ea0f62119efe4894e0235d72b0",
+      "posebusters/__init__.py": "f9369696c3a5c76f055da09a532fb6221e2c4a59a592a985ff62e65d0b817158",
+      "posebusters/cli.py": "0aa907d69594750fba20ea3c0aa8a0b633de23c8e4d0a6acfd75b1c6bc1bd24d",
+      "posebusters/modules/rmsd.py": "de37b33b762430df44cfc4971e059863d6123ea7ed637e61661dda533bd117d6",
+      "posebusters/modules/volume_overlap.py": "07b4a3259f49b7d98cda27404ed30f0de230862035e8d1e29152735381afa70e",
+      "posebusters/modules/sanity.py": "ca0e7c0b0fbd29221b570bef9608e422c957f7554224321aedf18895454dda02",
+      "posebusters/modules/sucos.py": "85bd2ed7bb8a2ec02787e524a76559236be81090fdc456418c78d18b532bf5cb",
+      "posebusters/modules/intermolecular_distance.py": "9b6ab7a1361254df3b8479af46bbd7817dd04457c114b2fc1c8f891f145eae10",
+      "posebusters/modules/energy_ratio.py": "0ca424becd1ca9048cbdf2511294f2bf09cb4cf4d5d31ebc9b86088fecf5fda5",
+      "posebusters/modules/distance_geometry.py": "da51961279f1ab30506647555ab4c112a6e96d1b687971951a705f6570dc5cec",
+      "posebusters/modules/loading.py": "c3bbd411bb27988d0e537fd234bb1aefe121ac2045b863ccee2c3249a63c9d72",
+      "posebusters/modules/identity.py": "32f12dc7661eed90083cae7cae64894c7365e91b08308dff32090ac09b71008e",
+      "posebusters/modules/flatness.py": "c12dc3338cd382dd76d1cdb6d5a35a86eef97e6f03caee1419ed64174a96f8c0",
+      "posebusters/modules/__init__.py": "d5c3f7ca7336851a691707ac80161c94c73eeef942b274863a20fdc88a71a5d9",
+      "posebusters/datasets/load_datasets.py": "81e971263b1d2934998afc837721504a912c62485e6d2c3543d4381127452392",
+      "posebusters/datasets/__init__.py": "a2f04ea354155a80ef6ac3edba0416ba471a720cf1ca7f81639208d899283ffb",
+      "posebusters/tools/logging.py": "2cbf3bdee666bea6fda3f95063302ab88c46d18bb43cfac05d94d8a664afc44b",
+      "posebusters/tools/molecules.py": "123c5d4e7371bc884e2a9a93a819de6d64be26d350ef32765fc4f5d993571322",
+      "posebusters/tools/formatting.py": "27112c682e7145c9c8ddf36f138961669334b72f379a2f1b8a256a312067dffa",
+      "posebusters/tools/protein.py": "f23a94f8a53bc23be0dd62da04e5e9ec54a6177ba9062b3b72cb1b4501c5eaea",
+      "posebusters/tools/parallel.py": "20522da22b127ba0c8d0da3a68947b4f94d8af6b8e1f7172797f1163baa98175",
+      "posebusters/tools/inchi.py": "95fa026d41168a7c535ba065daa0c73711ffd9190e02191f4fa5ec4cee06fdc0",
+      "posebusters/tools/loading.py": "ed0e18ed402d021b01a8ee3e6ea42aaff87101e0ba6b0e7b1361af6f8b8d8939",
+      "posebusters/tools/stats.py": "f041994837694abdc179de4132914544405c87c77aa90f8f5c9fb54414bf9996",
+      "posebusters/tools/__init__.py": "d10a324ec1488ed8c41fd76775c06ef39714d0a75d5817cd54c2c1f555cfd036",
+      "posebusters/config/dock.yml": "6b76d53a01fe9f7a8ac503eed87995e6323f1bc06274dc8f810ef970f89608f3",
+      "posebusters/config/redock.yml": "3cc1d43aec480e77abea92c9a7d652cf76194719059e9c4a87ca8cb35cd5665d",
+      "posebusters/config/gen.yml": "517b36f5ea397083a546bde3d87be47632c12a610e534895df5b37a595289191",
+      "posebusters/config/mol.yml": "13a9fe4c2b69918d2ea53a3789e5b857946bb47b7d42e9e248561684cd152370",
+      "scaffold_repair/geometry_intervention.py": "7a9089987a73961a1480d7d2d7dcfafd1709047c71c7425e1a93d32291ac7528",
+      "scaffold_repair/legacy_functions.py": "d58813cd0ec7744acde7c46d22bbcc48acb7f292a22b854951ce8bf4e1e50d27",
+      "scaffold_repair/topology.py": "ba498601f415bb6b23689ce1f0b2e06004bb2c0cc54fe1b3c3917876080f56c7",
+      "scaffold_repair/conformers.py": "61651780d1627eb2166e224f8230026bf1f8ca65bbcd69956db675a1f3291bc6",
+      "scaffold_repair/receptor.py": "c8725cb194a594fad8b18adb76786be1fba257e2fc61fb29964d892c1fde7147",
+      "scaffold_repair/regions.py": "293589b0d904e070894ca63e2b1e3765722e0c9e86752ddde194d1041b20a090",
+      "scaffold_repair/chemistry.py": "4ade9186df926f29aa903ccbf150006d2fbb72f82facd19dac7bef512ab7220e",
+      "scaffold_repair/import_state.py": "b922dbabff44ef83b81b0872420bf83ea7f7a281fc563157f898b6fdc9464915"
+    }
+  }
+}
