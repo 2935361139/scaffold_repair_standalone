@@ -4,22 +4,25 @@ import numpy as np
 from rdkit import Chem
 from ..io import read_json, require, resolve, sha, safe_id
 from ..evaluation import task_from_mapping
+from ..import_state import restore as restore_import_state
+from ..context import protein_input
 
 
 def load_one(spec, base):
     sdf = resolve(spec['sdf'], base)
     ref_path = resolve(spec['reference_sdf'], base)
-    protein = resolve(spec['protein_pdb'], base)
-    for path in (sdf, ref_path, protein):
+    mode = spec.get('protein_mode', 'required')
+    protein = protein_input(mode, spec.get('protein_pdb'), base)
+    for path in (sdf, ref_path):
         require(path.is_file(), f'Input file missing: {path}')
     supplier = Chem.SDMolSupplier(str(sdf), sanitize=False, removeHs=False)
     index = spec.get('sdf_index', 0)
     require(type(index) is int and 0 <= index < len(supplier), 'SDF record index out of range')
-    mol = supplier[index]
+    mol = restore_import_state(supplier[index])
     refs = Chem.SDMolSupplier(str(ref_path), sanitize=False, removeHs=False)
     reference_index = spec.get('reference_index', 0)
     require(type(reference_index) is int and 0 <= reference_index < len(refs), 'Reference record index out of range')
-    ref = refs[reference_index]
+    ref = restore_import_state(refs[reference_index])
     require(ref is not None, 'Reference molecule unreadable')
     Chem.SanitizeMol(ref)
     require(ref.GetNumConformers() == 1 and np.isfinite(ref.GetConformer().GetPositions()).all(), 'Reference needs finite coordinates')
@@ -35,7 +38,7 @@ def load_one(spec, base):
         xyz = np.asarray(mol.GetConformer().GetPositions(), dtype=np.float64)
     else:
         xyz = np.zeros((0, 3), dtype=np.float64)
-    sources = [sdf, ref_path, protein]
+    sources = [sdf, ref_path] + ([protein] if protein is not None else [])
     if spec.get('coordinates_npy'):
         path = resolve(spec['coordinates_npy'], base)
         accurate = np.load(path, allow_pickle=False)
@@ -65,7 +68,8 @@ def load_one(spec, base):
             trajectory = {k: arrays[k] for k in arrays.files}
         metadata = read_json(meta_path)
         sources += [path, meta_path]
-        require(metadata.get('coordinate_frame') == 'protein_world_angstrom', 'Trajectory must already be in protein coordinates, in angstroms')
+        expected_frame = 'protein_world_angstrom' if protein is not None else 'reference_world_angstrom'
+        require(metadata.get('coordinate_frame') == expected_frame, f'Trajectory must use {expected_frame}')
         require(mol is not None, 'Cannot map a trajectory to an unreadable endpoint')
         for stream, stream_meta in metadata['streams'].items():
             coords = trajectory[stream + '_coords']
@@ -77,7 +81,7 @@ def load_one(spec, base):
                     zip(trajectory[terminal + '_atom_classes'][-1], mol.GetAtoms())), 'Trajectory terminal element order mismatch')
         require(bool(np.all(trajectory[terminal + '_valid'][-1])), 'Trajectory endpoint masks retained atoms')
     return dict(id=safe_id(spec['id']), input_id=str(spec['input_id']), seed=spec.get('seed'),
-        mol=mol, ref=ref, protein=protein, raw_sdf=supplier.GetItemText(index).encode('utf-8'),
+        mol=mol, ref=ref, protein=protein, protein_mode=mode, raw_sdf=supplier.GetItemText(index).encode('utf-8'),
         xyz=xyz, target=target, slots=list(range(n)), task=task, expected=None, raw_fixed_evidence=None,
         trajectory=trajectory, trajectory_meta=metadata, imported_observations=None,
         provenance=dict(adapter='sdf', model=str(spec.get('model', 'external')), sdf_index=index,
@@ -99,7 +103,7 @@ def load_manifest(path):
     return items
 
 
-def load_sdf(sdf_path, protein_path, reference_path, mapping_path, record_indices=None):
+def load_sdf(sdf_path, protein_path, reference_path, mapping_path, record_indices=None, protein_mode='required'):
     path = Path(mapping_path).resolve()
     data = read_json(path)
     require(data.get('schema') == 'scaffold_repair_mapping_v1', 'Unknown atom mapping schema')
@@ -112,7 +116,8 @@ def load_sdf(sdf_path, protein_path, reference_path, mapping_path, record_indice
     require(set(indices) <= set(by_index), 'Every selected SDF record needs its own explicit atom mapping')
     items = []
     for index in indices:
-        spec = dict(by_index[index], sdf=str(sdf_path), protein_pdb=str(protein_path), reference_sdf=str(reference_path))
+        spec = dict(by_index[index], sdf=str(sdf_path), protein_pdb=str(protein_path) if protein_path else '',
+                    protein_mode=protein_mode, reference_sdf=str(reference_path))
         item = load_one(spec, path.parent)
         item['provenance']['source_hashes'][str(path)] = sha(path)
         items.append(item)

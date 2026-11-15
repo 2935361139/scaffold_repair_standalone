@@ -4,7 +4,9 @@ from rdkit import Chem
 from rdkit.Chem.Scaffolds import MurckoScaffold
 from posebusters import PoseBusters
 from .io import require
+from .import_state import restore as restore_import_state, encode as encode_import_state, PROPERTY as IMPORT_STATE_PROPERTY
 from .legacy_functions import fixed_diagnostics, pb_metrics, _sanitize_or_fix_aromaticity
+from .context import scope_record, molecular_config
 
 ENDPOINT_KEYS = ('rdkit_valid', 'fc_valid', 'root_fixed_substructure_match',
                  'fixed_chemistry_preserved', 'posebusters_valid')
@@ -17,7 +19,7 @@ def read_mol(path):
         return None
     supplier = Chem.SDMolSupplier(str(path), sanitize=False, removeHs=False)
     require(len(supplier) == 1, f'Expected one SDF record: {path}')
-    return supplier[0]
+    return restore_import_state(supplier[0])
 
 
 def restore_flowr_decoder_representation(mol):
@@ -45,6 +47,10 @@ def with_coords(mol, coords):
 def save_mol(path, mol):
     with Chem.SDWriter(str(path)) as writer:
         if mol is not None:
+            if mol.HasProp(IMPORT_STATE_PROPERTY):
+                writer.SetKekulize(False)
+                writer.SetForceV3000(True)
+                encode_import_state(mol)
             writer.write(mol)
 
 
@@ -87,9 +93,11 @@ def task_from_mapping(ref, fixed, ref_fixed):
 
 def evaluate(mol, coords, ref, task, slots, protein, raw_fixed_evidence=None):
     row = dict.fromkeys(ENDPOINT_KEYS)
+    row.update(scope_record(protein, PoseBusters('dock').config))
     row.update(rdkit_valid=False, fc_valid=False, posebusters_checks=None,
                posebusters_failed_checks=[], murcko_scaffold_changed=None,
                molecule_smiles=None, scaffold_smiles=None)
+    row['molecule_readable'] = mol is not None
     if raw_fixed_evidence is not None:
         row['fixed_chemistry_preserved'] = raw_fixed_evidence.get('fixed_chemistry_preserved')
         row['raw_fixed_evidence_source'] = 'previous_checksum_verified_raw_graph_audit'
@@ -97,6 +105,11 @@ def evaluate(mol, coords, ref, task, slots, protein, raw_fixed_evidence=None):
         row['geometry_status'] = 'not_assessed_unreadable_generated_molecule'
         return row, None
     result = with_coords(mol, coords)
+    row['fixed_missing_sites'] = sorted(set(task['fixed_sampler_indices']) - set(slots))
+    if not row['fixed_missing_sites']:
+        # Fixed identity / bond discrepancies can be reported even before the
+        # complete graph passes RDKit sanitization.
+        row.update(fixed_diagnostics(result, ref, task, slots, np))
     try:
         Chem.SanitizeMol(result)
     except Exception:
@@ -119,9 +132,25 @@ def evaluate(mol, coords, ref, task, slots, protein, raw_fixed_evidence=None):
     row['scaffold_smiles'] = Chem.MolToSmiles(MurckoScaffold.GetScaffoldForMol(result), isomericSmiles=False)
     row['murcko_scaffold_changed'] = row['scaffold_smiles'] != Chem.MolToSmiles(
         MurckoScaffold.GetScaffoldForMol(ref), isomericSmiles=False)
-    row.update(pb_metrics(result, protein, PoseBusters, Chem))
+    if protein is None:
+        row.update(molecular_pb_metrics(result))
+    else:
+        row.update(pb_metrics(result, protein, PoseBusters, Chem))
     row['geometry_status'] = 'evaluated'
     return row, result
+
+
+def molecular_pb_metrics(mol):
+    config = molecular_config(PoseBusters('dock').config)
+    table = PoseBusters(config).bust([Chem.AddHs(Chem.Mol(mol), addCoords=True)], None, None)
+    require(len(table) == 1 and len(table.columns) > 0, 'PoseBusters returned no unique result')
+    values = table.iloc[0]
+    require(not values.isna().any(), 'Missing molecular check result; not a molecular failure label')
+    require(all(isinstance(v, (bool, np.bool_)) for v in values.tolist()), 'Nonboolean molecular check')
+    checks = {str(k): bool(v) for k, v in values.items()}
+    # Omitted environmental tests appear separately as null/not_evaluated, never True.
+    return dict(posebusters_valid=all(checks.values()), posebusters_checks=checks,
+                posebusters_failed_checks=[k for k, v in checks.items() if not v])
 
 
 def compare_endpoint(actual, expected):

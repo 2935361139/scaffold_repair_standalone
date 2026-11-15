@@ -14,7 +14,12 @@ from .io import require, read_json, write_json, sha, save_csv, safe_id
 from .evaluation import evaluate, compare_endpoint, read_mol, save_mol, restore_flowr_decoder_representation
 from .diagnosis import diagnose
 from .geometry_intervention import SETTINGS, successful, route_failure, select_result
-from .engine import ARMS, run_bank
+from .engine import ARMS, run_bank, plan_bank
+from .receptor import prepare as prepare_receptor
+from .topology import LIMITS
+from .conformers import SETTINGS as CONFORMER_SETTINGS
+from .coverage import assess, batch_metrics, CATALOG, SOURCES
+from .context import scope_counts, molecular_config, MOLECULAR_SCOPE, PROTEIN_SCOPE
 
 
 def versions():
@@ -27,24 +32,37 @@ def method_record():
     root = Path(__file__).resolve().parent.parent
     hashes = {str(p.relative_to(root)): sha(p) for name in ('scaffold_repair', 'posebusters')
               for p in sorted((root / name).rglob('*')) if p.suffix in ('.py', '.yml', '.yaml')}
-    return dict(schema='standalone_scaffold_method_v1', versions=versions(), code_sha256=hashes,
-                evaluator_config=PoseBusters('dock').config, optimizer_settings=SETTINGS,
+    return dict(schema='standalone_scaffold_method_v2', versions=versions(), code_sha256=hashes,
+                evaluator_config=PoseBusters('dock').config,
+                molecular_evaluator_config=molecular_config(PoseBusters('dock').config),
+                scope_policy='Explicit absent protein only; omitted environment checks are not evaluated, never passed',
+                optimizer_settings=SETTINGS,
+                topology_settings=LIMITS.copy(),
+                conformer_settings=CONFORMER_SETTINGS.copy(),
                 arms=ARMS, primary_priority=['A', 'B', 'AB', 'C'],
                 new_generations=0, neural_interventions=0,
                 stop_rule='One fixed bank per eligible sample; no retries or outcome-based parameter tuning',
-                interpretation='Operational terminal-coordinate repair. C relaxes fixed coordinates. No unique upstream cause claim.')
+                interpretation='V2: corrected receptor selections, bounded fixed-template/connectivity edits plus geometry controls. Same five endpoint conditions; new baselines required. No unique upstream cause claim.')
 
 
-def snapshot(item, destination):
+def snapshot(item, destination, receptor_options=None):
     destination.mkdir(parents=True)
     (destination / 'raw.sdf').write_bytes(item['raw_sdf'])
     save_mol(destination / 'reference.sdf', item['ref'])
-    shutil.copyfile(item['protein'], destination / 'protein.pdb')
+    mode = item.get('protein_mode', 'required')
+    require((mode == 'absent') == (item['protein'] is None), 'Protein mode/context mismatch')
+    if item['protein'] is not None:
+        shutil.copyfile(item['protein'], destination / 'protein.original.pdb')
+        prepare_receptor(item['protein'], item['ref'], destination / 'protein.pdb', receptor_options)
+    else:
+        require(not receptor_options, 'RECEPTOR_OPTIONS cannot be applied without a protein')
+        write_json(destination / 'protein_context.json', dict(status='not_evaluated', reason='explicit_no_protein'))
     np.savez_compressed(destination / 'coordinates.npz', xyz=item['xyz'], target=item['target'])
     if item['trajectory']:
         np.savez_compressed(destination / 'trajectory.npz', **item['trajectory'])
     meta = {k: item[k] for k in ('id', 'input_id', 'seed', 'slots', 'task', 'expected',
                                 'trajectory_meta', 'imported_observations', 'provenance', 'raw_fixed_evidence')}
+    meta['protein_mode'] = mode
     write_json(destination / 'sample.json', meta)
 
 
@@ -53,7 +71,8 @@ def restore(destination):
     with np.load(destination / 'coordinates.npz', allow_pickle=False) as arrays:
         item['xyz'], item['target'] = arrays['xyz'], arrays['target']
     item.update(mol=read_mol(destination / 'raw.sdf'), ref=read_mol(destination / 'reference.sdf'),
-                protein=destination / 'protein.pdb', raw_sdf=(destination / 'raw.sdf').read_bytes(), trajectory={})
+                protein=None if item.get('protein_mode') == 'absent' else destination / 'protein.pdb',
+                raw_sdf=(destination / 'raw.sdf').read_bytes(), trajectory={})
     if item['provenance']['adapter'] == 'flowr_records':
         item['mol'] = restore_flowr_decoder_representation(item['mol'])
     Chem.SanitizeMol(item['ref'])
@@ -64,6 +83,8 @@ def restore(destination):
 
 
 def environment(path, config, cache):
+    if path is None:
+        return None
     digest = sha(path)
     if digest not in cache:
         cache[digest] = safe_load_mol(path, **config.get('loading', {}).get('mol_cond', {}))
@@ -86,14 +107,15 @@ def assert_sources_unchanged(items):
             require(Path(path).is_file() and sha(path) == digest, f'Source changed during processing: {path}')
 
 
-def check(items, output):
+def check(items, output, receptor_options=None):
     output = Path(output).resolve()
     require(not output.exists(), f'Output already exists: {output}. Choose a new OUTPUT_DIR; existing results are preserved.')
     require(items and len({item['id'] for item in items}) == len(items), 'Empty or duplicated inputs')
     # A passing control must genuinely belong to the same reference/protein condition.
     conditions = {}
     for item in items:
-        signature = (sha(item['protein']), Chem.MolToMolBlock(item['ref']), tuple(item['task']['fixed_reference_indices']))
+        signature = (sha(item['protein']) if item['protein'] is not None else 'explicit_no_protein',
+                     Chem.MolToMolBlock(item['ref']), tuple(item['task']['fixed_reference_indices']))
         previous = conditions.setdefault(item['input_id'], signature)
         require(previous == signature, f"input_id {item['input_id']} identifies inconsistent conditions")
     output.mkdir(parents=True)
@@ -101,24 +123,33 @@ def check(items, output):
         (output / name).mkdir()
     method = method_record()
     write_json(output / 'method.json', method)
+    write_json(output / 'coverage_catalog.json', dict(categories=CATALOG,sources=SOURCES))
     rows, errors, cache = [], [], {}
     try:
         for number, item in enumerate(items, 1):
             rid = safe_id(item['id'])
             print(f'CHECK {number}/{len(items)} {rid}', flush=True)
             folder = output / 'samples' / rid
-            snapshot(item, folder)
+            snapshot(item, folder, receptor_options)
             current = restore(folder)
             row, mol = evaluate(current['mol'], current['xyz'][current['slots']], current['ref'],
                                 current['task'], current['slots'], current['protein'], current['raw_fixed_evidence'])
             if item['expected'] is not None:
-                compare_endpoint(row, item['expected'])
+                # V1 environmental bugs are deliberately not reproduced. Preserve
+                # chemistry checks and report legacy differences separately.
+                for key in ('rdkit_valid','fc_valid','root_fixed_substructure_match','fixed_chemistry_preserved'):
+                    require(row.get(key) == item['expected'].get(key), f'Imported chemical baseline mismatch: {key}')
+                write_json(folder / 'legacy_evaluation_comparison.json', dict(previous=item['expected'],
+                    changed_fields=[k for k in item['expected'] if row.get(k) != item['expected'][k]],
+                    explanation='V2 fixes receptor selection; old and new environmental labels are not silently pooled.'))
             env = environment(current['protein'], method['evaluator_config'], cache)
             diagnostic = diagnose(current, mol, row, env, method['evaluator_config'])
             write_json(folder / 'evaluation.json', row)
             write_json(folder / 'diagnosis.json', diagnostic)
+            write_json(folder / 'research_assessment.json',assess(current,mol,row,method['evaluator_config']))
             route = route_failure(row)
             result = dict(id=rid, input_id=item['input_id'], seed=item['seed'], success=successful(row),
+                          evaluation_scope=row['evaluation_scope'], success_meaning=row['success_meaning'],
                           route=route, evaluation=row, localized_pair_count=len(diagnostic['pairs']),
                           timing_status=diagnostic['temporal']['status'])
             rows.append(result)
@@ -135,11 +166,16 @@ def check(items, output):
         evaluated_samples=len(rows), passed=sum(r['success'] for r in rows),
         failed=sum(not r['success'] for r in rows),
         supported_geometry_failures=sum(r['route']['status'] == 'supported_geometry' for r in rows),
+        supported_topology_failures=sum(r['route']['status'] == 'supported_topology' for r in rows),
         unsupported_failures=sum(r['route']['status'] == 'unsupported' for r in rows),
-        errors=errors, samples=rows, new_generations=0)
+        errors=errors, samples=rows, new_generations=0,
+        by_evaluation_scope=scope_counts(rows),
+        interpretation='Pass/fail applies only to evaluation_scope. Molecule-only passes do not establish protein compatibility; compare scopes separately.')
     write_json(output / 'summary.json', summary)
+    write_json(output / 'batch_metrics.json',batch_metrics([r['evaluation']['molecule_smiles'] for r in rows],len(items)))
     save_csv(output / 'samples.csv', [dict(id=r['id'], input_id=r['input_id'], success=r['success'],
-        route=r['route']['status'], failed_checks=r['evaluation']['posebusters_failed_checks'],
+        evaluation_scope=r['evaluation_scope'], not_evaluated_checks=list(r['evaluation']['not_evaluated_checks']),
+        route=r['route']['status'], failed_checks=[k for k in ('rdkit_valid','fc_valid','root_fixed_substructure_match','fixed_chemistry_preserved') if r['evaluation'].get(k) is not True] + r['evaluation']['posebusters_failed_checks'],
         localized_pairs=r['localized_pair_count'], timing=r['timing_status'],
         murcko_scaffold_changed=r['evaluation']['murcko_scaffold_changed']) for r in rows])
     if summary['completed']:
@@ -159,7 +195,7 @@ def verify_checked(root):
                 f'Checked evidence changed: {relative}. Run a fresh check in a new directory.')
     expected = read_json(root / 'method.json')
     current = method_record()
-    for key in ('code_sha256', 'evaluator_config', 'optimizer_settings', 'arms', 'versions'):
+    for key in ('schema', 'code_sha256', 'evaluator_config', 'optimizer_settings', 'topology_settings', 'conformer_settings', 'arms', 'versions'):
         require(current[key] == expected[key], f'Method/environment changed between stages: {key}')
 
 
@@ -175,7 +211,7 @@ def intervene(failed_dir, output, failure_ids=None):
     requested = available if failure_ids is None else set(failure_ids)
     require(failure_ids is None or len(failure_ids) == len(requested), 'Duplicate requested failure IDs')
     require(requested <= available, 'A requested failure is absent or originally passed')
-    active_inputs = {r['input_id'] for r in checked if r['id'] in requested and r['route']['status'] == 'supported_geometry'}
+    active_inputs = {r['input_id'] for r in checked if r['id'] in requested and r['route']['status'] in ('supported_geometry','supported_topology')}
     active_ids = {r['id'] for r in checked if r['input_id'] in active_inputs and
                   (r['id'] in requested or r['success']) and r['route']['status'] != 'unsupported'}
     output.mkdir(parents=True)
@@ -183,9 +219,9 @@ def intervene(failed_dir, output, failure_ids=None):
         (output / name).mkdir()
     method = method_record()
     write_json(output / 'method.json', method)
-    write_json(output / 'selection.json', dict(source_generated=str(root), source_integrity_sha256=sha(root / 'integrity.json'),
-        requested_failures=sorted(requested), active_runs=sorted(active_ids), planned_arms=len(active_ids) * len(ARMS)))
+    write_json(output / 'coverage_catalog.json', dict(categories=CATALOG,sources=SOURCES))
     records, errors, conclusions, cache, fatal = [], [], [], {}, []
+    plans, planned = {}, 0
     try:
         # Reproduce all checked baselines before any treated branch.
         items = {}
@@ -195,17 +231,26 @@ def intervene(failed_dir, output, failure_ids=None):
             require(baseline == r['evaluation'], f"Baseline no longer reproduces: {r['id']}")
             items[r['id']] = item
         for r in checked:
+            if r['id'] in active_ids:
+                plans[r['id']] = plan_bank(items[r['id']], r['evaluation'])
+        planned = sum(len(p['arm_names']) for p in plans.values())
+        write_json(output / 'selection.json', dict(source_generated=str(root), source_integrity_sha256=sha(root / 'integrity.json'),
+            requested_failures=sorted(requested), active_runs=sorted(active_ids), planned_arms=planned,
+            per_sample={rid:dict(arms=p['arm_names'],topology=p['audit']) for rid,p in plans.items()}))
+        for r in checked:
             rid = r['id']
             item = items[rid]
             if rid in active_ids:
                 env = environment(item['protein'], method['evaluator_config'], cache)
-                branches, branch_errors, conclusion = run_bank(item, r['evaluation'], env, method['evaluator_config'], output / 'arms' / rid)
+                branches, branch_errors, conclusion = run_bank(item, r['evaluation'], env, method['evaluator_config'], output / 'arms' / rid, plans[rid])
                 records.extend(branches)
                 errors.extend(branch_errors)
             else:
                 conclusion = dict(run_id=rid, **select_result(r['evaluation'], {}))
             conclusion.update(original_success=r['success'], requested_failure=rid in requested,
-                              intervention_executed=rid in active_ids, route=r['route']['status'])
+                              evaluation_scope=r['evaluation_scope'], success_meaning=r['success_meaning'],
+                              not_evaluated_checks=r['evaluation']['not_evaluated_checks'],
+                              intervention_executed=rid in plans and len(plans[rid]['arm_names']) > 0, route=r['route']['status'])
             if not r['success'] and rid not in requested:
                 conclusion['result'] = 'not_requested'
             elif r['route']['status'] == 'unsupported':
@@ -221,6 +266,13 @@ def intervene(failed_dir, output, failure_ids=None):
                 shutil.copyfile(root / ('success' if r['success'] else 'failed') / rid / 'molecule.sdf', dest / 'molecule.sdf')
                 np.save(dest / 'coordinates.npy', item['xyz'][item['slots']], allow_pickle=False)
             write_json(dest / 'sample.json', conclusion)
+            # Assess the selected full-precision structure, never just rounded SDF coordinates.
+            from .evaluation import with_coords
+            chosen_mol=read_mol(dest/'molecule.sdf')
+            if chosen_mol is not None:
+                chosen_mol=with_coords(chosen_mol,np.load(dest/'coordinates.npy',allow_pickle=False))
+            chosen_row=next((v['evaluation'] for v in records if v['run_id']==rid and v['arm']==selected),r['evaluation'])
+            write_json(dest/'research_assessment.json',assess(item,chosen_mol,chosen_row,method['evaluator_config']))
         verify_checked(root)
     except Exception as exc:
         fatal.append(dict(error=str(exc), traceback=traceback.format_exc()))
@@ -228,19 +280,29 @@ def intervene(failed_dir, output, failure_ids=None):
     summary = dict(completed=not fatal and len(conclusions) == len(checked),
         total_samples=len(checked), original_passed=sum(r['success'] for r in checked),
         original_failed=len(available), requested_failures=len(requested),
-        rescued=len(rescued), rescued_without_relaxing_fixed_coordinates=sum(r['selected_arm'] != 'C' for r in rescued),
-        rescued_with_relaxed_fixed_coordinates=sum(r['selected_arm'] == 'C' for r in rescued),
+        rescued=len(rescued), rescued_without_relaxing_fixed_coordinates=sum(not r['fixed_coordinate_relaxation'] for r in rescued),
+        rescued_with_relaxed_fixed_coordinates=sum(r['fixed_coordinate_relaxation'] for r in rescued),
+        rescued_with_graph_edits=sum(bool(r.get('graph_changed')) for r in rescued),
+        attempted_failures=sum(r['requested_failure'] and r['intervention_executed'] for r in conclusions),
         final_passed=sum(r['selected_arm'] is not None for r in conclusions),
         final_failed=sum(r['selected_arm'] is None for r in conclusions),
         unsupported_failures=sum(r['route']['status'] == 'unsupported' for r in checked),
-        planned_arms=len(active_ids) * len(ARMS), completed_arms=len(records), branch_errors=len(errors),
-        all_planned_arms_evaluated=len(records) == len(active_ids) * len(ARMS) and not errors,
+        planned_arms=planned, completed_arms=len(records), branch_errors=len(errors),
+        all_planned_arms_evaluated=len(records) == planned and not errors,
         fatal_errors=fatal, new_generations=0, neural_interventions=0,
-        interpretation='Operational repair under the unchanged evaluator. C is separately counted because fixed coordinates move.')
+        by_evaluation_scope=scope_counts(conclusions, intervention=True),
+        interpretation='V2 whole-endpoint repairs. Graph edits and relaxed fixed coordinates are reported separately; unsupported, unattempted, evaluated failures and runtime errors are distinct.')
     write_json(output / 'summary.json', summary)
     write_json(output / 'results.json', dict(summary=summary, records=records, conclusions=conclusions, branch_errors=errors))
+    chosen_smiles=[]
+    for c in conclusions:
+        original=next(r for r in checked if r['id']==c['run_id'])
+        chosen=next((r['evaluation'] for r in records if r['run_id']==c['run_id'] and r['arm']==c['selected_arm']),original['evaluation'])
+        chosen_smiles.append(chosen['molecule_smiles'])
+    write_json(output/'batch_metrics.json',batch_metrics(chosen_smiles,len(checked)))
     save_csv(output / 'samples.csv', conclusions)
     save_csv(output / 'arms.csv', [dict(id=r['run_id'], arm=r['arm'], passed=r['full_success'],
+        evaluation_scope=r['evaluation']['evaluation_scope'],
         improved=r['checks_improved'], worsened=r['checks_worsened'], failed_checks=r['evaluation']['posebusters_failed_checks']) for r in records])
     bundle(output)
     require(summary['completed'], f"Intervention stopped: {fatal[0]['error'] if fatal else 'incomplete'}; see {output / 'review.zip'}")

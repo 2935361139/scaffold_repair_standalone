@@ -168,7 +168,9 @@ def route_failure(row):
         return dict(status='already_passed', reason='Keep original result; eligible as a same-input control')
     chemical = ('rdkit_valid','fc_valid','root_fixed_substructure_match','fixed_chemistry_preserved')
     if not all(row.get(k) is True for k in chemical):
-        return dict(status='unsupported', reason='Chemical/connectivity/fixed-identity failure needs a discrete or model intervention; coordinate code cannot claim to repair it')
+        if row.get('molecule_readable') is False or row.get('fixed_missing_sites') or row.get('fixed_element_changed_sites'):
+            return dict(status='unsupported', reason='Unreadable graph, absent mapped atoms, or fixed element mismatch; no atom creation/replacement method is enabled')
+        return dict(status='supported_topology', reason='Attempt bounded fixed-template and connectivity graph interventions, with geometry-only controls')
     failed = set(row.get('posebusters_failed_checks') or [])
     if row.get('posebusters_valid') is False and failed and failed <= GEOMETRY_CHECKS:
         return dict(status='supported_geometry', reason='Run frozen geometry intervention bank, including fixed-region conflicts')

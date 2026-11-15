@@ -18,6 +18,8 @@ def environment_atom(atom):
 
 
 def clash_pairs(mol, ref, task, slots, environment, config, row):
+    if environment is None:
+        return []
     if mol is None or row['rdkit_valid'] is not True or row['posebusters_checks'] is None:
         return []
     mapping = dict(zip(task['fixed_sampler_indices'], task['fixed_reference_indices']))
@@ -56,6 +58,9 @@ def clash_pairs(mol, ref, task, slots, environment, config, row):
 
 
 def temporal_evidence(item, pairs, environment, config):
+    if environment is None:
+        return dict(status='not_evaluated_no_protein', observations=[],
+                    explanation='No environmental clash timing without a protein. Endpoint defects do not identify a generation step.')
     if not item['trajectory']:
         return dict(status='unavailable_final_SDF_only', observations=[],
                     explanation='No saved trajectory: generation step and neural module cannot be inferred from final SDF.')
@@ -88,12 +93,40 @@ def diagnose(item, mol, row, environment, config):
                    for k in row.get('posebusters_failed_checks', []) if k not in localized]
     for key in ('rdkit_valid', 'fc_valid', 'root_fixed_substructure_match', 'fixed_chemistry_preserved'):
         if row.get(key) is not True:
-            unlocalized.append(dict(check=key, status='chemical_or_fixed_mapping_failure_coordinate_bank_cannot_repair'))
-    return dict(pairs=pairs, unlocalized=unlocalized,
+            unlocalized.append(dict(check=key, status='see_graph_diagnosis_and_bounded_topology_plan'))
+    from .topology import bond_map, local_fixed, bridge_pairs
+    graph = dict(status='unreadable' if mol is None else 'observed_final_graph',
+                 components=[], fixed_bond_changes=[], proposed_cross_component_pairs=[])
+    candidates = []
+    if mol is not None:
+        mapping = local_fixed(item)
+        graph['components'] = [list(c) for c in Chem.GetMolFrags(mol)]
+        generated_bonds, reference_bonds = bond_map(mol), bond_map(item['ref'])
+        for i, j in row.get('fixed_internal_bond_changed_pairs', []):
+            a, b = item['slots'].index(i), item['slots'].index(j)
+            graph['fixed_bond_changes'].append(dict(generated_atoms=[a,b],
+                reference_atoms=[mapping[a],mapping[b]],
+                expected=reference_bonds.get(tuple(sorted((mapping[a],mapping[b])))),
+                observed=generated_bonds.get(tuple(sorted((a,b))))))
+        if graph['fixed_bond_changes'] or row.get('fixed_charge_changed_sites'):
+            candidates.append(dict(kind='F', hypothesis='Mapped fixed-template bond/charge inconsistency',
+                                   evidence=graph['fixed_bond_changes']))
+        if len(graph['components']) > 1:
+            graph['proposed_cross_component_pairs'] = [dict(atoms=[a,b], distance_A=d, distance_score=score)
+                for score,a,b,d in bridge_pairs(mol,set(mapping))]
+            candidates.append(dict(kind='L', hypothesis='Disconnected components may admit a local covalent connection',
+                                   component_count=len(graph['components'])))
+        if row.get('fixed_max_displacement_A',0) > 1e-5:
+            candidates.append(dict(kind='A', hypothesis='Observed fixed-coordinate drift',
+                                   max_displacement_A=row['fixed_max_displacement_A']))
+    if any(k != 'all_atoms_connected' for k in row.get('posebusters_failed_checks', [])):
+        candidates.append(dict(kind='geometry', hypothesis='Reported internal or environmental geometry failures',
+                               failed_checks=row['posebusters_failed_checks']))
+    return dict(evaluation_scope=row.get('evaluation_scope'),
+                not_evaluated_checks=row.get('not_evaluated_checks', {}),
+                pairs=pairs, unlocalized=unlocalized,
+                graph=graph,
                 temporal=temporal_evidence(item, pairs, environment, config),
                 imported_observations=item.get('imported_observations'),
-                candidates=[dict(arm='A', hypothesis='Fixed atoms drifted from conditioning coordinates'),
-                            dict(arm='B', hypothesis='Generated-region geometry conflicts'),
-                            dict(arm='AB', hypothesis='Fixed drift and generated-region geometry interact'),
-                            dict(arm='C', hypothesis='Geometry requires moving fixed atoms too; relax fixed-coordinate constraint')],
-                interpretation='Candidates are tested by a fixed intervention bank, not asserted as unique neural causes.')
+                candidates=candidates,
+                interpretation='Observed graph/geometry failures select bounded intervention families. A successful repair is not proof of a unique upstream cause.')
