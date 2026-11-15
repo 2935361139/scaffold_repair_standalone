@@ -1,0 +1,26 @@
+{
+  "diffsbdd": {
+    "arms": 115,
+    "source_evidence_integrity_verified": true,
+    "atom_count_and_elements_preserved": true,
+    "optimizer_budget_verified": true,
+    "all_selected_repairs_pass_full_endpoint": true,
+    "control_never_selected": true
+  },
+  "flowr": {
+    "arms": 65,
+    "source_evidence_integrity_verified": true,
+    "atom_count_and_elements_preserved": true,
+    "optimizer_budget_verified": true,
+    "all_selected_repairs_pass_full_endpoint": true,
+    "control_never_selected": true
+  },
+  "synthetic": {
+    "arms": 24,
+    "source_evidence_integrity_verified": true,
+    "atom_count_and_elements_preserved": true,
+    "optimizer_budget_verified": true,
+    "all_selected_repairs_pass_full_endpoint": true,
+    "control_never_selected": true
+  }
+}

@@ -36,9 +36,9 @@ class ScientificInvariants(unittest.TestCase):
     def test_original_success_is_preserved(self):
         self.assertEqual(select_result(passing(), {'C': passing()})['selected_arm'], 'baseline')
 
-    def test_discrete_failure_is_unsupported(self):
+    def test_discrete_failure_reaches_bounded_topology_bank(self):
         base = passing(); base['fc_valid'] = False
-        self.assertEqual(route_failure(base)['status'], 'unsupported')
+        self.assertEqual(route_failure(base)['status'], 'supported_topology')
         self.assertFalse(successful(base))
 
     def test_geometry_routing_is_not_water_specific(self):

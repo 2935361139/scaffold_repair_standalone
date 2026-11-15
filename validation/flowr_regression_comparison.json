@@ -1,0 +1,12 @@
+{
+  "baseline_samples": 3,
+  "intervention_control_endpoints_matched": 57,
+  "optimizer_and_control_receipts_exact": 57,
+  "sdf_files_byte_identical": 57,
+  "clash_pairs": 8,
+  "trajectory_series_exact": 16,
+  "repaired": 3,
+  "repaired_with_relaxed_fixed_coordinates": 3,
+  "additional_v2_arms": 8,
+  "note": "Original 57 branch endpoints, receipts, SDF bytes and trajectory evidence must match; new v2 branches may change final selection."
+}

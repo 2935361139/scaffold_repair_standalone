@@ -1,0 +1,23 @@
+{
+  "completed": true,
+  "total_samples": 5,
+  "original_passed": 0,
+  "original_failed": 5,
+  "requested_failures": 5,
+  "rescued": 3,
+  "rescued_without_relaxing_fixed_coordinates": 3,
+  "rescued_with_relaxed_fixed_coordinates": 0,
+  "rescued_with_graph_edits": 3,
+  "attempted_failures": 5,
+  "final_passed": 3,
+  "final_failed": 2,
+  "unsupported_failures": 0,
+  "planned_arms": 115,
+  "completed_arms": 115,
+  "branch_errors": 0,
+  "all_planned_arms_evaluated": true,
+  "fatal_errors": [],
+  "new_generations": 0,
+  "neural_interventions": 0,
+  "interpretation": "V2 whole-endpoint repairs. Graph edits and relaxed fixed coordinates are reported separately; unsupported, unattempted, evaluated failures and runtime errors are distinct."
+}

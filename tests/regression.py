@@ -23,7 +23,7 @@ def compare(fixture, output, exact_sdf=True):
     expected = {(r['run_id'], r['arm']): r for r in old['records']}
     actual = {(r['run_id'], r['arm']): r for r in new['records']}
     wanted = {k for k in expected if k[1] != 'baseline'}
-    require(set(actual) == wanted, 'Missing, duplicated or extra intervention branches')
+    require(wanted <= set(actual), 'Missing original intervention branches')
     sdf_equal = 0
     for key in sorted(wanted):
         a, b = actual[key], expected[key]
@@ -36,10 +36,6 @@ def compare(fixture, output, exact_sdf=True):
         sdf_equal += equal
         if exact_sdf:
             require(equal, f'SDF bytes changed: {key}')
-    old_conclusions = {r['run_id']: r for r in old['conclusions']}
-    for r in new['conclusions']:
-        for key in ('selected_arm', 'all_successful_interventions', 'fixed_coordinate_relaxation'):
-            require(r[key] == old_conclusions[r['run_id']][key], f'Selection changed: {r["run_id"]} {key}')
     golden_time = read_json(fixture / 'generation/group_01/localization_v2/geometry/temporal_evidence.json')
     times = {(r['id'], r['check'], r['stream'], r['sampler_atom_index'], r['environment_atom_index']): r for r in golden_time}
     time_count, pair_count = 0, 0
@@ -57,7 +53,9 @@ def compare(fixture, output, exact_sdf=True):
     return dict(baseline_samples=3, intervention_control_endpoints_matched=len(wanted),
                 optimizer_and_control_receipts_exact=len(wanted), sdf_files_byte_identical=sdf_equal,
                 clash_pairs=pair_count, trajectory_series_exact=time_count,
-                repaired=new['summary']['rescued'], repaired_by_C=new['summary']['rescued_with_relaxed_fixed_coordinates'])
+                repaired=new['summary']['rescued'], repaired_with_relaxed_fixed_coordinates=new['summary']['rescued_with_relaxed_fixed_coordinates'],
+                additional_v2_arms=len(actual)-len(wanted),
+                note='Original 57 branch endpoints, receipts, SDF bytes and trajectory evidence must match; new v2 branches may change final selection.')
 
 
 def main():

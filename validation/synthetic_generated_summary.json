@@ -1,0 +1,64 @@
+{
+  "completed": true,
+  "requested_samples": 1,
+  "evaluated_samples": 1,
+  "passed": 0,
+  "failed": 1,
+  "supported_geometry_failures": 0,
+  "supported_topology_failures": 1,
+  "unsupported_failures": 0,
+  "errors": [],
+  "samples": [
+    {
+      "id": "independent_valence_case",
+      "input_id": "synthetic_condition",
+      "seed": null,
+      "success": false,
+      "route": {
+        "status": "supported_topology",
+        "reason": "Attempt bounded fixed-template and connectivity graph interventions, with geometry-only controls"
+      },
+      "evaluation": {
+        "rdkit_valid": false,
+        "fc_valid": false,
+        "root_fixed_substructure_match": null,
+        "fixed_chemistry_preserved": null,
+        "posebusters_valid": null,
+        "posebusters_checks": null,
+        "posebusters_failed_checks": [],
+        "murcko_scaffold_changed": null,
+        "molecule_smiles": null,
+        "scaffold_smiles": null,
+        "molecule_readable": true,
+        "fixed_missing_sites": [],
+        "fixed_element_changed_sites": [],
+        "fixed_charge_changed_sites": [],
+        "fixed_internal_bond_changed_pairs": [],
+        "fixed_rms_displacement_A": 0.0,
+        "fixed_max_displacement_A": 0.0,
+        "strict_boundary_reference_match": true,
+        "strict_boundary_differing_sites": [],
+        "attachment_sites_without_generated_neighbor": [],
+        "nonattachment_sites_with_generated_neighbors": [],
+        "boundary_details": [
+          {
+            "fixed_site": 4,
+            "reference_bond_types": [
+              "SINGLE"
+            ],
+            "generated_bond_types": [
+              "SINGLE"
+            ],
+            "generated_neighbors": [
+              1
+            ]
+          }
+        ],
+        "geometry_status": "not_assessed_invalid_chemistry"
+      },
+      "localized_pair_count": 0,
+      "timing_status": "unavailable_final_SDF_only"
+    }
+  ],
+  "new_generations": 0
+}

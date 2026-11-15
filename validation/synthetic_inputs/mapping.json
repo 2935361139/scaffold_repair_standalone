@@ -1,0 +1,17 @@
+{
+  "schema": "scaffold_repair_mapping_v1",
+  "samples": [
+    {
+      "id": "independent_valence_case",
+      "input_id": "synthetic_condition",
+      "sdf_index": 0,
+      "reference_index": 0,
+      "fixed_generated_indices": [
+        4
+      ],
+      "fixed_reference_indices": [
+        4
+      ]
+    }
+  ]
+}
